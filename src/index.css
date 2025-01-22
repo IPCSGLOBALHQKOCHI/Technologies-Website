@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+#root,
+body,
 html {
   @apply bg-customBg;
   scroll-behavior: smooth;

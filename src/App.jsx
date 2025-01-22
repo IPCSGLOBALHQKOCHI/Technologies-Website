@@ -8,11 +8,11 @@ import Home from "./Pages/Home";
 function App() {
   return (
     <div className="h-screen w-full bg-customBg">
-      <Header/>
-      <Home/>
-      <HomeDownSection/>
-      <Mission/>
-      <Vision/>
+      <Header />
+      <Home />
+      <HomeDownSection />
+      <Mission />
+      <Vision />
     </div>
   );
 }
