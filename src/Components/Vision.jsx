@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 import {parentVariant,childVariant} from "../../src/Variants/FadeInAnimation"
 
 
-function Vision() {
+const Vision=React.forwardRef((props, ref)=> {
   return (
     <motion.div
+    ref={ref}
       variants={parentVariant}
       initial="hidden"
       animate="show"
+      viewport={{ once: true, amount: 0. }}
       className="h-screen flex flex-col items-center justify-center px-24 py-24 leading-normal text-center tracking-[0.09em] text-[#FFFFFFCC] snap-start"
     >
       <motion.h1
@@ -30,6 +32,6 @@ function Vision() {
       </motion.p>
     </motion.div>
   );
-}
+})
 
 export default Vision;

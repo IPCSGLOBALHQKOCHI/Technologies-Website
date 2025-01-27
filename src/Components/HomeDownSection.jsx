@@ -5,13 +5,15 @@ import {
   childVariant,
 } from "../../src/Variants/FadeInAnimation";
 
-function CaseStudy() {
+const CaseStudy=React.forwardRef((props, ref)=> {
   return (
     <motion.div
+  ref={ref}
       variants={parentVariant}
       initial="hidden"
       animate="show"
-      className="h-screen flex flex-col items-center justify-center px-24 py-24 leading-normal text-4xl tracking-[0.05em] text-[#FFFFFFCC]"
+      viewport={{ once: true, amount: -0.2 }}
+      className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFFCC]"
     >
       <div className="text-left">
         <motion.p
@@ -49,6 +51,6 @@ function CaseStudy() {
       </div>
     </motion.div>
   );
-}
+})
 
 export default CaseStudy;

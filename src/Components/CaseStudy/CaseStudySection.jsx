@@ -8,4 +8,4 @@ function CaseStudySection() {
   )
 }
 
-export default CaseStudySection
+export default CaseStudySection;
