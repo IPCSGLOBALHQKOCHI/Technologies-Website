@@ -1,25 +1,25 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
 import {
   parentVariant,
   childVariant,
 } from "../../src/Variants/FadeInAnimation";
 
-const CaseStudy=React.forwardRef((props, ref)=> {
+const CaseStudy =React.forwardRef((props, ref) => {
   return (
     <motion.div
-  ref={ref}
+      ref={ref}
       variants={parentVariant}
       initial="hidden"
       animate="show"
-      viewport={{ once: true, amount: -0.2 }}
+      viewport={{ once: false }}
       className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFFCC]"
     >
       <div className="text-left">
         <motion.p
           variants={childVariant}
           initial="hidden"
-          whileInView={"show"}
+          animate="show"
           className="font-300"
         >
           This case study highlights transformative solutions
@@ -27,7 +27,7 @@ const CaseStudy=React.forwardRef((props, ref)=> {
         <motion.p
           variants={childVariant}
           initial="hidden"
-          whileInView={"show"}
+          animate="show"
           className="font-300"
         >
           we have implemented, showcasing the Growth,
@@ -35,7 +35,7 @@ const CaseStudy=React.forwardRef((props, ref)=> {
         <motion.p
           variants={childVariant}
           initial="hidden"
-          whileInView={"show"}
+          animate="show"
           className="font-300"
         >
           Success and Positive changes we have driven for
@@ -43,7 +43,7 @@ const CaseStudy=React.forwardRef((props, ref)=> {
         <motion.p
           variants={childVariant}
           initial="hidden"
-          whileInView={"show"}
+          animate="show"
           className="font-300"
         >
           our Clients.
@@ -51,6 +51,6 @@ const CaseStudy=React.forwardRef((props, ref)=> {
       </div>
     </motion.div>
   );
-})
+});
 
 export default CaseStudy;

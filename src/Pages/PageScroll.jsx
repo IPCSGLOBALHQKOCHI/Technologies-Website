@@ -38,7 +38,7 @@ export default function Appss() {
   useEffect(() => {
     if (sections.current[currentIndex]) {
       requestAnimationFrame(() => {
-        sections.current[currentIndex].scrollIntoView({ behavior: "smooth" });
+        sections.current[currentIndex].scrollIntoView({ behavior: "smooth",block:"center" });
       });
     }
   }, [currentIndex]);

@@ -1,39 +1,35 @@
-import React from "react";
-import { motion } from "framer-motion";
-import {
-  parentVariant,
-  childVariant,
-} from "../../src/Variants/FadeInAnimation";
+import React, { forwardRef, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Mission=React.forwardRef((props, ref)=> {
+const Mission = forwardRef((props, ref) => {
+  useEffect(() => {
+    AOS.init({ duration: 3000, once: true });
+  }, []);
+
   return (
-    <motion.div
-    ref={ref}
-      variants={parentVariant}
-      initial="hidden"
-      animate="show"
-      viewport={{ once: true, amount: 0. }}
-      className="h-screen flex flex-col items-center justify-center px-24 py-24 leading-normal text-center tracking-[0.09em] text-[#FFFFFFCC] "
+    <div
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      ref={ref}
+      className="h-screen flex flex-col items-center justify-center px-24 py-24 leading-normal text-center tracking-[0.09em] text-[#FFFFFFCC]"
     >
-      <motion.h1
-        variants={childVariant}
-        initial="hidden"
-        whileInView={"show"}
-        className="text-[250px] font-200 leading-none"
-      >
+      {/* "Mission" appears first */}
+      <h1 data-aos="fade-up" className="text-[250px] font-200 leading-none">
         Mission
-      </motion.h1>
-      <motion.p
-        variants={childVariant}
-        initial="hidden"
-        whileInView={"show"}
+      </h1>
+
+      {/* Sentence appears after a delay */}
+      <p
+        data-aos="fade-up"
+        data-aos-delay="500"
         className="max-w-2xl leading-relaxed font-300 text-lg text-left"
       >
         To build sustainable solutions that empower Businesses by fostering
-        Creativity, Innovation and Impactful service delivery.
-      </motion.p>
-    </motion.div>
+        Creativity, Innovation, and Impactful service delivery.
+      </p>
+    </div>
   );
-}
-)
+});
+
 export default Mission;
