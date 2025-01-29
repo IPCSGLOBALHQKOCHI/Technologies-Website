@@ -3,9 +3,10 @@ import HeroSection from "../Components/Home/HeroSection";
 import HeroDownSection from "../Components/HomeDownSection";
 import Mission from "../Components/Mission";
 import Vision from "../Components/Vision";
+import CaseStudySection from "../Components/CaseStudy/CaseStudySection";
 
-export default function Appss() {
-  const sections = useRef([]); // Store section references
+export default function PageScroll() {
+  const sections = useRef([]); 
   const [currentIndex, setCurrentIndex] = useState(0);
   const isScrolling = useRef(false); 
 
@@ -49,6 +50,7 @@ export default function Appss() {
       <HeroDownSection ref={(el) => (sections.current[1] = el)} />
       <Mission ref={(el) => (sections.current[2] = el)} />
       <Vision ref={(el) => (sections.current[3] = el)} />
+      <CaseStudySection ref={(el) => (sections.current[4] = el)} />
     </div>
   );
 }

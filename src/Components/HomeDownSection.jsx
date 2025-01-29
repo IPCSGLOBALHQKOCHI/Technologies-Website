@@ -1,55 +1,32 @@
-import React, { forwardRef } from "react";
-import { motion } from "framer-motion";
-import {
-  parentVariant,
-  childVariant,
-} from "../../src/Variants/FadeInAnimation";
+import React, { forwardRef, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const CaseStudy =React.forwardRef((props, ref) => {
+const CaseStudy = forwardRef((props, ref) => {
+  useEffect(() => {
+    AOS.init({ once: true }); 
+  }, []);
+
   return (
-    <motion.div
+    <div
       ref={ref}
-      variants={parentVariant}
-      initial="hidden"
-      animate="show"
-      viewport={{ once: false }}
       className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFFCC]"
     >
       <div className="text-left">
-        <motion.p
-          variants={childVariant}
-          initial="hidden"
-          animate="show"
-          className="font-300"
-        >
+        <p data-aos="fade-up" data-aos-delay="100" className="font-300">
           This case study highlights transformative solutions
-        </motion.p>
-        <motion.p
-          variants={childVariant}
-          initial="hidden"
-          animate="show"
-          className="font-300"
-        >
+        </p>
+        <p data-aos="fade-up" data-aos-delay="300" className="font-300">
           we have implemented, showcasing the Growth,
-        </motion.p>
-        <motion.p
-          variants={childVariant}
-          initial="hidden"
-          animate="show"
-          className="font-300"
-        >
+        </p>
+        <p data-aos="fade-up" data-aos-delay="500" className="font-300">
           Success and Positive changes we have driven for
-        </motion.p>
-        <motion.p
-          variants={childVariant}
-          initial="hidden"
-          animate="show"
-          className="font-300"
-        >
+        </p>
+        <p data-aos="fade-up" data-aos-delay="700" className="font-300">
           our Clients.
-        </motion.p>
+        </p>
       </div>
-    </motion.div>
+    </div>
   );
 });
 
