@@ -3,9 +3,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const CaseStudy = forwardRef((props, ref) => {
-  useEffect(() => {
-    AOS.init({ once: true }); 
-  }, []);
+  // useEffect(() => {
+  //   if (!localStorage.getItem("aosInitialized")) {
+  //     AOS.init({ duration: 1000, easing: "ease-out" });
+  //     localStorage.setItem("aosInitialized", "true");
+  //   }
+
+  //   return () => {
+  //   };
+  // }, []); 
+   useEffect(() => {
+      AOS.init();
+    }, []);
 
   return (
     <div

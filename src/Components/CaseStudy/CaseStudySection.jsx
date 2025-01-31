@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import sisuLogo from "../../../src/assets/images/sisiu logo.png";
 import makayiramLogo from "../../../src/assets/images/makayiram logo.png";
 import image1 from "../../../src/assets/images/casestudyimage.png";
@@ -13,7 +13,7 @@ import seoGraph from "../../../src/assets/images/seo graph.png";
 
 const CaseStudySection = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className=" h-screen py-20 px-6 lg:px-20">
+    <section ref={ref} className="min-h-screen py-20 px-6 lg:px-20">
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="leading-none tracking-[2.68px]">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Case</h2>
@@ -26,7 +26,7 @@ const CaseStudySection = forwardRef((props, ref) => {
           Impactful Execution.
         </p>
       </div>
-      <div className="grid grid-cols-5 gap-2 p-6 h-screen ">
+      <div className="grid grid-cols-5 gap-2 p-6">
         <div className="col-span-2 bg-[#0B0B0B] p-6 rounded-3xl flex flex-col justify-center h-64">
           <h2 className="text-5xl text-[#FFFFFF] font-300">Hi there!</h2>
           <p className="text-[#FFFFFF] text-opacity-50 font-300 text-2xl mt-8">
@@ -58,7 +58,8 @@ const CaseStudySection = forwardRef((props, ref) => {
             our content for maximum impact.
           </p>
         </div>
-        <div className="rounded-3xl h-52 p-1 overflow-hidden flex items-center justify-center">
+
+        <div className="rounded-3xl h-52 p-1 flex items-center justify-center">
           <img
             src={image1}
             alt="bentoimage"
@@ -66,7 +67,56 @@ const CaseStudySection = forwardRef((props, ref) => {
           />
         </div>
 
-        <div className="col-span-2 mr-[13%] bg-[#000000] p-6 rounded-3xl h-52"></div>
+        <div className="bg-[#0B0B0B] col-span-2 mr-[13%] p-6 pt-2 rounded-3xl flex flex-col space-x-4 h-52">
+          <div className="flex justify-between w-full">
+            <div className="max-w-[50%]">
+              <p className="text-[#9999FF] text-[12px]">Before (Feb 2024)</p>
+              <p className="text-[#FFFFFF] text-[10px]">
+                Zero Organic reach, no Google Ranking!
+              </p>
+            </div>
+            <div className="max-w-[50%] text-left">
+              <p className="text-[#B659FF] text-[12px]">After (Nov 2024)</p>
+              <p className="text-[#FFFFFF] text-[10px]">
+                In 8 months, Organic reach multiplied and keyword rankings
+                skyrocketed to the Top 10 on Google!
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center justify-center space-x-4">
+            <img
+              src={lowGraph}
+              alt="Low Graph"
+              className="w-20 h-auto object-contain mt-12 "
+            />
+            <div className="border border-[#B659FF] rounded-full px-6 py-2 flex items-center justify-center ">
+              <h2 className="text-[#FFFFFF] font-medium text-sm">MAKAYIRAM</h2>
+            </div>
+            <img
+              src={highGraph}
+              alt="High Graph"
+              className="w-20 h-auto object-contain -mt-2 "
+            />
+          </div>
+          <div className="flex justify-between text-[10px] text-start">
+            <div>
+              <p className="text-[#FFFFFF]">
+                Total Clicks: <span className="text-[#9999FF]">52</span>{" "}
+              </p>
+              <p className="text-[#FFFFFF]">
+                Impressions: <span className="text-[#9999FF]">801</span>
+              </p>
+            </div>
+            <div>
+              <p className="text-[#FFFFFF]">
+                Total Clicks: <span className="text-[#B659FF]">526</span>{" "}
+              </p>
+              <p className="text-[#FFFFFF]">
+                Impressions: <span className="text-[#B659FF]">25.7 k</span>
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="bg-[#0B0B0B] col-span-1 -ml-[26%] p-6 pt-10 rounded-3xl flex flex-col h-52">
           <h2 className="text-xl font-400 text-[#FFF]">
@@ -74,7 +124,7 @@ const CaseStudySection = forwardRef((props, ref) => {
             <span className="text-xl text-[#FFFFFF] font-500">MAKAYIRAM</span>{" "}
           </h2>
           <p className="text-xl font-400 text-[#FFFFFF] pt-2 text-opacity-50">
-            From zero organic reach to Top 10 Google rankings in just 8 months!
+            From zero organic reach to Top 10 Google rankings in just 8 months! 
           </p>
         </div>
         <div className="flex flex-col h-52 space-y-4 ">
@@ -123,9 +173,10 @@ const CaseStudySection = forwardRef((props, ref) => {
             SEO
           </h2>
           <p className="text-xs font-300">Keyword Ranking</p>
-          <img src={seoGraph} alt="seo graph"/>
-          <p className="text-xs font-400">Keyword : “Best Plantation Resort in Munnar”</p>
-          {/* <p>Client Name: Makayiram Retreat</p> */}
+          <img src={seoGraph} alt="seo graph" />
+          <p className="text-xs font-400">
+            Keyword : “Best Plantation Resort in Munnar”
+          </p>
         </div>
         <div className="bg-[#0B0B0B] col-span-1  ml-[25%] p-6 rounded-3xl flex flex-col justify-center">
           <img src={globalLogo} alt="global logo" />
