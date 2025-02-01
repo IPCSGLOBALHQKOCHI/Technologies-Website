@@ -67,13 +67,13 @@ export default function PageScroll() {
   }, [currentIndex]);
 
   return (
-    <div className="App">
-      <HeroSection ref={(el) => (sections.current[0] = el)} />
-      <HeroDownSection ref={(el) => (sections.current[1] = el)} />
-      <Mission ref={(el) => (sections.current[2] = el)} />
-      <Vision ref={(el) => (sections.current[3] = el)} />
-      <CaseStudySection ref={(el) => (sections.current[4] = el)} />
-        <Services/>
-    </div>
+    <div className="h-full w-full">
+    <HeroSection ref={(el) => (sections.current[0] = el)} />
+    <HeroDownSection ref={(el) => (sections.current[1] = el)} />
+    <Mission ref={(el) => (sections.current[2] = el)} />
+    <Vision ref={(el) => (sections.current[3] = el)} />
+    <CaseStudySection ref={(el) => (sections.current[4] = el)} />
+    <Services />
+  </div>
   );
 }
