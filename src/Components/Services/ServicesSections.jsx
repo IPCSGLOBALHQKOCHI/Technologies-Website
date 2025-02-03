@@ -72,13 +72,13 @@ const ServicesSections = () => {
             )}
           </div>
           <div className="w-full border-b-[2px] border-[#3A3A3A] -mt-[136px]"></div>
-          {/* <Link
+          <Link
             to={section.link}
             className="absolute w-14 h-14 left-1/2 bottom-1 -ml-8 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-  bg-white/20 backdrop-blur-md border bg-white text-black p-2 rounded-full shadow-lg hover:scale-110"
+   backdrop-blur-md border bg-white text-black p-2 rounded-full shadow-lg hover:scale-110"
           >
             <HiMiniArrowUpRight className="w-10 h-10 text-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:rotate-45" />
-          </Link> */}
+          </Link>
         </div>
       ))}
     </section>

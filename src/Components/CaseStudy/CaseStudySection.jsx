@@ -27,13 +27,13 @@ const CaseStudySection = forwardRef((props, ref) => {
         </p>
       </div>
       <div className="grid grid-cols-5 gap-2 p-6">
-        <div className="col-span-2 bg-[#0B0B0B] p-6 rounded-3xl flex flex-col justify-center h-64">
+        <div className="col-span-2 bg-[#0B0B0B] p-6 rounded-3xl flex flex-col justify-center h-64 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-5xl text-[#FFFFFF] font-300">Hi there!</h2>
           <p className="text-[#FFFFFF] text-opacity-50 font-300 text-2xl mt-8">
             Let's walk you through our Success Stories.
           </p>
         </div>
-        <div className="p-6 rounded-3xl flex flex-col h-64  bg-[#0B0B0B]">
+        <div className="p-6 rounded-3xl flex flex-col h-64  bg-[#0B0B0B] hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-2xl font-500 text-[#FDDA21] text-center ">
             Branding
           </h2>
@@ -42,15 +42,15 @@ const CaseStudySection = forwardRef((props, ref) => {
             Curating Art with Passion, Delivering Masterpieces with Precision
           </p>
         </div>
-        <div className=" h-64 p-6 bg-[#0B0B0B] bg-[radial-gradient(circle_at_0%_top,rgba(41,51,39,0.6)_0%,transparent_100%)] rounded-3xl flex flex-col justify-center">
+        <div className=" h-64 p-6 bg-[#0B0B0B] bg-[radial-gradient(circle_at_0%_top,rgba(41,51,39,0.6)_0%,transparent_100%)] hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)] rounded-3xl flex flex-col justify-center">
           <h2 className="text-xl font-500 text-[#A1FFAC] text-center">
             Landing Page
           </h2>
           <img src={makayiramLogo} alt="makayiram logo"></img>
           <p className="text-[#DEDCB2] text-center font-500">UI/UX Design</p>
         </div>
-        <div className="bg-[#0B0B0B] p-4 pt-6 rounded-3xl h-64">
-          <h2 className="text-3xl text-center font-500 text-[#FFFFFFCC] ">
+        <div className="bg-[#0B0B0B] p-4 pt-6 rounded-3xl h-64 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
+          <h2 className="text-3xl text-center font-500 text-[#FFFFFFCC]">
             Tools We Use
           </h2>
           <p className="font-400 text-base text-[#FFFFFFCC] pt-6 px-3">
@@ -67,7 +67,7 @@ const CaseStudySection = forwardRef((props, ref) => {
           />
         </div>
 
-        <div className="bg-[#0B0B0B] col-span-2 mr-[13%] p-6 pt-2 rounded-3xl flex flex-col space-x-4 h-52">
+        <div className="bg-[#0B0B0B] col-span-2 mr-[13%] p-6 pt-2 rounded-3xl flex flex-col space-x-4 h-52 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <div className="flex justify-between w-full">
             <div className="max-w-[50%]">
               <p className="text-[#9999FF] text-[12px]">Before (Feb 2024)</p>
@@ -118,13 +118,13 @@ const CaseStudySection = forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div className="bg-[#0B0B0B] col-span-1 -ml-[26%] p-6 pt-10 rounded-3xl flex flex-col h-52">
+        <div className="bg-[#0B0B0B] col-span-1 -ml-[26%] p-6 pt-10 rounded-3xl flex flex-col h-52 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-xl font-400 text-[#FFF]">
             Client:{" "}
             <span className="text-xl text-[#FFFFFF] font-500">MAKAYIRAM</span>{" "}
           </h2>
           <p className="text-xl font-400 text-[#FFFFFF] pt-2 text-opacity-50">
-            From zero organic reach to Top 10 Google rankings in just 8 months! 
+            From zero organic reach to Top 10 Google rankings in just 8 months!
           </p>
         </div>
         <div className="flex flex-col h-52 space-y-4 ">
@@ -151,7 +151,7 @@ const CaseStudySection = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 bg-[#0B0B0B] p-6 rounded-3xl h-56">
+        <div className="col-span-2 bg-[#0B0B0B] p-6 rounded-3xl h-56 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <div className="border-[1px] border-[#B659FF] rounded-full text-center justify-center mx-8">
             <h2 className="text-3xl font-200 text-center py-3 text-[#FFFFFF] ">
               16-Year Legacy
@@ -161,7 +161,7 @@ const CaseStudySection = forwardRef((props, ref) => {
             We’re part of a 16-Year Legacy and that’s our Strength.
           </p>
         </div>
-        <div className="bg-[#0B0B0B] col-span-1 -mr-[25%] text-white p-4 rounded-3xl flex flex-col ">
+        <div className="bg-[#0B0B0B] col-span-1 -mr-[25%] text-white p-4 rounded-3xl flex flex-col hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2
             className="text-5xl font-600 text-start"
             style={{
@@ -178,7 +178,7 @@ const CaseStudySection = forwardRef((props, ref) => {
             Keyword : “Best Plantation Resort in Munnar”
           </p>
         </div>
-        <div className="bg-[#0B0B0B] col-span-1  ml-[25%] p-6 rounded-3xl flex flex-col justify-center">
+        <div className="bg-[#0B0B0B] col-span-1  ml-[25%] p-6 rounded-3xl flex flex-col justify-center hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <img src={globalLogo} alt="global logo" />
         </div>
         <div className="rounded-3xl flex flex-col justify-center">
