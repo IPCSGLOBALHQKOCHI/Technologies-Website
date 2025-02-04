@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const DigitalMarketing=() =>{
+   useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
-    <div className="flex flex-col min-h-screen mt-10 p-16">
+    <div className="flex flex-col mt-10 p-16">
     <div className="flex justify-between">
       <div className="text-[#FFFFFF] text-[200px] font-200 mt-14 leading-none tracking-[4px]">
         Digital Marketing
@@ -73,15 +76,15 @@ const DigitalMarketing=() =>{
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-4 gap-2 p-6 pt-24">
-    <div className="col-span-2 row-span-1 rounded-3xl bg-black mr-[25%] overflow-hidden h-64">
+    <div className="grid grid-cols-5 gap-2 p-6 pt-24">
+    <div className="col-span-1 row-span-2 rounded-3xl bg-black  overflow-hidden">
       <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Dining" />
     </div>
-    <div className="col-span-1 row-span-1 bg-green-100 p-4 -ml-[50%] mr-[50%] rounded-3xl"> 
+    <div className="col-span-1 row-span-1 bg-green-100 p-4  rounded-3xl"> 
       <h2 className="text-lg font-bold">ASPEKTA</h2>
       <p className="text-gray-600">Font Family</p>
     </div>
-    <div className="col-span-1 row-span-1 rounded-3xl -ml-[50%] bg-black overflow-hidden">
+    <div className="col-span-1 row-span-2 rounded-3xl bg-black overflow-hidden">
       <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Ocean" />
     </div>
 
@@ -92,17 +95,22 @@ const DigitalMarketing=() =>{
     <div className="col-span-1 row-span-1 bg-gray-100 p-4 rounded-3xl">
       <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Mountain" />
     </div>
-    <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden">
+    <div className="col-span-1 row-span-2 rounded-3xl bg-black overflow-hidden">
       <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Tiles" />
     </div>
-    <div className="col-span-1 row-span-2 bg-white p-4 rounded-3xl">
+    <div className="col-span-1 row-span-1 -mb-64 bg-white p-4 rounded-3xl">
       <h2 className="text-gray-800 font-bold">Color Palette</h2>
       <p className="text-red-500 font-bold">923.36</p>
     </div>
 
-    <div className="col-span-2 row-span-1 rounded-3xl bg-black overflow-hidden">
+    <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden h-64">
       <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Billboard" />
     </div>
+
+    <div className="col-span-2 row-span-1 rounded-3xl bg-black overflow-hidden h-64">
+      <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Billboard" />
+    </div>
+    
   </div>
   </div>
   )

@@ -5,7 +5,8 @@ import Mission from "../Components/Mission";
 import Vision from "../Components/Vision";
 import CaseStudySection from "../Components/CaseStudy/CaseStudySection";
 import Services from "./Services";
-
+import ClientSlides from "../Components/Clients/ClientSlides";
+import ClientReviews from "../Components/ClientReviews";
 export default function Home() {
   const sections = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,6 +75,8 @@ export default function Home() {
     <Vision ref={(el) => (sections.current[3] = el)} />
     <CaseStudySection ref={(el) => (sections.current[4] = el)} />
     <Services />
+    <ClientSlides/>
+    <ClientReviews/>
   </div>
   );
 }
