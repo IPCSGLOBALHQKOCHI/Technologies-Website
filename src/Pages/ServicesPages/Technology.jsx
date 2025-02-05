@@ -5,7 +5,7 @@ const Technology=()=> {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col mt-10 p-16">
+    <div className="flex flex-col p-16">
       <div className="flex justify-between">
         <div className="text-[#FFFFFF] text-[200px] font-200 tracking-[4px] mt-12">
           Technology

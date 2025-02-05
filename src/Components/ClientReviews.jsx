@@ -15,21 +15,21 @@ const ClientReviews = () => {
         </p>
       </div>
       <div className="flex flex-row items-center justify-around mt-20">
-        <div className="border border-white w-72 h-72 rounded-3xl bg-gray-900">
+        <div className="w-72 h-72 rounded-3xl bg-[#000000]">
           <h3 className="items-center text-center p-6 font-400 text-4xl text-[#FFFFFF]">Makayiram</h3>
           <p className="px-6 pt-1 text-lg font-300 text-[#E1E1E1]">
             IPCS Technologies transformed our minimal Google Visibility into a
             top-ranked Website through their proper SEO Strategies.
           </p>
         </div>
-        <div className="border border-white w-80 h-72 rounded-3xl bg-gray-900">
+        <div className="w-80 h-72 rounded-3xl bg-[#000000]">
           <h3 className="items-center text-center p-6 font-400 text-4xl text-[#FFFFFF]">Sky Power Energy</h3>
           <p className="px-6 text-lg font-300 text-[#E1E1E1]">
             Our Organic leads were very low, but with the support of IPCS
             Technologies, we achieved Steady and Rewarding Growth.
           </p>
         </div>
-        <div className="border border-white w-72 h-72 rounded-3xl bg-gray-900">
+        <div className="w-72 h-72 rounded-3xl bg-[#000000]">
           <h3 className="items-center text-center p-6 font-400 text-4xl text-[#FFFFFF]">Sisu</h3>
           <p className="px-6 text-lg font-300 text-[#E1E1E1]">
             Creating the perfect blend of Creativity and Professionalism for our
@@ -38,6 +38,7 @@ const ClientReviews = () => {
           </p>
         </div>
       </div>
+      <div className="w-full border-b-[2px] border-[#3A3A3A] mt-20"></div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import CaseStudySection from "../Components/CaseStudy/CaseStudySection";
 import Services from "./Services";
 import ClientSlides from "../Components/Clients/ClientSlides";
 import ClientReviews from "../Components/ClientReviews";
+
 export default function Home() {
   const sections = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(0);

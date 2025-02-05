@@ -5,7 +5,7 @@ const DigitalMarketing=() =>{
         window.scrollTo(0, 0);
       }, []);
   return (
-    <div className="flex flex-col mt-10 p-16">
+    <div className="flex flex-col  p-16">
     <div className="flex justify-between">
       <div className="text-[#FFFFFF] text-[200px] font-200 mt-14 leading-none tracking-[4px]">
         Digital Marketing

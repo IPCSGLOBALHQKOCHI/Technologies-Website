@@ -5,7 +5,7 @@ const Branding = () => {
       window.scrollTo(0, 0);
     }, []);
   return (
-    <div className="flex flex-col mt-10 p-16">
+    <div className="flex flex-col p-16">
       <div className="flex justify-between">
         <div className="text-[#FFFFFF] text-[220px] font-200 mt-4 tracking-[4px]">
           Branding
