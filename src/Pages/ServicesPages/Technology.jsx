@@ -1,16 +1,13 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 
 const Technology=()=> {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div className="flex flex-col p-16">
       <div className="flex justify-between">
         <div className="text-[#FFFFFF] text-[200px] font-200 tracking-[4px] mt-12">
           Technology
         </div>
-        <div className="text-[#FFFFFF] text-[100px] font-200">02</div>
+        <div className="text-[#FFFFFF] text-[100px] font-200 mt-2">02</div>
       </div>
       <div className="text-[#FFFFFF] p-6 mt-6">
         <div className="grid grid-cols-2 gap-8">

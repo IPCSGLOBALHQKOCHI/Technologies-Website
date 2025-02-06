@@ -26,35 +26,27 @@ function ClientSlides() {
     ipcs,
     doubleHorse,
     marriot,
+    milma,
+    ebi,
+    logro,
+    triple,
+    glaze,
+    bhanoo,
+    makayiram,
+    kitex,
   ];
 
-  const row2 = [milma, ebi, logro, triple, glaze, bhanoo, makayiram, kitex];
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center mt-0">
-      <h2 className="text-7xl font-200 text-[#FFFFFF] mb-20">Clients</h2>
-      <div className="relative overflow-hidden w-full max-w-[1200px] mb-4 group">
-        <div className="flex animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused]">
+    <div id="clients" className="min-h-screen bg-[#FFFFFF] flex flex-col items-center justify-center mt-0">
+      <h2 className="text-7xl font-200 text-[#0B0B0B] mb-20">Clients</h2>
+      <div className="relative overflow-hidden w-full max-w-[1200px] group">
+        <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused]">
           {[...row1, ...row1].map((src, i) => (
             <div key={i} className="flex-shrink-0 w-[200px] p-4">
               <img
                 src={src}
                 alt={`Logo ${i}`}
-                className="w-24 h-24 object-contain rounded-xl shadow-md"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative overflow-hidden w-full max-w-[1200px] mt-4 group">
-        <div className="flex animate-scrollRight whitespace-nowrap group-hover:[animation-play-state:paused]">
-          {[...row2, ...row2].map((src, i) => (
-            <div key={i} className="flex-shrink-0 w-[200px] p-4">
-              <img
-                src={src}
-                alt={`Logo ${i}`}
-                className="w-24 h-24 object-contain rounded-xl shadow-md"
+                className="w-24 h-24 object-contain"
               />
             </div>
           ))}

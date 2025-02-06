@@ -1,16 +1,12 @@
-import { useEffect } from "react";
 
 const Branding = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
   return (
     <div className="flex flex-col p-16">
       <div className="flex justify-between">
         <div className="text-[#FFFFFF] text-[220px] font-200 mt-4 tracking-[4px]">
           Branding
         </div>
-        <div className="text-[#FFFFFF] text-[120px] font-200">01</div>
+        <div className="text-[#FFFFFF] text-[120px] font-200 mt-1">01</div>
       </div>
       <div className="text-[#FFFFFF] p-6 mt-6">
         <div className="grid grid-cols-2 gap-8">

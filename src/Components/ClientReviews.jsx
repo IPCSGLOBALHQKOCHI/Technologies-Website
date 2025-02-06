@@ -2,7 +2,7 @@ import React from "react";
 
 const ClientReviews = () => {
   return (
-    <div className="py-20 px-6 lg:px-20">
+    <div id="testimonials" className="py-20 px-6 lg:px-20">
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="leading-none tracking-[2.68px]">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Trusted </h2>

@@ -1,16 +1,13 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 
 const SocialBranding=()=> {
-   useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
   return (
     <div className="flex flex-col  p-16">
     <div className="flex justify-between leading-none text-left">
       <div className="text-[#FFFFFF] text-[200px] font-200 tracking-[4px] mt-10">
         Social Branding
       </div> 
-      <div className="text-[#FFFFFF] text-[100px] font-200 mt-4">04</div>
+      <div className="text-[#FFFFFF] text-[100px] font-200 mt-5">04</div>
     </div>
     <div className="text-[#FFFFFF] p-6 mt-8">
       <div className="grid grid-cols-2 gap-8">

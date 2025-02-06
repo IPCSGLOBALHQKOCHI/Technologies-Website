@@ -1,16 +1,13 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 
 const ExperienceDesign=()=> {
-   useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
   return (
     <div className="flex flex-col  p-16">
     <div className="flex justify-between leading-none">
       <div className="text-[#FFFFFF] text-[220px] font-200 tracking-[4px] mt-14">
       Experience Design
       </div>
-      <div className="text-[#FFFFFF] text-[120px] font-200">05</div>
+      <div className="text-[#FFFFFF] text-[120px] font-200 mt-4">05</div>
     </div>
     <div className="text-[#FFFFFF] p-6 mt-6">
       <div className="grid grid-cols-2 gap-8">

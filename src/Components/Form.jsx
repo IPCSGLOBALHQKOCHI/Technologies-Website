@@ -25,15 +25,15 @@ const Form = () => {
   });
 
   return (
-    <div className="p-6 w-full mr-10">
+    <div className="p-6 w-full mr-10 bg-black/5 rounded-lg ">
       <form onSubmit={formik.handleSubmit} className="space-y-4">
-        <div className="pt-4">
-          <label className="block text-[#0B0B0BCC]">Name*</label>
+        <div className="pt-4 ">
+          <label className="block text-[#0B0B0B]">Name*</label>
           <input
             type="text"
             name="name"
             placeholder="Enter Name"
-            className="w-full px-3 py-2 border-b text-sm focus:outline-none border-[#0000004D]"
+            className="w-full px-3 py-2 border-b text-sm  focus:outline-none border-[#0B0B0B]"
             {...formik.getFieldProps("name")}
           />
           {formik.touched.name && formik.errors.name ? (
@@ -41,12 +41,12 @@ const Form = () => {
           ) : null}
         </div>
         <div className="pt-4">
-          <label className="block text-[#0B0B0BCC]">Email*</label>
+          <label className="block text-[#0B0B0B]">Email*</label>
           <input
             type="email"
             name="email"
             placeholder="Enter Email"
-            className="w-full px-3 py-2 border-b text-sm  focus:outline-none border-[#0000004D]"
+            className="w-full px-3 py-2 border-b text-sm   focus:outline-none border-[#0B0B0B]"
             {...formik.getFieldProps("email")}
           />
           {formik.touched.email && formik.errors.email ? (
@@ -54,16 +54,16 @@ const Form = () => {
           ) : null}
         </div>
         <div className="pt-4">
-          <label className="block text-[#0B0B0BCC]">Phone Number*</label>
-          <div className="flex items-center border-b border-[#0000004D]">
-            <span className="px-3 py-2 bg-gray-100 text-[#0B0B0BCC] border-r border-[#0000004D]">
+          <label className="block text-[#0B0B0B]">Phone Number*</label>
+          <div className="flex items-center border-b border-[#0B0B0B]">
+            <span className="px-3 py-[6px] bg-gray-300 text-black border-r  border-[#0B0B0B]">
               +91
             </span>
             <input
               type="text"
               name="phone"
               placeholder="Enter Phone Number"
-              className="w-full px-3 py-2 text-sm focus:outline-none"
+              className="w-full px-3 py-2 text-sm  focus:outline-none"
               {...formik.getFieldProps("phone")}
             />
           </div>
@@ -72,18 +72,18 @@ const Form = () => {
           ) : null}
         </div>
         <div className="pt-4">
-          <label className="block text-[#0B0B0BCC]">Tell Us More</label>
+          <label className="block text-[#0B0B0B]">Tell Us More</label>
           <textarea
             name="message"
             placeholder="Tell More Us About Your Vision"
-            className="w-full px-3 py-2 border-b border-[#0000004D] text-sm focus:outline-none "
+            className="w-full px-3 py-2 border-b border-[#0B0B0B]  text-sm focus:outline-none "
             rows="3"
             {...formik.getFieldProps("message")}
           ></textarea>
         </div>
         <button
           type="submit"
-          className="w-40 bg-[#8E0608] text-white p-2 rounded-md"
+          className="w-40 bg-[#25789B] text-white p-2 rounded-md"
         >
           Submit
         </button>
