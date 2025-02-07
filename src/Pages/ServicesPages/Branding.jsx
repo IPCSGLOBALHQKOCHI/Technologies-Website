@@ -1,3 +1,4 @@
+import ConnectUs from "../../Components/ConnectUs";
 
 const Branding = () => {
   return (
@@ -73,36 +74,59 @@ const Branding = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 gap-2 p-6 pt-24">
-      <div className="col-span-2 row-span-1 rounded-3xl bg-black mr-[25%] overflow-hidden h-64">
-        <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Dining" />
-      </div>
-      <div className="col-span-1 row-span-1 bg-green-100 p-4 -ml-[50%] mr-[50%] rounded-3xl"> 
-        <h2 className="text-lg font-bold">ASPEKTA</h2>
-        <p className="text-gray-600">Font Family</p>
-      </div>
-      <div className="col-span-1 row-span-1 rounded-3xl -ml-[50%] bg-black overflow-hidden">
-        <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Ocean" />
-      </div>
+        <div className="col-span-2 row-span-1 rounded-3xl bg-black mr-[25%] overflow-hidden h-64">
+          <img
+            src="your-image-url.jpg"
+            className="w-full h-full object-cover"
+            alt="Dining"
+          />
+        </div>
+        <div className="col-span-1 row-span-1 bg-green-100 p-4 -ml-[50%] mr-[50%] rounded-3xl">
+          <h2 className="text-lg font-bold">ASPEKTA</h2>
+          <p className="text-gray-600">Font Family</p>
+        </div>
+        <div className="col-span-1 row-span-1 rounded-3xl -ml-[50%] bg-black overflow-hidden">
+          <img
+            src="your-image-url.jpg"
+            className="w-full h-full object-cover"
+            alt="Ocean"
+          />
+        </div>
 
-      <div className="col-span-1 row-span-2 bg-gray-900 p-4 rounded-3xl flex flex-col h-[440px]">
-        <h2 className="text-white font-bold">SSU Eclipse</h2>
-        <p className="text-gray-400">Brand Identity</p>
-      </div>
-      <div className="col-span-1 row-span-1 bg-gray-100 p-4 rounded-3xl">
-        <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Mountain" />
-      </div>
-      <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden">
-        <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Tiles" />
-      </div>
-      <div className="col-span-1 row-span-2 bg-white p-4 rounded-3xl">
-        <h2 className="text-gray-800 font-bold">Color Palette</h2>
-        <p className="text-red-500 font-bold">923.36</p>
-      </div>
+        <div className="col-span-1 row-span-2 bg-gray-900 p-4 rounded-3xl flex flex-col h-[440px]">
+          <h2 className="text-white font-bold">SSU Eclipse</h2>
+          <p className="text-gray-400">Brand Identity</p>
+        </div>
+        <div className="col-span-1 row-span-1 bg-gray-100 p-4 rounded-3xl">
+          <img
+            src="your-image-url.jpg"
+            className="w-full h-full object-cover"
+            alt="Mountain"
+          />
+        </div>
+        <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden">
+          <img
+            src="your-image-url.jpg"
+            className="w-full h-full object-cover"
+            alt="Tiles"
+          />
+        </div>
+        <div className="col-span-1 row-span-2 bg-white p-4 rounded-3xl">
+          <h2 className="text-gray-800 font-bold">Color Palette</h2>
+          <p className="text-red-500 font-bold">923.36</p>
+        </div>
 
-      <div className="col-span-2 row-span-1 rounded-3xl bg-black overflow-hidden">
-        <img src="your-image-url.jpg" className="w-full h-full object-cover" alt="Billboard" />
+        <div className="col-span-2 row-span-1 rounded-3xl bg-black overflow-hidden">
+          <img
+            src="your-image-url.jpg"
+            className="w-full h-full object-cover"
+            alt="Billboard"
+          />
+        </div>
       </div>
-    </div>
+      {/* <div className="mt-16">
+      <ConnectUs/>
+      </div> */}
     </div>
   );
 };

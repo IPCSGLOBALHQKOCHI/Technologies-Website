@@ -19,7 +19,7 @@ const CaseStudy = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFFCC]"
+      className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFF]"
     >
       <div className="text-left">
         <p data-aos="fade-up" data-aos-delay="100" className="font-300">

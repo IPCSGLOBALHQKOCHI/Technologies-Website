@@ -4,11 +4,11 @@ const ClientReviews = () => {
   return (
     <div id="testimonials" className="py-20 px-6 lg:px-20">
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
-        <div className="leading-none tracking-[2.68px]">
+        <div className="leading-none">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Trusted </h2>
           <h2 className="ml-20 text-[130px] font-400 text-[#FFFFFF]">Voices</h2>
         </div>
-        <p className="mt-6 lg:mt-0 lg:ml-20 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.86px] leading-normal">
+        <p className="mt-6 lg:mt-0 lg:ml-20 font-200 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.86px] leading-normal">
           Hear from those who’ve experienced the Transformation. See how our
           Unique Approach has empowered Brands to overcome Challenges and
           achieve remarkable Success.

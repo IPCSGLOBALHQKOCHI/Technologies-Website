@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         aspekta: ['Aspekta', 'sans-serif'],
+        // poppins:[ "Poppins", 'serif'],
       },
       fontWeight: {
         100: '100',

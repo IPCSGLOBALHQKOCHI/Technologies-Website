@@ -46,7 +46,7 @@ const ServicesSections = () => {
                   <h2 className="text-6xl text-[#FFFFFF] font-400">
                     {section.title}
                   </h2>
-                  <p className="text-2xl font-400 text-[#FFFFFF] tracking-[0.68px] mt-10">
+                  <p className="text-2xl font-200 text-[#FFFFFFCC] tracking-[0.68px] mt-10">
                     {section.desc}
                   </p>
                 </div>
@@ -63,7 +63,7 @@ const ServicesSections = () => {
                   <h2 className="text-6xl text-[#FFFFFF] font-400">
                     {section.title}
                   </h2>
-                  <p className="text-2xl font-400 text-[#FFFFFF] tracking-[0.68px] mt-10">
+                  <p className="text-2xl font-200 text-[#FFFFFFCC] tracking-[0.68px] mt-10">
                     {section.desc}
                   </p>
                 </div>

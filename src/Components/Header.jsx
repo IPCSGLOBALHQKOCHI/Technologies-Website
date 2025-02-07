@@ -84,14 +84,6 @@ const Header = () => {
                         ],
                       },
                       {
-                        heading: "Technology",
-                        subItems: [
-                          { name: "Web Development", link: "/technology" },
-                          { name: "Mobile App Development", link: "/technology" },
-                          { name: "E-Commerce", link: "/technology" },
-                        ],
-                      },
-                      {
                         heading: "Digital Marketing",
                         subItems: [
                           { name: "Social Media Management", link: "/digital-marketing" },
@@ -112,6 +104,14 @@ const Header = () => {
                         ],
                       },
                       {
+                        heading: "Technology",
+                        subItems: [
+                          { name: "Web Development", link: "/technology" },
+                          { name: "Mobile App Development", link: "/technology" },
+                          { name: "E-Commerce", link: "/technology" },
+                        ],
+                      },
+                      {
                         heading: "Experience Design",
                         subItems: [
                           { name: "Website Design", link: "/experience-design" },
@@ -122,7 +122,7 @@ const Header = () => {
                       },
                     ].map((category, index) => (
                       <div key={index} className="space-y-4">
-                        <h3 className="text-2xl font-400">{category.heading}</h3>
+                        <h3 className="text-xl font-400">{category.heading}</h3>
                         <ul className="space-y-2">
                           {category.subItems.map((service, i) => (
                             <li key={i} className="text-[#FFFFFFCC] font-200 text-lg relative hover:no-underline">

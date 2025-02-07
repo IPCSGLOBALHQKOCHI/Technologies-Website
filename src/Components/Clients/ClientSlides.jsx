@@ -37,7 +37,7 @@ function ClientSlides() {
   ];
 
   return (
-    <div id="clients" className="min-h-screen bg-[#FFFFFF] flex flex-col items-center justify-center mt-0">
+    <div id="clients" className="h-[70vh] bg-[#FFFFFF] flex flex-col items-center justify-center mt-0">
       <h2 className="text-7xl font-200 text-[#0B0B0B] mb-20">Clients</h2>
       <div className="relative overflow-hidden w-full max-w-[1200px] group">
         <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused]">

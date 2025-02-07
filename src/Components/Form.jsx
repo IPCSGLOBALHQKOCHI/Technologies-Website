@@ -26,6 +26,7 @@ const Form = () => {
 
   return (
     <div className="p-6 w-full mr-10 bg-black/5 rounded-lg ">
+        <h2 className="font-500 text-2xl text-[#0B0B0B] mb-4">Get a FREE 30-minute consultation</h2>
       <form onSubmit={formik.handleSubmit} className="space-y-4">
         <div className="pt-4 ">
           <label className="block text-[#0B0B0B]">Name*</label>
@@ -56,7 +57,7 @@ const Form = () => {
         <div className="pt-4">
           <label className="block text-[#0B0B0B]">Phone Number*</label>
           <div className="flex items-center border-b border-[#0B0B0B]">
-            <span className="px-3 py-[6px] bg-gray-300 text-black border-r  border-[#0B0B0B]">
+            <span className="px-3 py-[6px] bg-gray-300 text-[#0B0B0B]">
               +91
             </span>
             <input

@@ -5,13 +5,13 @@ const Services = () => {
   return (
     <section id="services" className="min-h-screen py-20 px-6 lg:px-20">
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
-        <div className="leading-none tracking-[2.68px]">
+        <div className="leading-none">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Our</h2>
           <h2 className="ml-14 text-[130px] font-400 text-[#FFFFFF]">
             Services
           </h2>
         </div>
-        <p className="mt-6 lg:mt-0 lg:ml-20 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.56px] leading-normal">
+        <p className="mt-6 lg:mt-0 lg:ml-20 text-xl font-200 max-w-xl text-[#FFFFFFCC] tracking-[0.56px] leading-normal">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor

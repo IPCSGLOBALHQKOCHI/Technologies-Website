@@ -13,13 +13,13 @@ import seoGraph from "../../../src/assets/images/seo graph.png";
 
 const CaseStudySection = forwardRef((props, ref) => {
   return (
-    <section ref={ref} id="casestudy" className="min-h-screen py-20 px-6 lg:px-20">
+    <section ref={ref} id="case" className="min-h-screen py-20 px-6 lg:px-20">
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
-        <div className="leading-none tracking-[2.68px]">
+        <div className="leading-none ">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Case</h2>
           <h2 className="ml-14 text-[130px] font-400 text-[#FFFFFF]">Study</h2>
         </div>
-        <p className="mt-6 lg:mt-0 lg:ml-6 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.56px] leading-normal">
+        <p className="mt-6 lg:mt-0 lg:ml-6 font-200 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.56px] leading-normal">
           This case study highlights the transformative solutions we have
           implemented, showcasing the Growth, Success, and Positive changes we
           have driven for our Clients through Innovative Strategies and
