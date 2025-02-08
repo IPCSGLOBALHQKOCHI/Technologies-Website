@@ -125,7 +125,7 @@ const Header = () => {
                         <h3 className="text-xl font-400">{category.heading}</h3>
                         <ul className="space-y-2">
                           {category.subItems.map((service, i) => (
-                            <li key={i} className="text-[#FFFFFFCC] font-200 text-lg relative hover:no-underline">
+                            <li key={i} className="text-[#FFFFFFCC] font-100 text-base relative hover:no-underline">
                               <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                               <a href={service.link}>{service.name}</a>
                               </span>

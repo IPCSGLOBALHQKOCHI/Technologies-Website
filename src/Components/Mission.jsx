@@ -9,9 +9,9 @@ const Mission = forwardRef((props, ref) => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-duration="3000"
+      data-aos-duration="4000"
       ref={ref}
-      className="h-screen flex flex-col items-center justify-center px-24 py-24 leading-normal text-center tracking-[0.09em] text-[#FFFFFF]"
+      className="h-screen flex flex-col items-center justify-center px-24 py-36 leading-normal text-center tracking-[0.09em] text-[#FFFFFF]"
     >
       <h1 data-aos="fade-up" className="text-[250px] font-200 leading-none">
         Mission

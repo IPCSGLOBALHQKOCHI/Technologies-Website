@@ -12,7 +12,7 @@ const ConnectUs = () => {
           <h2 className="text-[130px] font-300 text-[#000000] leading-none">
             With us
           </h2>
-          <p className="text-xl font-400 text-[#0B0B0BCC] mt-8 mb-10 tracking-[0.30px]">
+          <p className="text-xl font-400 text-[#0B0B0BCC] mt-14 mb-10 tracking-[0.30px]">
             Your next step starts here! Connect with us to grow your Brand and
             create Strategies that deliver Lasting Impact and Real Results
           </p>
