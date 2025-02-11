@@ -4,7 +4,7 @@ const Technology=()=> {
   return (
     <div className="flex flex-col p-16">
       <div className="flex justify-between">
-        <div className="text-[#FFFFFF] text-[200px] font-200 tracking-[4px] mt-12">
+        <div className="text-[#FFFFFF] text-[200px] font-200 mt-12">
           Technology
         </div>
         <div className="text-[#FFFFFF] text-[100px] font-200 mt-2">02</div>
@@ -14,19 +14,19 @@ const Technology=()=> {
           {/* Left Side */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-400  tracking-[0.60px]">
+              <h3 className="text-3xl font-400">
               Web Development
               </h3>
-              <p className="text-xl text-[#FFFFFF99]  tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
               Building dynamic, high-performance Websites.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
             </div>
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-40 ">
               Mobile App Development
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99 mt-2">
                Designing scalable and user-friendly Apps.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
@@ -35,10 +35,10 @@ const Technology=()=> {
           {/* Right Side */}
           <div className="space-y-8 text-left ml-8">
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-40 ">
               E-Commerce
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99 mt-2">
               Delivering complete e-commerce solutions for Businesses.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>

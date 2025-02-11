@@ -4,7 +4,7 @@ const DigitalMarketing=() =>{
   return (
     <div className="flex flex-col  p-16">
     <div className="flex justify-between">
-      <div className="text-[#FFFFFF] text-[200px] font-200 mt-14 leading-none tracking-[4px]">
+      <div className="text-[#FFFFFF] text-[200px] font-200 mt-14 leading-none">
         Digital Marketing
       </div>
       <div className="text-[#FFFFFF] text-[120px] mt-1 font-200">03</div>
@@ -14,28 +14,28 @@ const DigitalMarketing=() =>{
         {/* Left Side */}
         <div className="space-y-8">
           <div>
-            <h3 className="text-3xl font-400  tracking-[0.60px]">
+            <h3 className="text-3xl font-400 ">
             Social Media Management
             </h3>
-            <p className="text-xl text-[#FFFFFF99]  tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]  mt-2">
             Strategizing and Executing Social Media Campaigns.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400 ">
             Performance Marketing
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] mt-2">
             Data-driven ad Campaigns to achieve measurable results.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400 ">
             Meta Ads
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] mt-2">
             Reach Targeted Audiences through Facebook and Insta Ads.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
@@ -44,29 +44,29 @@ const DigitalMarketing=() =>{
         {/* Right Side */}
         <div className="space-y-8 text-left ml-8">
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
-            SEO Strategy
-            </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
-            Enhancing Online Visibility through Search Engine Optimization.
-            </p>
-            <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
-          </div>
-          <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400 ">
             Linkedin Campaigns
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] mt-2">
             Generate high-quality Leads for your B2B needs.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400 ">
             Google Ads
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] mt-2">
             Drive Traffic, Reach Targets and Achieve Flexible Results.
+            </p>
+            <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
+          </div>
+          <div>
+            <h3 className="text-3xl font-400 ">
+            SEO Strategy
+            </h3>
+            <p className="text-xl text-[#FFFFFF99] mt-2">
+            Enhancing Online Visibility through Search Engine Optimization.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>

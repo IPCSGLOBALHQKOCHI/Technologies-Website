@@ -8,8 +8,8 @@ const Vision = forwardRef((props, ref) => {
   }, []);
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="3000"
+      data-aos="fade"
+      data-aos-duration="4000"
       ref={ref}
       className="h-screen flex flex-col items-center justify-center px-24 py-36 leading-normal text-center tracking-[0.09em] text-[#FFFFFF]"
     >
@@ -20,7 +20,7 @@ const Vision = forwardRef((props, ref) => {
       <p
         data-aos="fade-up"
         data-aos-delay="500"
-        className="max-w-2xl leading-relaxed font-300 text-lg text-left text-[#FFFFFFCC]"
+        className="max-w-2xl leading-relaxed font-300 text-lg text-left text-[#FFFFFFCC] tracking-wide"
       >
         To set the benchmark as a Trusted Partner for delivering Visionary and
         Impactful Digital Experiences that resonate and inspire.

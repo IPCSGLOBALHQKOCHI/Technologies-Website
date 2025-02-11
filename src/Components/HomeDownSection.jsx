@@ -13,11 +13,13 @@ const CaseStudy = forwardRef((props, ref) => {
   //   };
   // }, []); 
    useEffect(() => {
-      AOS.init();
+      AOS.init({ duration: 3000, easing: "ease-out",});
     }, []);
 
   return (
     <div
+      data-aos="fade"
+      data-aos-duration="4000"
       ref={ref}
       className="h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFF]"
     >

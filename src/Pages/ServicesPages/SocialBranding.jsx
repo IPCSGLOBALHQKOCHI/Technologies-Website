@@ -4,7 +4,7 @@ const SocialBranding=()=> {
   return (
     <div className="flex flex-col  p-16">
     <div className="flex justify-between leading-none text-left">
-      <div className="text-[#FFFFFF] text-[200px] font-200 tracking-[4px] mt-10">
+      <div className="text-[#FFFFFF] text-[200px] font-200 mt-10">
         Social Branding
       </div> 
       <div className="text-[#FFFFFF] text-[100px] font-200 mt-5">04</div>
@@ -14,19 +14,19 @@ const SocialBranding=()=> {
         {/* Left Side */}
         <div className="space-y-8">
           <div>
-            <h3 className="text-3xl font-400  tracking-[0.60px]">
+            <h3 className="text-3xl font-400 px]">
             Content Marketing
             </h3>
-            <p className="text-xl text-[#FFFFFF99]  tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] px] mt-2">
             Creating Valuable, Audience-focused content.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             Organic Creatives
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
              Producing Innovative and Impactful visuals.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
@@ -35,19 +35,19 @@ const SocialBranding=()=> {
         {/* Right Side */}
         <div className="space-y-8 text-left ml-8">
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             Community Building
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
             Engaging audiences to foster brand loyalty.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             Social Media Management
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
             Strategizing and executing social media campaigns.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>

@@ -16,9 +16,12 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed w-full flex items-center justify-between z-50 px-16 py-1 transition-all duration-300 ${
-        isScrolled ? "bg-[#0B0B0B] shadow-md text-white" : "bg-transparent text-white"
-      }`}
+    className={`fixed w-full flex items-center justify-between z-40 px-16 py-1 transition-all duration-300  ${
+      isScrolled
+        ? "bg-[#0B0B0B] shadow-md text-white"
+        : "bg-transparent text-white"
+    }`}
+    style={{ borderLeftWidth: "20%", borderRightWidth: "20%" }}
     >
       <div className="left-0">
         <a href="/">
@@ -30,13 +33,13 @@ const Header = () => {
         </a>
       </div>
       <div className="right-0">
-        <ul className="flex space-x-20 font-400">
+        <ul className="flex space-x-20 font-400 tracking-wide">
           {[
             { name: "ABOUT", link: "" },
             { name: "CASE STUDY", link: "#casestudy" },
           ].map((item, index) => (
-            <li key={index} className="relative group transition-colors duration-300">
-              <a href={item.link} className="cursor-pointer">{item.name}</a>
+            <li key={index} className="relative group transition-colors duration-300 ">
+              <a href={item.link} className="cursor-pointer ">{item.name}</a>
               <span
                 className={`absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
                   isScrolled ? "bg-white" : "bg-white"
@@ -66,8 +69,10 @@ const Header = () => {
                       We’ve got you all you need to turn your ideas into
                       top-notch digital products that drive growth.
                     </h4>
-                    <button className="bg-[#25789B] text-[#FFFFFF] px-2 py-2 mt-7 w-44 rounded-md">
+                    <button className="bg-[#25789B] text-[#FFFFFF] px-2 py-2 mt-7 w-44 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
+                      <a href="/connect-us">
                       Connect Us
+                      </a>
                     </button>
                   </div>
                   <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-14 text-[#FFFFFF]">
@@ -122,10 +127,10 @@ const Header = () => {
                       },
                     ].map((category, index) => (
                       <div key={index} className="space-y-4">
-                        <h3 className="text-xl font-400">{category.heading}</h3>
+                        <h3 className="text-xl font-400 tracking-wide">{category.heading}</h3>
                         <ul className="space-y-2">
                           {category.subItems.map((service, i) => (
-                            <li key={i} className="text-[#FFFFFFCC] font-100 text-base relative hover:no-underline">
+                            <li key={i} className="text-[#FFFFFFCC] font-100 text-lg tracking-normal relative hover:no-underline">
                               <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                               <a href={service.link}>{service.name}</a>
                               </span>

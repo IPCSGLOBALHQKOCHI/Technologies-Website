@@ -4,7 +4,7 @@ const Branding = () => {
   return (
     <div className="flex flex-col p-16">
       <div className="flex justify-between">
-        <div className="text-[#FFFFFF] text-[220px] font-200 mt-4 tracking-[4px]">
+        <div className="text-[#FFFFFF] text-[220px] font-200 mt-4">
           Branding
         </div>
         <div className="text-[#FFFFFF] text-[120px] font-200 mt-1">01</div>
@@ -14,28 +14,28 @@ const Branding = () => {
           {/* Left Side */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-400  tracking-[0.60px]">
+              <h3 className="text-3xl font-400">
                 Brand Consulting
               </h3>
-              <p className="text-xl text-[#FFFFFF99]  tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Helping businesses define their identity and values.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
             </div>
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-400 ">
                 Brand Identity
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Crafting a narrative that reflects the brand's essence.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
             </div>
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-400 ">
                 Logo Design
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Designing globally adaptable and premium-quality logos.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
@@ -44,28 +44,28 @@ const Branding = () => {
           {/* Right Side */}
           <div className="space-y-8 text-left ml-8">
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-400 ">
                 Brand Collateral
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Delivering cohesive marketing materials.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
             </div>
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-400 ">
                 2D/3D Visualization
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Creating visuals that enhance brand impact.
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
             </div>
             <div>
-              <h3 className="text-3xl font-400 tracking-[0.60px] ">
+              <h3 className="text-3xl font-400 ">
                 Product Design
               </h3>
-              <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+              <p className="text-xl text-[#FFFFFF99] mt-2">
                 Designing products that are both functional and stylish
               </p>
               <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>

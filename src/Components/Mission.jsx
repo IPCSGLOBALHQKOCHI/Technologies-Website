@@ -4,11 +4,11 @@ import "aos/dist/aos.css";
 
 const Mission = forwardRef((props, ref) => {
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-out" });
+    AOS.init({ duration: 3000, easing: "ease-out" });
   }, []);
   return (
     <div
-      data-aos="fade-up"
+      data-aos="fade"
       data-aos-duration="4000"
       ref={ref}
       className="h-screen flex flex-col items-center justify-center px-24 py-36 leading-normal text-center tracking-[0.09em] text-[#FFFFFF]"
@@ -19,7 +19,7 @@ const Mission = forwardRef((props, ref) => {
       <p
         data-aos="fade-up"
         data-aos-delay="500"
-        className="max-w-3xl leading-relaxed font-300 text-lg text-left text-[#FFFFFFCC]"
+        className="max-w-3xl leading-relaxed font-300 text-lg text-left text-[#FFFFFFCC] tracking-wide"
       >
         To build sustainable solutions that empower Businesses by fostering
         Creativity, Innovation and Impactful service delivery.

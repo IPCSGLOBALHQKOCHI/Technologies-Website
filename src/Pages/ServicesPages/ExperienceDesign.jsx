@@ -4,7 +4,7 @@ const ExperienceDesign=()=> {
   return (
     <div className="flex flex-col  p-16">
     <div className="flex justify-between leading-none">
-      <div className="text-[#FFFFFF] text-[220px] font-200 tracking-[4px] mt-14">
+      <div className="text-[#FFFFFF] text-[220px] font-200 mt-14">
       Experience Design
       </div>
       <div className="text-[#FFFFFF] text-[120px] font-200 mt-4">05</div>
@@ -14,20 +14,20 @@ const ExperienceDesign=()=> {
         {/* Left Side */}
         <div className="space-y-8">
           <div>
-            <h3 className="text-3xl font-400  tracking-[0.60px]">
+            <h3 className="text-3xl font-400 px]">
             Website Design
             </h3>
-            <p className="text-xl text-[#FFFFFF99]  tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99] px] mt-2">
             Tailored Strategies to Boost Conversions and Maximize ROI.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             
             Web App Design
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
             Functional, intuitive interfaces to optimize user engagement.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
@@ -36,19 +36,19 @@ const ExperienceDesign=()=> {
         {/* Right Side */}
         <div className="space-y-8 text-left ml-8">
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             Mobile App Design
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
             Smart, efficient solutions to enhance operational flow.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
           </div>
           <div>
-            <h3 className="text-3xl font-400 tracking-[0.60px] ">
+            <h3 className="text-3xl font-400px] ">
             Software Design
             </h3>
-            <p className="text-xl text-[#FFFFFF99] tracking-[0.48px] mt-2">
+            <p className="text-xl text-[#FFFFFF99]px] mt-2">
             Industry-specific workflows designed for operational efficiency.
             </p>
             <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>

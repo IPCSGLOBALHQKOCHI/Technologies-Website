@@ -37,9 +37,9 @@ function ClientSlides() {
   ];
 
   return (
-    <div id="clients" className="h-[80vh] bg-[#FFFFFF] flex flex-col items-center justify-center mt-0">
-      <h2 className="text-6xl font-400 text-[#0B0B0B]">We Work With <span className="font-600">BRANDS</span> </h2>
-      <h2 className="text-6xl font-400 text-[#0B0B0B] mb-20">You Love</h2>
+    <div id="clients" className="h-[80vh] bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none">
+      <h2 className="text-[70px] font-600 text-[#0B0B0B]">We Work With Brands</h2>
+      <h2 className="text-[70px] font-600 text-[#0B0B0B] mb-20">You Love</h2>
       <div className="relative overflow-hidden w-full max-w-[1200px] group">
         <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused]">
           {[...row1, ...row1].map((src, i) => (

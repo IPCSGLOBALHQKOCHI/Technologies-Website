@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef} from "react";
 import sisuLogo from "../../../src/assets/images/sisiu logo.png";
 import makayiramLogo from "../../../src/assets/images/makayiram logo.png";
 import image1 from "../../../src/assets/images/casestudyimage.png";
@@ -17,7 +17,7 @@ const CaseStudySection = forwardRef((props, ref) => {
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="leading-none ">
           <h2 className="text-[130px] font-200 text-[#FFFFFFCC]">Case</h2>
-          <h2 className="ml-14 text-[130px] font-400 text-[#FFFFFF]">Study</h2>
+          <h2 className="ml-14 text-[130px] font-300 text-[#FFFFFF]">Study</h2>
         </div>
         <p className="mt-6 lg:mt-0 lg:ml-6 font-200 text-xl max-w-xl text-[#FFFFFFCC] tracking-[0.56px] leading-normal">
           This case study highlights the transformative solutions we have

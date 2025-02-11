@@ -12,6 +12,7 @@ import ConnectUs from './Components/ConnectUs';
 import ConnectPage from './Pages/ConnectPage';
 import PrivacyPolicy from './Pages/Privacypolicy';
 import TermsOfUse from './Pages/TermsOfUse';
+import CookieComponent from './Components/CookieComponent';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function MainContent() {
       </main>
       {!hiddenPages.includes(location.pathname) && <ConnectUs />}
       <Footer />
+      <CookieComponent/>
     </>
   );
 }

@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#casestudy"
+                href="/#casestudy"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 Case Study
@@ -42,7 +42,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#clients"
+                href="/#clients"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 Clients
@@ -50,7 +50,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#testimonials"
+                href="/#testimonials"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 Testimonials
@@ -144,11 +144,13 @@ const Footer = () => {
             </li>
           </ul>
           <button className="bg-[#25789B] text-[#FFFFFF] px-6 py-2 mt-7 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
+            <a href="/connect-us">
             Connect Us
+            </a>
           </button>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-20 pt-10 mb-20 text-[#FFFFFF] text-center text-md font-200 tracking-[1.5px] leading-normal">
+      <div className="border-t border-gray-700 mt-20 pt-10 mb-20 text-[#FFFFFF] text-center text-md font-200 leading-normal">
         <p>© 2025 &nbsp; IPCS Technologies &nbsp;| &nbsp;All Rights Reserved</p>
         <p>
           <a
