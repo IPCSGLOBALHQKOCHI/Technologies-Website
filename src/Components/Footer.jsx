@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.60px]">
+          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
             Quick Links
           </h3>
           <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
@@ -59,7 +59,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.60px]">
+          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
             Services
           </h3>
           <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
@@ -106,7 +106,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.60px]">
+          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
             Connect Us
           </h3>
           <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
@@ -143,14 +143,14 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <button className="bg-[#25789B] text-[#FFFFFF] px-6 py-2 mt-7 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
+          <button className="bg-[#25789B] text-[#FFFFFF] px-6 py-2 mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
             <a href="/connect-us">
             Connect Us
             </a>
           </button>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-20 pt-10 mb-20 text-[#FFFFFF] text-center text-md font-200 leading-normal">
+      <div className="border-t border-gray-700 mt-14 pt-10 mb-20 text-[#FFFFFF] text-center text-lg font-200 leading-normal">
         <p>© 2025 &nbsp; IPCS Technologies &nbsp;| &nbsp;All Rights Reserved</p>
         <p>
           <a

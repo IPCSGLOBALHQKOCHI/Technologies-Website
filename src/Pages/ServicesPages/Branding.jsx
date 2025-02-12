@@ -1,5 +1,10 @@
-import ConnectUs from "../../Components/ConnectUs";
-
+import Aspekta from "../../../src/assets/videos/Bento/Branding/Font.mp4"
+import ColorPalette from '../../../src/assets/videos/Bento/Branding/Color Palette.mp4'
+import Sisu1 from "../../../src/assets/videos/Bento/Branding/SISU Branding.mp4"
+import BillBoard from "../../../src/assets/videos/Bento/Branding/Hoarding Mockup.mp4"
+import SisuLogo from "../../../src/assets/videos/Bento/Branding/SISU Logo.mp4"
+import SisuSlider from '../../../src/assets/videos/Bento/Branding/Photo Slide SISU.mp4'
+import Sisu2 from '../../../src/assets/videos/Bento/Branding/SISU Band.mp4'
 const Branding = () => {
   return (
     <div className="flex flex-col p-16">
@@ -74,59 +79,89 @@ const Branding = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 gap-2 p-6 pt-24">
-        <div className="col-span-2 row-span-1 rounded-3xl bg-black mr-[25%] overflow-hidden h-64">
-          <img
-            src="your-image-url.jpg"
-            className="w-full h-full object-cover"
-            alt="Dining"
-          />
+        <div className="col-span-2 row-span-1 rounded-3xl mr-[25%] overflow-hidden h-64">
+        <video
+        src={SisuLogo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
         </div>
-        <div className="col-span-1 row-span-1 bg-green-100 p-4 -ml-[50%] mr-[50%] rounded-3xl">
-          <h2 className="text-lg font-bold">ASPEKTA</h2>
-          <p className="text-gray-600">Font Family</p>
+        <div className="col-span-1 row-span-1 -ml-[50%] mr-[50%] rounded-3xl overflow-hidden">
+        <video
+        src={SisuSlider}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover"
+      />
         </div>
-        <div className="col-span-1 row-span-1 rounded-3xl -ml-[50%] bg-black overflow-hidden">
-          <img
-            src="your-image-url.jpg"
-            className="w-full h-full object-cover"
-            alt="Ocean"
-          />
-        </div>
+        <div className="col-span-1 row-span-1 rounded-3xl -ml-[50%] overflow-hidden">
+      <video
+        src={Aspekta}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
+    </div>
 
-        <div className="col-span-1 row-span-2 bg-gray-900 p-4 rounded-3xl flex flex-col h-[440px]">
-          <h2 className="text-white font-bold">SSU Eclipse</h2>
-          <p className="text-gray-400">Brand Identity</p>
+        <div className="col-span-1 row-span-2 bg-[#FFFFFF] overflow-hidden rounded-3xl flex flex-col h-[520px]">
+        <video
+        src={Sisu1}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
         </div>
-        <div className="col-span-1 row-span-1 bg-gray-100 p-4 rounded-3xl">
-          <img
-            src="your-image-url.jpg"
-            className="w-full h-full object-cover"
-            alt="Mountain"
-          />
+        <div className="col-span-1 row-span-1 overflow-hidden  rounded-3xl">
+        <video
+        src={Sisu2}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
         </div>
         <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden">
-          <img
-            src="your-image-url.jpg"
-            className="w-full h-full object-cover"
-            alt="Tiles"
-          />
+        <video
+        src={Sisu2}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
         </div>
-        <div className="col-span-1 row-span-2 bg-white p-4 rounded-3xl">
-          <h2 className="text-gray-800 font-bold">Color Palette</h2>
-          <p className="text-red-500 font-bold">923.36</p>
+        <div className="col-span-1 row-span-2 bg-white overflow-hidden rounded-3xl">
+        <video
+        src={ColorPalette}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-fill"
+      />
         </div>
 
-        <div className="col-span-2 row-span-1 rounded-3xl bg-black overflow-hidden">
-          <img
-            src="your-image-url.jpg"
-            className="w-full h-full object-cover"
-            alt="Billboard"
-          />
+        <div className="col-span-2 row-span-1 rounded-3xl overflow-hidden ">
+        <video
+        src={BillBoard}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover"
+      />
         </div>
       </div>
-      {/* <div className="mt-16">
-      <ConnectUs/>
-      </div> */}
     </div>
   );
 };

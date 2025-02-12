@@ -36,7 +36,7 @@ const ServicesSections = () => {
   ];
 
   return (
-    <section className="px-6 w-full">
+    <section className="px-6 pb-14 w-full">
       {sections.map((section, index) => (
         <div key={index} className="relative group">
           <div className="flex items-center justify-between">

@@ -9,7 +9,7 @@ const ConnectPage = () => {
         <h2 className="font-300 text-[80px] text-white">
           Let’s talk about your vision
         </h2>
-        <p className="font-300 text-3xl text-white/80 mt-4 max-w-3xl">
+        <p className="font-300 text-2xl text-white/80 mt-3 max-w-3xl">
           To set the benchmark as a Trusted Partner for delivering Visionary and
           Impactful Digital Experiences that resonate and inspire.
         </p>

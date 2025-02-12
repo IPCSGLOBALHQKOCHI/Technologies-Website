@@ -4,7 +4,7 @@ import Form from "./Form";
 const ConnectUs = () => {
   return (
     <div className="h-screen bg-[#FFFFFF] flex items-center justify-center">
-      <div className=" mx-24 flex rounded-lg shadow-lg">
+      <div className=" mx-24 flex rounded-lg shadow-md">
         <div className="w-1/2 px-10 py-6 flex flex-col text-left">
           <h2 className="text-[130px] font-300 text-[#0B0B0BCC] leading-none">
             Connect
