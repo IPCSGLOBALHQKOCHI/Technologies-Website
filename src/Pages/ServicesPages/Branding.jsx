@@ -131,14 +131,14 @@ const Branding = () => {
       />
         </div>
         <div className="col-span-1 row-span-1 rounded-3xl bg-black overflow-hidden">
-        <video
+        {/* <video
         src={Sisu2}
         autoPlay
         loop
         muted
         playsInline
         className="w-full h-full object-fill"
-      />
+      /> */}
         </div>
         <div className="col-span-1 row-span-2 bg-white overflow-hidden rounded-3xl">
         <video

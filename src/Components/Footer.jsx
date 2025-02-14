@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
-            Quick Links
+            Company
           </h3>
           <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
             <li>

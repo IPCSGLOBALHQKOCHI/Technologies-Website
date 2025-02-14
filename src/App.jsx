@@ -43,8 +43,8 @@ function MainContent() {
           <Route path='/terms-of-use' element={<TermsOfUse />} />
         </Routes>
       </main>
-      {!hiddenPages.includes(location.pathname) && <ConnectUs />}
-      <Footer />
+      {/* {!hiddenPages.includes(location.pathname) && <ConnectUs />} */}
+      {/* <Footer /> */}
       <CookieComponent/>
     </>
   );

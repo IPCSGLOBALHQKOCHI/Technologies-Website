@@ -13,8 +13,21 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollingMode, setScrollingMode] = useState("controlled");
   const isScrolling = useRef(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Detect mobile on initial render
+
+  // Update isMobile state on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
+    if (isMobile) return; // Disable scroll effect for mobile
+
     const caseStudySection = sections.current[4];
 
     const checkForScrollMode = () => {
@@ -32,9 +45,11 @@ export default function Home() {
 
     window.addEventListener("scroll", checkForScrollMode);
     return () => window.removeEventListener("scroll", checkForScrollMode);
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
+    if (isMobile) return; // Disable scroll effect for mobile
+
     const handleScroll = (event) => {
       if (scrollingMode === "normal") return;
 
@@ -57,27 +72,29 @@ export default function Home() {
 
     window.addEventListener("wheel", handleScroll, { passive: false });
     return () => window.removeEventListener("wheel", handleScroll);
-  }, [currentIndex, scrollingMode]);
+  }, [currentIndex, scrollingMode, isMobile]);
 
   useEffect(() => {
+    if (isMobile) return; // Disable scroll effect for mobile
+
     if (sections.current[currentIndex]) {
       sections.current[currentIndex].scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
     }
-  }, [currentIndex]);
+  }, [currentIndex, isMobile]);
 
   return (
-    <div className="h-full w-full">
-    <HeroSection ref={(el) => (sections.current[0] = el)} />
-    <HeroDownSection ref={(el) => (sections.current[1] = el)} />
-    <Mission ref={(el) => (sections.current[2] = el)} />
-    <Vision ref={(el) => (sections.current[3] = el)} />
-    <CaseStudySection ref={(el) => (sections.current[4] = el)} />
-    <Services />
-    <ClientSlides/>
-    <ClientReviews/>
-  </div>
+    <div className="">
+      <HeroSection ref={(el) => (sections.current[0] = el)} />
+      <HeroDownSection ref={(el) => (sections.current[1] = el)} />
+      <Mission ref={(el) => (sections.current[2] = el)} />
+      <Vision ref={(el) => (sections.current[3] = el)} />
+      <CaseStudySection ref={(el) => (sections.current[4] = el)} />
+      {/* <Services /> */}
+      {/* <ClientSlides/> */}
+      {/* <ClientReviews/> */}
+    </div>
   );
 }
