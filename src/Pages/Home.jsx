@@ -92,7 +92,7 @@ export default function Home() {
       <Mission ref={(el) => (sections.current[2] = el)} />
       <Vision ref={(el) => (sections.current[3] = el)} />
       <CaseStudySection ref={(el) => (sections.current[4] = el)} />
-      {/* <Services /> */}
+      <Services />
       {/* <ClientSlides/> */}
       {/* <ClientReviews/> */}
     </div>
