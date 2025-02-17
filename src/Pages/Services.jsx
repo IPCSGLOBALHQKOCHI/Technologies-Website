@@ -4,13 +4,13 @@ import ServicesSections from "../Components/Services/ServicesSections";
 const Services = () => {
   return (
     <>
-    <section id="services" className="min-h-screen py-10 sm:py-20 px-12 sm:px-12 lg:px-20">
+    <section id="services" className="min-h-screen w-full py-10 sm:py-20 px-6 sm:px-12 lg:px-20">
       <div className="mb-8 sm:mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="leading-none">
-          <h2 className="text-[60px] sm:text-[80px] lg:text-[130px] font-200 text-[#FFFFFFCC]">
+          <h2 className="text-[50px] sm:text-[80px] lg:text-[130px] font-200 text-[#FFFFFFCC]">
             Our
           </h2>
-          <h2 className="ml-8 sm:ml-14 text-[60px] sm:text-[80px] lg:text-[130px] font-300 text-[#FFFFFF]">
+          <h2 className="ml-6 sm:ml-14 text-[50px] sm:text-[80px] lg:text-[130px] font-300 text-[#FFFFFF]">
             Services
           </h2>
         </div>
@@ -20,7 +20,7 @@ const Services = () => {
           it over 2000 years old. Richard McClintock, a Latin professor
         </p>
       </div>
-      <div className="border-b-[2px] border-[#3A3A3A] mx-4 sm:mx-6"></div>
+      <div className="border-b-[2px] border-[#3A3A3A] mx-0 sm:mx-6 mb-4"></div>
       <ServicesSections />
     </section>
     </>

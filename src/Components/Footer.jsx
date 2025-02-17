@@ -143,7 +143,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <button className="bg-[#25789B] text-[#FFFFFF] px-6 py-2 mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
+          <button className="bg-[#003ad6] text-[#FFFFFF] px-6 py-2 mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6]">
             <a href="/connect-us">
             Connect Us
             </a>

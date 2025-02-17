@@ -94,7 +94,7 @@ const ServicesSections = () => {
               </>
             )}
           </div>
-          <div className="w-full border-b-[2px] border-[#3A3A3A] mt-8 sm:mt-12 lg:-mt-36"></div>
+          <div className="w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-32 mb-4"></div>
           {/* Arrow for desktop hover effect */}
           <a
             href={section.href}

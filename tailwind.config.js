@@ -10,8 +10,8 @@ export default {
         customBg: "#0B1215",
       },
       fontFamily: {
-        // aspekta: ['Aspekta', 'sans-serif'],
-        proxima:[ "proxima-nova", 'sans-serif'],
+        aspekta: ['Aspekta', 'sans-serif'], 
+        // proxima:[ "proxima-nova", 'sans-serif'],
       },
       fontWeight: {
         100: '100',

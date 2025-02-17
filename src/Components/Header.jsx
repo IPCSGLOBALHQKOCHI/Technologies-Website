@@ -76,7 +76,7 @@ const Header = () => {
                     We’ve got you all you need to turn your ideas into top-notch
                     digital products that drive growth.
                   </h4>
-                  <button className="bg-[#25789B] text-[#FFFFFF] px-2 py-2 mt-7 w-44 rounded-md hover:bg-[#FFFFFF] hover:text-[#25789B]">
+                  <button className="bg-[#003ad6] text-[#FFFFFF] px-2 py-2 mt-7 w-44 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6]">
                     <a href="/connect-us">Connect Us</a>
                   </button>
                 </div>
@@ -187,7 +187,7 @@ const Header = () => {
           href="/connect-us"
           className={`cursor-pointer px-5 py-2 -mt-1 transition-colors font-400 text-sm duration-300 rounded-md ${
             isScrolled
-              ? "bg-[#25789B] text-white"
+              ? "bg-[#003ad6] text-white"
               : "bg-white text-black rounded-md"
           }`}
         >
@@ -271,7 +271,7 @@ const Header = () => {
           <li>
             <a
               href="/connect-us"
-              className="block bg-[#25789B] text-white px-4 py-2 w-40 rounded-md text-center"
+              className="block bg-[#003ad6] text-white px-4 py-2 w-40 rounded-md text-center"
             >
               CONTACT
             </a>

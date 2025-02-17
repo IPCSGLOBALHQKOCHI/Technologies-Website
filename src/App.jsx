@@ -45,7 +45,7 @@ function MainContent() {
       </main>
       {/* {!hiddenPages.includes(location.pathname) && <ConnectUs />} */}
       {/* <Footer /> */}
-      <CookieComponent/>
+      <CookieComponent/> 
     </>
   );
 }

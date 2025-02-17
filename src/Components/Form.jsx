@@ -99,7 +99,7 @@ const Form = () => {
           ></textarea>
         </div>
 
-        <button type="submit" className="w-40 bg-[#25789B] text-white p-2 rounded-md">
+        <button type="submit" className="w-40 bg-[#003ad6] text-white p-2 rounded-md">
           Submit
         </button>
       </form>
