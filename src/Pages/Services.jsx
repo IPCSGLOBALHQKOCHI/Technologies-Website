@@ -4,9 +4,9 @@ import ServicesSections from "../Components/Services/ServicesSections";
 const Services = () => {
   return (
     <>
-    <section id="services" className="min-h-screen w-full py-10 sm:py-20 px-6 sm:px-12 lg:px-20">
+    <section id="services" className="min-h-screen w-full py-10 sm:py-20 px-6 sm:px-12 lg:px-20 bg-[#FFFFFF] md:bg-customBg">
       <div className="mb-8 sm:mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
-        <div className="leading-none">
+        <div className="leading-none hidden md:block">
           <h2 className="text-[50px] sm:text-[80px] lg:text-[130px] font-200 text-[#FFFFFFCC]">
             Our
           </h2>
@@ -14,7 +14,10 @@ const Services = () => {
             Services
           </h2>
         </div>
-        <p className="mt-4 sm:mt-6 lg:mt-0 lg:ml-20 text-base sm:text-lg lg:text-xl font-200 max-w-md sm:max-w-xl text-[#FFFFFFCC] tracking-[0.15px] leading-relaxed sm:leading-normal">
+        <div className="block md:hidden">
+          <h2 className="text-5xl font-300 text-[#121212]">Our Services</h2>
+        </div>
+        <p className="mt-4 sm:mt-6 lg:mt-0 lg:ml-20 text-base sm:text-lg lg:text-xl font-200 max-w-md sm:max-w-xl text-[#121212] md:text-[#FFFFFFCC] tracking-[0.15px] leading-relaxed sm:leading-normal">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor

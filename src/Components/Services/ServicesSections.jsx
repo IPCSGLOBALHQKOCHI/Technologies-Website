@@ -1,5 +1,6 @@
 import React from "react";
-import { HiMiniArrowUpRight } from "react-icons/hi2";
+// import { HiMiniArrowUpRight } from "react-icons/hi2";
+import { BsArrowRight } from "react-icons/bs";
 
 const ServicesSections = () => {
   const sections = [
@@ -38,28 +39,37 @@ const ServicesSections = () => {
   return (
     <section className="px-0 sm:px-6 pb-10 sm:pb-14 w-full">
       {sections.map((section, index) => (
-        <div key={index} className="relative group">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div key={index} className="relative group mb-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between bg-customBg px-6 py-4 rounded-md "> 
             {index % 2 === 0 ? (
               <>
-                <div className="w-full lg:max-w-[50%] mb-8 lg:mb-14">
+                <div className=" group w-full lg:max-w-[50%] mb-8 lg:mb-14">
                   <div className="flex items-center justify-between">
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl text-[#FFFFFF] font-400">
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl  text-[#FFFFFF] font-200">
                       {section.title}
-                    </h2>
+                    </h2> 
                     {/* Show arrow on mobile, hide on desktop */}
                     <div className="lg:hidden">
                       <a
                         href={section.href}
-                        className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+                        className="w-10 h-10 flex items-center justify-center text-white bg-[#003ad6] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
                       >
-                        <HiMiniArrowUpRight className="w-6 h-6" />
+                        <BsArrowRight className="w-6 h-6" />
                       </a>
                     </div>
                   </div>
                   <p className="text-lg sm:text-xl lg:text-2xl font-200 text-[#FFFFFFCC] mt-6 sm:mt-10">
                     {section.desc}
                   </p>
+                  <div className="hidden md:block">
+                    <a
+                      href={section.href}
+                      className="flex items-center space-x-4 text-[#FFFFFF] mt-4 group-hover:text-[#003ad6] transition-all duration-300"
+                    >
+                      <span className="text-xl">Learn More</span>
+                      <BsArrowRight className="w-5 h-5 " />
+                    </a>
+                  </div>
                 </div>
                 {/* Show number on desktop, hide on mobile */}
                 <p className="hidden lg:block text-[350px] font-200 text-[#FFFFFF]">
@@ -72,36 +82,38 @@ const ServicesSections = () => {
                 <p className="hidden lg:block text-[350px] font-200 text-[#FFFFFF]">
                   {section.id}
                 </p>
-                <div className="w-full lg:max-w-[50%] mb-8 lg:mb-14">
+                <div className=" group w-full lg:max-w-[50%] mb-8 lg:mb-14">
                   <div className="flex items-center justify-between">
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl text-[#FFFFFF] font-400">
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl text-[#FFFFFF] font-200">
                       {section.title}
                     </h2>
                     {/* Show arrow on mobile, hide on desktop */}
                     <div className="lg:hidden">
                       <a
                         href={section.href}
-                        className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+                        className="w-10 h-10 flex items-center justify-center text-white bg-[#003ad6] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
                       >
-                        <HiMiniArrowUpRight className="w-6 h-6" />
+                        <BsArrowRight className="w-6 h-6" />
                       </a>
                     </div>
                   </div>
                   <p className="text-lg sm:text-xl lg:text-2xl font-200 text-[#FFFFFFCC] mt-6 sm:mt-10">
                     {section.desc}
                   </p>
+                  <div className="hidden md:block">
+                    <a
+                      href={section.href}
+                      className="flex items-center space-x-4 text-[#FFFFFF] mt-4 group-hover:text-[#003ad6] transition-all duration-300"
+                    >
+                      <span className="text-xl">Learn More</span>
+                      <BsArrowRight className="w-5 h-5 " />
+                    </a>
+                  </div>
                 </div>
               </>
             )}
           </div>
-          <div className="w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-32 mb-4"></div>
-          {/* Arrow for desktop hover effect */}
-          <a
-            href={section.href}
-            className="hidden lg:block absolute w-14 h-14 left-1/2 bottom-1 -ml-8 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-md border bg-white text-black p-2 rounded-full shadow-lg hover:scale-110"
-          >
-            <HiMiniArrowUpRight className="w-10 h-10 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:rotate-45" />
-          </a>
+          <div className=" hidden md:block w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-36 mb-4"></div>
         </div>
       ))}
     </section>

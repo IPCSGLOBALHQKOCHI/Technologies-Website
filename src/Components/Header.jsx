@@ -157,7 +157,7 @@ const Header = () => {
                         {category.subItems.map((service, i) => (
                           <li
                             key={i}
-                            className="text-[#FFFFFFCC] font-100 text-lg tracking-normal relative hover:no-underline"
+                            className="text-[#FFFFFFCC] font-100 text-lg tracking-wide relative hover:no-underline"
                           >
                             <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                               <a href={service.link}>{service.name}</a>
@@ -252,7 +252,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="/social-branding" className="block py-1">
-                    Digital Marketing
+                    Social Branding 
                   </a>
                 </li>
                 <li>

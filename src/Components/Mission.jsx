@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { BsArrowRight } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,16 +33,16 @@ const Mission = forwardRef((props, ref) => {
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-200 leading-none mb-5">
           Mission
         </h1>
-        <p className="max-w-xl leading-normal font-100 text-base sm:text-lg text-left text-[#FFFFFFCC]">
+        <p className="max-w-xl leading-normal font-200 text-base sm:text-lg text-left text-[#FFFFFFCC]">
           To build sustainable solutions that empower Businesses by fostering
           Creativity, Innovation, and Impactful service delivery.
         </p>
         <a
-          href="/your-link"
+          href="#"
           className="flex items-center space-x-2 text-[#FFFFFF] mt-4"
         >
           <span>Learn More</span>
-          <FaArrowRight className="w-4 h-4" />
+          <BsArrowRight className="w-4 h-4" />
         </a>
         <div className="border-b-[2px] border-[#3A3A3A] mx-0 sm:mx-6 mt-4"></div>
       </div>
