@@ -8,22 +8,20 @@ import twitter from "../../src/assets/vectors/twitter (1) 1.png";
 
 const Footer = () => {
   return (
-    <footer className=" py-16 px-14 h-[80vh]">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-left">
-        <div className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.60px] ml-4">
-        <div className="mb-10">
-            Location
-        </div>
-          <div className="font-300 text-xl leading-loose tracking-[0.5px] text-[#FFFFFF99]">
+    <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-20 min-h-[80vh]">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 text-left">
+        <div className="mt-3 mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.60px] px-4">
+          <div className="mb-6 sm:mb-10">Location</div>
+          <div className="font-300 text-base sm:text-lg leading-loose tracking-[0.5px] text-[#FFFFFF99]">
             15th Floor, Muthoot Royal Towers Building, Kaloor,
             <br /> Kochi, Kerala 682017
           </div>
         </div>
-        <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
+        <div className="px-4">
+          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Company
           </h3>
-          <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
+          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
             <li>
               <a
                 href="/"
@@ -58,11 +56,11 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
+        <div className="px-4">
+          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Services
           </h3>
-          <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
+          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
             <li>
               <a
                 href="/branding"
@@ -105,19 +103,19 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="mt-3 mb-8 text-[#FFFFFF] text-2xl font-500 tracking-[0.40px]">
+        <div className="px-4">
+          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Connect Us
           </h3>
-          <ul className="leading-[50px] text-lg font-300 text-[#FFFFFF99]">
+          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
             <li className="flex items-center">
-              <img src={mail} alt="call" />
+              <img src={mail} alt="mail" className="w-6 h-6" />
               <a href="mailto:info@ipcstechnologies.com" className="ml-4">
                 info@ipcstechnologies.com
               </a>
             </li>
             <li className="flex items-center">
-              <img src={call} alt="" />
+              <img src={call} alt="call" className="w-6 h-6" />
               <a href="tel:+919072946664" className="ml-4">
                 +91 9072946664
               </a>
@@ -126,43 +124,47 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/IPCSTechnologies"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={fb} alt="Facebook" />
+                <img src={fb} alt="Facebook" className="w-7 h-7" />
               </a>
               <a
                 href="https://www.instagram.com/ipcstechnologies"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={insta} alt="Instagram" />
+                <img src={insta} alt="Instagram" className="w-7 h-7" />
               </a>
-              <a href="https://www.linkedin.com/company/99073852/admin/page-posts/published/" target="_blank">
-                <img src={linkedin} alt="LinkedIn" />
+              <a
+                href="https://www.linkedin.com/company/99073852/admin/page-posts/published/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedin} alt="LinkedIn" className="w-7 h-7" />
               </a>
-              <a href="#" target="_blank">
-                <img src={twitter} alt="twitter" />
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={twitter} alt="Twitter" className="w-7 h-7" />
               </a>
             </li>
           </ul>
-          <button className="bg-[#003ad6] text-[#FFFFFF] px-6 py-2 mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6]">
-            <a href="/connect-us">
-            Connect Us
-            </a>
+          <button className="bg-[#003ad6] text-[#FFFFFF] px-6 sm:px-8 py-2 mt-6 sm:mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6] transition-colors duration-300">
+            <a href="/connect-us">Connect Us</a>
           </button>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-14 pt-10 mb-20 text-[#FFFFFF] text-center text-lg font-200 leading-normal">
+      <div className="border-t border-[#3A3A3A] mt-10 sm:mt-14 pt-6 sm:pt-10 mb-10 text-[#FFFFFF] text-center text-sm sm:text-lg font-200 leading-normal">
         <p>© 2025 &nbsp; IPCS Technologies &nbsp;| &nbsp;All Rights Reserved</p>
         <p>
           <a
             href="/privacy-policy"
-            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-sm"
+            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-xs sm:text-sm"
           >
             Privacy Policy &nbsp;
           </a>{" "}
           |&nbsp;{" "}
           <a
             href="/terms-of-use"
-            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-sm"
+            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-xs sm:text-sm"
           >
             Terms of Use
           </a>

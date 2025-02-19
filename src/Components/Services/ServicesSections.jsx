@@ -37,17 +37,17 @@ const ServicesSections = () => {
   ];
 
   return (
-    <section className="px-0 sm:px-6 pb-10 sm:pb-14 w-full">
+    <section className="px-0 sm:px-6 pb-10 sm:pb-14 lg:pb-0 w-full">
       {sections.map((section, index) => (
         <div key={index} className="relative group mb-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between bg-customBg px-6 py-4 rounded-md "> 
+          <div className="flex flex-col lg:flex-row items-center justify-between bg-customBg px-6 py-4 rounded-md ">
             {index % 2 === 0 ? (
               <>
                 <div className=" group w-full lg:max-w-[50%] mb-8 lg:mb-14">
                   <div className="flex items-center justify-between">
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl  text-[#FFFFFF] font-200">
                       {section.title}
-                    </h2> 
+                    </h2>
                     {/* Show arrow on mobile, hide on desktop */}
                     <div className="lg:hidden">
                       <a
@@ -116,6 +116,11 @@ const ServicesSections = () => {
           <div className=" hidden md:block w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-36 mb-4"></div>
         </div>
       ))}
+      <div className="flex justify-center items-center w-full mt-2 sm:mt-12 lg:min-h-[250px]">
+        <button className="bg-[#003ad6] text-[#FFFFFF] px-8 py-3 w-44 rounded-md">
+          <a href="/connect-us" className="text-xl font-300">Let's Talk</a>
+        </button>
+      </div>
     </section>
   );
 };

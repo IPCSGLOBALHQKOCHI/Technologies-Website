@@ -93,8 +93,8 @@ export default function Home() {
       <Vision ref={(el) => (sections.current[3] = el)} />
       <CaseStudySection ref={(el) => (sections.current[4] = el)} />
       <Services />
-      {/* <ClientSlides/> */}
-      {/* <ClientReviews/> */}
+      <ClientSlides/>
+      <ClientReviews/>
     </div>
   );
 }
