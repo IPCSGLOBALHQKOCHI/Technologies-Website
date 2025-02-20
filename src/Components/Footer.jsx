@@ -9,14 +9,16 @@ import twitter from "../../src/assets/vectors/twitter (1) 1.png";
 const Footer = () => {
   return (
     <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-20 min-h-[80vh]">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 text-left">
-        <div className="mt-3 mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.60px] px-4">
-          <div className="mb-6 sm:mb-10">Location</div>
-          <div className="font-300 text-base sm:text-lg leading-loose tracking-[0.5px] text-[#FFFFFF99]">
-            15th Floor, Muthoot Royal Towers Building, Kaloor,
-            <br /> Kochi, Kerala 682017
-          </div>
-        </div>
+    <div className="flex flex-col md:flex-row items-center md:justify-between text-left mb-8 ml-10 mr-36">
+  <div>
+    <h2 className="text-xl sm:text-2xl md:text-5xl font-400 text-[#FFFFFF]">Start your journey now!</h2>
+    <p className="text-[#FFFFFFCC] text-3xl font-300 mt-3">A minute is all you need.</p>
+  </div>
+  <button className="bg-[#003ad6] text-white px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md hover:bg-white hover:text-[#003ad6] border border-[#003ad6] transition-colors duration-300">
+    <a href="/connect-us">Get a Quote</a>
+  </button>
+</div>
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-center sm:text-left">
         <div className="px-4">
           <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Company

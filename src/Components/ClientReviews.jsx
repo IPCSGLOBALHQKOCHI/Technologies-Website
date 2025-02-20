@@ -18,7 +18,7 @@ const ClientReviews = () => {
           Trusted Voices
         </h2>
       </div>
-        <p className="mt-6 lg:mt-0 lg:ml-20 font-200 text-lg sm:text-xl max-w-xl text-[#FFFFFFCC] leading-normal">
+        <p className="mt-6 lg:mt-0 lg:ml-20 font-200 text-lg sm:text-xl max-w-xl text-[#FFFFFFCC] leading-relaxed tracking-[0.85px]">
           Hear from those who’ve experienced the Transformation. See how our
           Unique Approach has empowered Brands to overcome Challenges and
           achieve remarkable Success.

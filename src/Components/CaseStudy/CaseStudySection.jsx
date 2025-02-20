@@ -30,7 +30,7 @@ const CaseStudySection = forwardRef((props, ref) => {
           <div className="block md:hidden">
             <h2 className="text-[#FFFFFF] text-5xl font-300 mb-4">Case Study</h2>
           </div>
-        <p className="mt-2 lg:mt-0 lg:ml-6 font-200 md:font-300 text-base sm:text-lg md:text-xl max-w-xl text-[#FFFFFFCC] tracking-[1px] md:tracking-[0.56px] leading-relaxed">
+        <p className="mt-2 lg:mt-0 lg:ml-6 font-200 md:font-200 text-base sm:text-lg md:text-xl max-w-xl text-[#FFFFFFCC] tracking-[1px] md:tracking-[0.86px] leading-relaxed">
           This case study highlights the transformative solutions we have
           implemented, showcasing the Growth, Success, and Positive changes we
           have driven for our Clients through Innovative Strategies and

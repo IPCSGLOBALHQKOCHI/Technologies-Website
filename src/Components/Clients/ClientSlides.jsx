@@ -44,19 +44,15 @@ function ClientSlides() {
     <h2 className="text-[50px] md:text-[50px] font-400  md:font-600 text-[#FFFFFF] md:text-[#0B0B0B] mb-20 md:mb-10 text-center">
       You Love
     </h2>
-  
-    {/* Desktop View with Animation */}
     <div className="hidden md:block relative overflow-hidden w-full max-w-[1200px] group my-10">
-      <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused]">
+      <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">
         {[...row1, ...row1].map((src, i) => (
           <div key={i} className="flex-shrink-0 w-[200px]">
-            <img src={src} alt={`Logo ${i}`} className="w-24 h-28 object-contain" />
+            <img src={src} alt={`Logo ${i}`} className="w-24 h-28 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 " />
           </div>
         ))}
       </div>
     </div>
-  
-    {/* Mobile View without Animation */}
     <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 w-full max-w-[500px] px-4 md:hidden">
       {row1.map((src, i) => (
         <div key={i} className="flex justify-center">

@@ -116,9 +116,9 @@ const ServicesSections = () => {
           <div className=" hidden md:block w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-36 mb-4"></div>
         </div>
       ))}
-      <div className="flex justify-center items-center w-full mt-2 sm:mt-12 lg:min-h-[250px]">
-        <button className="bg-[#003ad6] text-[#FFFFFF] px-8 py-3 w-44 rounded-md">
-          <a href="/connect-us" className="text-xl font-300">Let's Talk</a>
+      <div className="flex justify-center items-center w-full mt-2 sm:mt-12 lg:min-h-[250px] ">
+        <button className="bg-[#003ad6] text-[#FFFFFF] px-8 py-4 w-72 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6]">
+          <a href="/connect-us" className="text-2xl font-400">Let's Talk</a>
         </button>
       </div>
     </section>
