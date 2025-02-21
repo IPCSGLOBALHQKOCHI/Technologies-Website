@@ -40,9 +40,9 @@ const Form = () => {
   });
 
   return (
-<div className="p-4 sm:p-6 w-full bg-black/5 rounded-lg">
-  <h2 className="font-500 text-xl sm:text-2xl text-[#0B0B0B] mb-4">
-    Get a FREE 30-minute consultation
+<div className="p-4 sm:p-6 w-full shadow-lg  rounded-lg">
+  <h2 className="font-500 text-xl sm:text-2xl text-[#0B0B0B] mb-4 text-center">
+    Get a <span className="font-700">FREE 30-minute</span> consultation
   </h2>
   <form onSubmit={formik.handleSubmit} className="space-y-4">
     <div className="pt-4">
@@ -51,7 +51,7 @@ const Form = () => {
         type="text"
         name="name"
         placeholder="Charles David"
-        className="w-full px-3 py-2 border-b text-sm focus:outline-none border-[#0B0B0B]"
+        className="w-full px-3 py-2 border text-sm focus:outline-none border-[#727272cc] border-b-[#0B0B0B]"
         {...formik.getFieldProps("name")}
       />
       {formik.touched.name && formik.errors.name ? (
@@ -64,7 +64,7 @@ const Form = () => {
         type="email"
         name="email"
         placeholder="name@example.com"
-        className="w-full px-3 py-2 border-b text-sm focus:outline-none border-[#0B0B0B]"
+        className="w-full px-3 py-2 border text-sm focus:outline-none border-[#727272cc] border-b-[#0B0B0B]"
         {...formik.getFieldProps("email")}
       />
       {formik.touched.email && formik.errors.email ? (
@@ -73,7 +73,7 @@ const Form = () => {
     </div>
     <div className="pt-4">
       <label className="block text-[#0B0B0B]">Phone Number*</label>
-      <div className="flex items-center border-b border-[#0B0B0B]">
+      <div className="flex items-center border border-[#727272cc] border-b-[#0B0B0B]">
         <span className="px-3 py-[6px] bg-gray-300 text-[#0B0B0B]">+91</span>
         <input
           type="text"
@@ -92,7 +92,7 @@ const Form = () => {
       <textarea
         name="message"
         placeholder="Tell More Us About Your Vision"
-        className="w-full px-3 py-2 border-b border-[#0B0B0B] text-sm focus:outline-none"
+        className="w-full px-3 py-2 border border-[#727272cc] border-b-[#000000] text-sm focus:outline-none"
         rows="3"
         {...formik.getFieldProps("message")}
       ></textarea>

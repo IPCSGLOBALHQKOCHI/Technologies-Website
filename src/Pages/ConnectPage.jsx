@@ -16,7 +16,7 @@ const ConnectPage = () => {
         </p>
       </div>
       <div className="h-auto sm:h-screen bg-[#FFFFFF] flex items-center justify-center py-10 sm:py-0">
-        <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col md:flex-row rounded-lg shadow-lg">
+        <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 flex flex-col md:flex-row rounded-lg">
           <div className="w-full md:w-1/2 px-4 sm:px-6 md:px-10 py-6 flex flex-col text-left order-1 md:order-1">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-200 text-[#0B0B0BCC] leading-none">
               Ready to Elevate your brand’s

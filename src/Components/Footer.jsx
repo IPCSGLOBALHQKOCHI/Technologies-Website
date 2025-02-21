@@ -1,35 +1,55 @@
 import React from "react";
-import call from "../../src/assets/vectors/call.png";
-import mail from "../../src/assets/vectors/mail.png";
 import fb from "../../src/assets/vectors/facebook 1 (1).png";
 import insta from "../../src/assets/vectors/instagram 2.png";
 import linkedin from "../../src/assets/vectors/linkedin (1) 1.png";
 import twitter from "../../src/assets/vectors/twitter (1) 1.png";
+import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-20 min-h-[80vh]">
-    <div className="flex flex-col md:flex-row items-center md:justify-between text-left mb-8 ml-10 mr-36">
-  <div>
-    <h2 className="text-xl sm:text-2xl md:text-5xl font-400 text-[#FFFFFF]">Start your journey now!</h2>
-    <p className="text-[#FFFFFFCC] text-3xl font-300 mt-3">A minute is all you need.</p>
-  </div>
-  <button className="bg-[#003ad6] text-white px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md hover:bg-white hover:text-[#003ad6] border border-[#003ad6] transition-colors duration-300">
-    <a href="/connect-us">Get a Quote</a>
-  </button>
-</div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-center sm:text-left">
+    <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[80vh]">
+      {/* Top Section */}
+      <div className="flex flex-col md:flex-row items-center md:justify-start text-left mb-8 ml-4 mr-4 md:mr-36">
+        <div>
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-4xl font-400 text-[#FFFFFF]">
+          Are You Ready for the Next Big Leap?
+          </h2>
+          <p className="text-[#FFFFFFCC] text-lg sm:text-xl md:text-2xl font-300 mt-3">
+          Get Started in 60 Seconds.
+          </p>
+        </div>
+        <button className="bg-[#003ad6] text-white w-60 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300 md:ml-20">
+          <a
+            href="/connect-us"
+            className="flex items-center justify-center gap-6"
+          >
+            GET A QUOTE <BsArrowRight className="w-5 h-5" />
+          </a>
+        </button>
+      </div>
+
+      {/* Grid Section */}
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 md:gap-4 text-center sm:text-left">
+        {/* Company Section */}
         <div className="px-4">
-          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Company
           </h3>
-          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
+          <ul className="leading-[40px] sm:leading-[45px] text-base sm:text-xl font-300 text-[#FFFFFF99]">
             <li>
               <a
                 href="/"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+              >
+                About
               </a>
             </li>
             <li>
@@ -45,24 +65,18 @@ const Footer = () => {
                 href="/#clients"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
-                Clients
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#testimonials"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
-                Testimonials
+                Our Clients
               </a>
             </li>
           </ul>
         </div>
+
+        {/* Services Section */}
         <div className="px-4">
-          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Services
           </h3>
-          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
+          <ul className="leading-[40px] sm:leading-[45px] text-base sm:text-xl font-300 text-[#FFFFFF99]">
             <li>
               <a
                 href="/branding"
@@ -105,20 +119,78 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+        {/* Others Section */}
         <div className="px-4">
-          <h3 className="mt-3 mb-6 sm:mb-8 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+            Others
+          </h3>
+          <ul className="leading-[40px] sm:leading-[45px] text-base sm:text-xl font-300 text-[#FFFFFF99]">
+            <li>
+              <a
+                href="/branding"
+                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+              >
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#testimonials"
+                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a
+                href="/technology"
+                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+              >
+                Privacy policy
+              </a>
+            </li>
+            <li>
+              <a
+                href="/digital-marketing"
+                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+              >
+                Terms of use
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Connect Us Section */}
+        <div className="px-4 w-full sm:w-96">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Connect Us
           </h3>
-          <ul className="leading-[40px] sm:leading-[50px] text-base sm:text-lg font-300 text-[#FFFFFF99]">
-            <li className="flex items-center">
-              <img src={mail} alt="mail" className="w-6 h-6" />
-              <a href="mailto:info@ipcstechnologies.com" className="ml-4">
+          <ul className="leading-[40px] sm:leading-[45px] text-base sm:text-xl font-300 text-[#FFFFFF99]">
+            <li className="flex items-center gap-2 flex-wrap">
+              <p className="whitespace-nowrap">Email:</p>
+              <a
+                href="mailto:info@ipcstechnologies.com"
+                className="text-[#FFFFFF] hover:underline"
+              >
                 info@ipcstechnologies.com
               </a>
             </li>
-            <li className="flex items-center">
-              <img src={call} alt="call" className="w-6 h-6" />
-              <a href="tel:+919072946664" className="ml-4">
+            <li className="flex items-center gap-2 flex-wrap">
+              <p className="whitespace-nowrap">Phone:</p>
+              <a
+                href="tel:+919072946664"
+                className="text-[#FFFFFF] hover:underline"
+              >
+                +91 9072946664
+              </a>
+            </li>
+            <li className="flex items-center gap-2 flex-wrap">
+              <p className="whitespace-nowrap">Whatsapp:</p>
+              <a
+                href="https://wa.me/919072946664"
+                className="text-[#FFFFFF] hover:underline"
+              >
                 +91 9072946664
               </a>
             </li>
@@ -149,28 +221,29 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <button className="bg-[#003ad6] text-[#FFFFFF] px-6 sm:px-8 py-2 mt-6 sm:mt-8 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6] transition-colors duration-300">
-            <a href="/connect-us">Connect Us</a>
-          </button>
         </div>
       </div>
-      <div className="border-t border-[#3A3A3A] mt-10 sm:mt-14 pt-6 sm:pt-10 mb-10 text-[#FFFFFF] text-center text-sm sm:text-lg font-200 leading-normal">
-        <p>© 2025 &nbsp; IPCS Technologies &nbsp;| &nbsp;All Rights Reserved</p>
-        <p>
-          <a
-            href="/privacy-policy"
-            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-xs sm:text-sm"
-          >
-            Privacy Policy &nbsp;
-          </a>{" "}
-          |&nbsp;{" "}
-          <a
-            href="/terms-of-use"
-            className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-xs sm:text-sm"
-          >
-            Terms of Use
-          </a>
-        </p>
+
+      {/* Footer Bottom Section */}
+      <div className="border-t border-[#3A3A3A] mt-5 sm:mt-6 pt-4 sm:pt-6 mb-4 text-[#FFFFFF] text-center text-sm sm:text-lg font-200 leading-normal">
+        <div className="flex flex-wrap justify-center items-center gap-2">
+          <p>© 2025 &nbsp; IPCS Technologies &nbsp; All Rights Reserved &nbsp;|&nbsp;</p>
+          <p className="flex items-center gap-2">
+            <a
+              href="/privacy-policy"
+              className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+            >
+              Privacy Policy
+            </a>
+            <span>|</span>
+            <a
+              href="/terms-of-use"
+              className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+            >
+              Terms of Use
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
