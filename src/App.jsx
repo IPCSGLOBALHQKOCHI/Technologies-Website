@@ -10,7 +10,7 @@ import ExperienceDesign from './Pages/ServicesPages/ExperienceDesign';
 import Footer from './Components/Footer';
 import ConnectUs from './Components/ConnectUs';
 import ConnectPage from './Pages/ConnectPage';
-import PrivacyPolicy from './Pages/PrivacyPolicy';
+import PrivacyPolicy from '../src/Pages/PrivacyPolicy';
 import TermsOfUse from './Pages/TermsOfUse';
 import CookieComponent from './Components/CookieComponent';
 
