@@ -10,7 +10,7 @@ import ExperienceDesign from './Pages/ServicesPages/ExperienceDesign';
 import Footer from './Components/Footer';
 import ConnectUs from './Components/ConnectUs';
 import ConnectPage from './Pages/ConnectPage';
-import PrivacyPolicy from "./Pages/PrivacyPolicyPage";
+import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage.jsx";
 import TermsOfUse from './Pages/TermsOfUse';
 import CookieComponent from './Components/CookieComponent';
 
@@ -39,7 +39,7 @@ function MainContent() {
           <Route path="/social-branding" element={<SocialBranding />} />
           <Route path="/experience-design" element={<ExperienceDesign />} />
           <Route path='/connect-us' element={<ConnectPage />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
           <Route path='/terms-of-use' element={<TermsOfUse />} />
         </Routes>
       </main>
