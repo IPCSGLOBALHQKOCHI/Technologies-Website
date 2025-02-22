@@ -1,13 +1,22 @@
 import React from "react";
-import bgImage from "../../../src/assets/images/home bg.png";
-
+import BgVideo from "../../assets/videos/Bento/homevideo.mp4"
 const HeroSection = React.forwardRef((props, ref) => {
   return (
     <div
-      ref={ref}
       className=" h-screen bg-cover bg-center snap-start"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    ></div>
+          >
+       <video
+        ref={ref}
+          className="top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          preload="auto"
+          playsInline
+        >
+          <source src={BgVideo} type="video/mp4" />
+        </video>
+    </div>
   );
 });
 

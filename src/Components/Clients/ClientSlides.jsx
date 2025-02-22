@@ -33,20 +33,20 @@ function ClientSlides() {
     glaze,
     bhanoo,
     makayiram,
-    kitex,
+    // kitex,
   ];
 
   return (
-    <div id="clients" className="flex flex-col items-center justify-center mt-0 leading-none py-20">
-    <h2 className="text-[50px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] text-center">
+    <div id="clients" className="bg-customBg md:bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none py-20">
+    <h2 className="text-[50px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center">
       We Work With Brands
     </h2>
-    <h2 className="text-[50px] md:text-[50px] font-400  md:font-600 text-[#FFFFFF] mb-20 md:mb-10 text-center">
+    <h2 className="text-[50px] md:text-[50px] font-400  md:font-600 text-[#FFFFFF] md:text-customBg mb-20 md:mb-10 text-center">
       You Love
     </h2>
     <div className="hidden md:block relative overflow-hidden w-full max-w-[1200px] group my-10">
       <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">
-        {[...row1, ...row1].map((src, i) => (
+        {[...row1, ...row1].map((src, i) => ( 
           <div key={i} className="flex-shrink-0 w-[200px]">
             <img src={src} alt={`Logo ${i}`} className="w-24 h-28 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 " />
           </div>
@@ -56,7 +56,7 @@ function ClientSlides() {
     <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 w-full max-w-[500px] px-4 md:hidden">
       {row1.map((src, i) => (
         <div key={i} className="flex justify-center">
-          <img src={src} alt={`Logo ${i}`} className="w-16 h-20 object-contain" />
+          <img src={src} alt={`Logo ${i}`} className="w-16 h-20 object-contain"/>
         </div>
       ))}
     </div>
