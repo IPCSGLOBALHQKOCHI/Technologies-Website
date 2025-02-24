@@ -1,11 +1,8 @@
 import sisuLogo from "../../../src/assets/images/sisiu logo.png";
-import makayiramLogo from "../../../src/assets/images/makayiram logo.png";
-import image1 from "../../../src/assets/images/casestudyimage.png";
-import image2 from "../../../src/assets/images/bentoimage2.png";
+import makayiramLogo from "../../../src/assets/images/maklogoclient.png";
 import figmaLogo from "../../../src/assets/images/figma logo.png";
 import jsLogo from "../../../src/assets/images/js logo.png";
 import reactLogo from "../../../src/assets/images/react logo.png";
-import globalLogo from "../../../src/assets/vectors/logo global.png";
 import highGraph from "../../../src/assets/images/high graph.png";
 import lowGraph from "../../../src/assets/images/low graph.png";
 import seoGraph from "../../../src/assets/images/seo graph.png";

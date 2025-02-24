@@ -1,5 +1,4 @@
-import React from "react";
-
+import maklogo from "../../src/assets/images/maklogoclient.png"
 const ClientReviews = () => {
   return (
     <div id="testimonials" className="py-8 md:py-20 px-7 lg:px-20">
@@ -25,30 +24,33 @@ const ClientReviews = () => {
         </p>
       </div>
       {/* Reviews Section */}
-      <div className="flex flex-wrap justify-center gap-6 md:gap-20 mt-10 md:mt-20 px-3">
-        <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-3xl bg-[#0B0B0BCC] p-6 flex flex-col">
-          <h3 className="text-center font-400 text-3xl sm:text-4xl text-[#FFFFFF]">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-6 mt-10 md:mt-20 px-3">
+        <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
+        <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
+          <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF] mb-1">
             Makayiram
           </h3>
-          <p className="mt-2 text-lg font-300 text-[#E1E1E1]">
+          <p className="mt-2 text-base font-300 text-[#E1E1E1]">
             IPCS Technologies transformed our minimal Google Visibility into a
             top-ranked Website through their proper SEO Strategies.
           </p>
         </div>
-        <div className="w-full sm:w-80 md:w-80 h-auto md:h-72 rounded-3xl bg-[#0B0B0BCC] p-6 flex flex-col">
-          <h3 className="text-center font-400 text-3xl sm:text-4xl text-[#FFFFFF]">
+        <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
+        <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
+          <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF]">
             Sky Power Energy
           </h3>
-          <p className="mt-2 text-lg font-300 text-[#E1E1E1]">
+          <p className="mt-2 text-base font-300 text-[#E1E1E1]">
             Our Organic leads were very low, but with the support of IPCS
             Technologies, we achieved Steady and Rewarding Growth.
           </p>
         </div>
-        <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-3xl bg-[#0B0B0BCC] p-6 flex flex-col">
-          <h3 className="text-center font-400 text-3xl sm:text-4xl text-[#FFFFFF]">
+        <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
+        <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
+          <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF] mb-1">
             Sisu
           </h3>
-          <p className="mt-2 text-lg font-300 text-[#E1E1E1]">
+          <p className="mt-2 text-base font-300 text-[#E1E1E1]">
             Creating the perfect blend of Creativity and Professionalism for our
             Art Website felt impossible until IPCS Technologies delivered
             brilliance.

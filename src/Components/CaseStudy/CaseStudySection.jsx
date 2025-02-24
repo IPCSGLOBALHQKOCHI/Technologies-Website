@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import sisuLogo from "../../../src/assets/images/sisiu logo.png";
-import makayiramLogo from "../../../src/assets/images/makayiram logo.png";
+import makayiramLogo from "../../../src/assets/images/maklogoclient.png";
 import image1 from "../../../src/assets/images/casestudyimage.png";
 import image2 from "../../../src/assets/images/bentoimage2.png";
 import figmaLogo from "../../../src/assets/images/figma logo.png";

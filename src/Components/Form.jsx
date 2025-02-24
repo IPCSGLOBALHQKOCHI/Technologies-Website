@@ -2,16 +2,17 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Form = () => {
   const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
     phone: Yup.string()
-      .matches(/^[0-9]{10}$/, "Phone number must be 10 digits")
-      .required("Phone number is required"),
+    .matches(/^\+?[1-9]\d{9,14}$/, "Enter a valid phone number") 
+    .required("Phone number is required"),
   });
-
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -72,21 +73,24 @@ const Form = () => {
       ) : null}
     </div>
     <div className="pt-4">
-      <label className="block text-[#0B0B0B]">Phone Number*</label>
-      <div className="flex items-center border border-[#727272cc] border-b-[#0B0B0B]">
-        <span className="px-3 py-[6px] bg-gray-300 text-[#0B0B0B]">+91</span>
-        <input
-          type="text"
-          name="phone"
-          placeholder="999-999-9999"
-          className="w-full px-3 py-2 text-sm focus:outline-none"
-          {...formik.getFieldProps("phone")}
-        />
-      </div>
-      {formik.touched.phone && formik.errors.phone ? (
-        <div className="text-red-500 text-sm">{formik.errors.phone}</div>
-      ) : null}
-    </div>
+  <label className="block text-[#0B0B0B]">Phone Number*</label>
+  <div className="border border-[#727272cc] border-b-[#0B0B0B]">
+    <PhoneInput
+      country={"in"}
+      value={formik.values.phone}
+      onChange={(phone) => {
+        formik.setFieldValue("phone", phone);
+        formik.setFieldTouched("phone", true, false); 
+      }}
+      inputClass="!w-full !py-2 !px-14 !border-none !text-black focus:outline-none"
+      buttonClass="!bg-gray-200"
+      containerClass="!w-full"
+    />
+  </div>
+  {formik.touched.phone && formik.errors.phone ? (
+    <div className="text-red-500 text-sm">{formik.errors.phone}</div>
+  ) : null}
+</div>
     <div className="pt-4">
       <label className="block text-[#0B0B0B]">Tell Us More</label>
       <textarea
