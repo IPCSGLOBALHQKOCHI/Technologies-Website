@@ -217,9 +217,9 @@ const Footer = () => {
               >
                 <img src={linkedin} alt="LinkedIn" className="w-7 h-7" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              {/* <a href="#" target="_blank" rel="noopener noreferrer">
                 <img src={twitter} alt="Twitter" className="w-7 h-7" />
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>

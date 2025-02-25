@@ -124,7 +124,7 @@ const CaseStudySection = forwardRef((props, ref) => {
             <img
               src={lowGraph}
               alt="Low Graph"
-              className="w-12 md:w-20 h-auto object-contain"
+              className="w-12 md:w-20 h-auto object-contain mt-14"
             />
             <div className="border border-[#B659FF] rounded-full px-4 md:px-6 py-1 md:py-2 flex items-center justify-center">
               <h2 className="text-[#FFFFFF] font-medium text-xs md:text-sm">
@@ -205,7 +205,7 @@ const CaseStudySection = forwardRef((props, ref) => {
         </div>
 
         {/* Ninth Row */}
-        <div className="col-span-1 md:col-span-2 bg-[#0B0B0B] p-4 md:p-6 rounded-3xl h-48 md:h-60 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
+        <div className="col-span-1 md:col-span-2 bg-[#0B0B0B] p-4 md:p-6 rounded-3xl h-48 md:h-60 2xl:h-80 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <div className="border-[1px] border-[#B659FF] rounded-full text-center justify-center mx-4 md:mx-8">
             <h2 className="text-2xl md:text-3xl font-200 text-center py-2 md:py-3 text-[#FFFFFF]">
               16-Year Legacy

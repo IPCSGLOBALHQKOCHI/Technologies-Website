@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Logo from "../../src/assets/vectors/technoloies logo.png";
-import {FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
-
+import { FiPhoneCall } from "react-icons/fi";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -80,7 +80,7 @@ const Header = () => {
                     <a href="/connect-us">Connect Us</a>
                   </button>
                 </div>
-                <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-14 text-[#FFFFFF]">
+                <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-20 text-[#FFFFFF]">
                   {[
                     {
                       heading: "Branding",
@@ -196,7 +196,13 @@ const Header = () => {
       </div>
 
       {/* Hamburger Menu for Mobile */}
-      <div className="md:hidden">
+
+      <div className="md:hidden flex">
+        <div className="p-4">
+          <a href="tel:+919072946664">
+            <FiPhoneCall className="w-6 h-6" />
+          </a>
+        </div>
         <button onClick={() => setIsMobileOpen(!isMobileOpen)}>
           {isMobileOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
@@ -252,7 +258,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="/social-branding" className="block py-1">
-                    Social Branding 
+                    Social Branding
                   </a>
                 </li>
                 <li>

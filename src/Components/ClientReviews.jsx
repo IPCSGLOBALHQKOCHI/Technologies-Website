@@ -24,7 +24,7 @@ const ClientReviews = () => {
         </p>
       </div>
       {/* Reviews Section */}
-      <div className="flex flex-wrap justify-center gap-6 md:gap-6 mt-10 md:mt-20 px-3">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10 mt-10 md:mt-20 px-3">
         <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
         <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
           <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF] mb-1">
