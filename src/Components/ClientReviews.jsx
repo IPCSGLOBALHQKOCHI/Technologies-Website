@@ -1,4 +1,7 @@
 import maklogo from "../../src/assets/images/maklogoclient.png"
+import global from "../../src/assets/images/whiteLogos/IPCS GLOBAL logo bk 1.png"
+import sisiulogo from "../../src/assets/images/sisiulogo.png"
+
 const ClientReviews = () => {
   return (
     <div id="testimonials" className="py-8 md:py-20 px-7 lg:px-20">
@@ -36,7 +39,7 @@ const ClientReviews = () => {
           </p>
         </div>
         <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
-        <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
+        <img src={global} alt="logo" className="w-16 h-16 p-2 object-cover rounded-full mb-3 bg-[#0B1215]"/>
           <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF]">
             Sky Power Energy
           </h3>
@@ -46,7 +49,7 @@ const ClientReviews = () => {
           </p>
         </div>
         <div className="w-full sm:w-80 md:w-72 h-auto md:h-72 rounded-xl bg-[#FFFFFF33] p-4 flex flex-col">
-        <img src={maklogo} alt="logo" className="w-16 h-16 object-cover rounded-full mb-3 bg-[#0B1215]"/>
+        <img src={sisiulogo} alt="global" className="w-16 h-16 p-1 object-cover rounded-full mb-3 bg-[#0B1215]"/>
           <h3 className="text-left font-400 text-2xl sm:text-4xl text-[#FFFFFF] mb-1">
             Sisu
           </h3>
