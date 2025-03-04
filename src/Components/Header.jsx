@@ -172,7 +172,7 @@ const Header = () => {
             </div>
           )}
         </li>
-        <li className="relative group transition-colors duration-300 list-none">
+        {/* <li className="relative group transition-colors duration-300 list-none">
           <a href="" className="cursor-pointer">
             BLOG
           </a>
@@ -181,7 +181,7 @@ const Header = () => {
               isScrolled ? "bg-white" : "bg-white"
             }`}
           ></span>
-        </li>
+        </li> */}
 
         <a
           href="/connect-us"

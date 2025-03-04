@@ -34,14 +34,14 @@ const HeroSection = React.forwardRef((props, ref) => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
         <h1
-          className="text-3xl md:text-7xl font-600"
+          className="text-3xl md:text-7xl font-800 md:font-600"
           data-aos="fade-up"
           data-aos-delay="2000"
         >
-          Moonshot to Magnitude
+          Moonshot To Magnitude
         </h1>
         <p
-          className="text-xl md:text-3xl mt-4 font-200"
+          className="text-lg md:text-3xl mt-2 font-200"
           data-aos="fade-up"
           data-aos-delay="2300"
           data-aos-duration="4000"
@@ -61,7 +61,7 @@ const HeroSection = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className={`absolute bottom-4 flex justify-center w-full pb-20 md:pb-0 transition-opacity duration-1000 transform ${
+          className={`absolute bottom-4 flex justify-center w-full pb-28 md:pb-14 transition-opacity duration-1000 transform ${
             showButton ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
