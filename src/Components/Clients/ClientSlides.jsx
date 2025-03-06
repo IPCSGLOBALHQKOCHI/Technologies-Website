@@ -1,5 +1,5 @@
 import React from "react";
-import brandix from "../../../src/assets/images/whiteLogos/Brandix BW (2).png";
+//Mobile
 import godrej from "../../../src/assets/images/whiteLogos/Godrej_&_Boyce- BW (2).png";
 import eastern from "../../../src/assets/images/whiteLogos/Eastern logo (2).png";
 import kannanDevan from "../../../src/assets/images/whiteLogos/kannan devan BW (2).png";
@@ -14,29 +14,28 @@ import triple from "../../../src/assets/images/whiteLogos/TRIPLE I 1 (1).png";
 import glaze from "../../../src/assets/images/whiteLogos/Glaze 1 (1).png";
 import bhanoo from "../../../src/assets/images/whiteLogos/image 2 (1).png";
 import makayiram from "../../../src/assets/images/whiteLogos/mak lolgo 4.png";
-// import kitex from "../../../src/assets/images/whiteLogos/Kitex BW 1 (1).png";
-
-// import brandixBL from "../../../src/assets/images/blackLogos/Brandix BW (3).png";
-import godrejBL from "../../../src/assets/images/blackLogos/Godrej_&_Boyce- BW (3).png";
-import easternBL from "../../../src/assets/images/blackLogos/Eastern logo (3).png";
-import kannanDevanBL from "../../../src/assets/images/blackLogos/kannan devan BW (3).png";
-import keltronBL from "../../../src/assets/images/blackLogos/keltron BW (2).png";
-import ipcsBL from "../../../src/assets/images/blackLogos/IPCS GLOBAL logo bk 1 (1).png";
-import doubleHorseBL from "../../../src/assets/images/blackLogos/Double horses 2 (1).png";
-import marriotBL from "../../../src/assets/images/blackLogos/marriot BW 1 (2).png";
-import milmaBL from "../../../src/assets/images/blackLogos/mlma logo BW 1 (2).png";
-import ebiBL from "../../../src/assets/images/blackLogos/ebi-removebg-preview 1 (4).png";
+import kitex from "../../../src/assets/images/whiteLogos/Kitex BW 1 (1).png";
+//web
+import godrejBL from "../../../src/assets/images/blackLogos/Godrej_Logo.png";
+import easternBL from "../../../src/assets/images/blackLogos/Eastern-Logo.png";
+import kannanDevanBL from "../../../src/assets/images/blackLogos/kannandevan logo.jpeg";
+import keltronBL from "../../../src/assets/images/blackLogos/kel-logo.png";
+import ipcsBL from "../../../src/assets/images/blackLogos/ipcs-global logo.png";
+import doubleHorseBL from "../../../src/assets/images/blackLogos/double horse logo.avif";
+import marriotBL from "../../../src/assets/images/blackLogos/marriot logo.avif";
+import milmaBL from "../../../src/assets/images/blackLogos/Milma-Logo-.png";
+import ebiBL from "../../../src/assets/images/blackLogos/ebi logo.jpg";
 import logroBL from "../../../src/assets/images/blackLogos/logro-main-logo 1 (3).jpg";
-import tripleBL from "../../../src/assets/images/blackLogos/TRIPLE I 1 (2).png";
-import glazeBL from "../../../src/assets/images/blackLogos/Glaze 2.png";
-import bhanooBL from "../../../src/assets/images/blackLogos/image 3.png";
+import tripleBL from "../../../src/assets/images/blackLogos/triple-i-logo.svg";
+import glazeBL from "../../../src/assets/images/blackLogos/glaze logo.jpg";
+import bhanooBL from "../../../src/assets/images/blackLogos/bhanoo logo.webp";
 import makayiramBL from "../../../src/assets/images/blackLogos/mak lolgo 5.png";
-import kitexBL from "../../../src/assets/images/blackLogos/Kitex BW 1 (2).png";
-
+import kitexBL from "../../../src/assets/images/blackLogos/kitex logo.avif";
+import bmgBL from "../../assets/images/blackLogos/best-money logo.jpg"
+import BsidesBL from "../../assets/images/blackLogos/besides-logo.png"
 
 function ClientSlides() {
   const white = [
-    brandix,
     godrej,
     eastern,
     kannanDevan,
@@ -51,11 +50,10 @@ function ClientSlides() {
     glaze,
     bhanoo,
     makayiram,
-    // kitex,
+    kitex,
   ];
 
   const Black=[
-    // brandixBL,
     godrejBL,
     easternBL,
     kannanDevanBL,
@@ -71,6 +69,8 @@ function ClientSlides() {
     bhanooBL,
     makayiramBL,
     kitexBL,
+    bmgBL,
+    BsidesBL
   ]
 
   return (
@@ -81,11 +81,11 @@ function ClientSlides() {
     <h2 className="text-[50px] md:text-[50px] font-400  md:font-600 text-[#FFFFFF] md:text-customBg mb-20 md:mb-10 text-center">
       You Love
     </h2>
-    <div className="hidden md:block relative overflow-hidden w-full max-w-[1200px] group my-10">
+    <div className="hidden md:block relative overflow-hidden w-full max-w-[1200px] group my-6">
       <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">
         {[...Black, ...Black].map((src, i) => ( 
-          <div key={i} className="flex-shrink-0 w-[200px]">
-            <img src={src} alt={`Logo ${i}`} className="w-24 h-28 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 " />
+          <div key={i} className="flex-shrink-0 w-[250px]">
+            <img src={src} alt={`Logo ${i}`} className="w-28 h-32 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 " />
           </div>
         ))}
       </div>

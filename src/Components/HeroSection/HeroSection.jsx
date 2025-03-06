@@ -32,16 +32,16 @@ const HeroSection = React.forwardRef((props, ref) => {
         <source src={BgVideo} type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-2">
         <h1
-          className="text-3xl md:text-7xl font-800 md:font-600"
+          className="text-3xl md:text-7xl font-700 md:font-600"
           data-aos="fade-up"
           data-aos-delay="2000"
         >
           Moonshot To Magnitude
         </h1>
         <p
-          className="text-lg md:text-3xl mt-2 font-200"
+          className="text-lg md:text-3xl mt-2 font-200 px-6"
           data-aos="fade-up"
           data-aos-delay="2300"
           data-aos-duration="4000"

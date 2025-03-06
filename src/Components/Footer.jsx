@@ -2,14 +2,14 @@ import React from "react";
 import fb from "../../src/assets/vectors/facebook 1 (1).png";
 import insta from "../../src/assets/vectors/instagram 2.png";
 import linkedin from "../../src/assets/vectors/linkedin (1) 1.png";
-import twitter from "../../src/assets/vectors/twitter (1) 1.png";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[80vh]">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row items-center md:justify-start text-left mb-8 ml-4 mr-4 md:mr-36">
+      <div className="flex flex-col md:flex-row items-center md:justify-center text-center md:text-left mb-8 ml-4 mr-4 md:mr-36">
         <div>
           <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-4xl font-400 text-[#FFFFFF]">
             Are You Ready for the Next Big Leap?
@@ -18,12 +18,13 @@ const Footer = () => {
             Get Started in 60 Seconds.
           </p>
         </div>
-        <button className="bg-[#003ad6] text-white w-60 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300 md:ml-20">
+        <button className="bg-[#003ad6] text-white w-60 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300 md:ml-20 group">
           <a
             href="/connect-us"
             className="flex items-center justify-center gap-6"
           >
-            GET A QUOTE <BsArrowRight className="w-5 h-5" />
+            GET A QUOTE
+            <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-3" />
           </a>
         </button>
       </div>
@@ -160,9 +161,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Connect Us Section */}
-        {/* Connect Us Section */}
         <div className="px-4 w-full sm:w-96 text-center sm:text-left">
           <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Connect Us
@@ -217,9 +215,9 @@ const Footer = () => {
               >
                 <img src={linkedin} alt="LinkedIn" className="w-7 h-7" />
               </a>
-              {/* <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={twitter} alt="Twitter" className="w-7 h-7" />
-              </a> */}
+              <a href="https://wa.me/919072946664" target="_blank" rel="noopener noreferrer" className="bg-[#FFFFFF] p-1 rounded-full">
+                <IoLogoWhatsapp className="w-6 h-6 text-[#000000]"/>
+              </a>
             </li>
           </ul>
         </div>

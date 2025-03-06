@@ -21,7 +21,7 @@ const Mission = forwardRef((props, ref) => {
         <p
           data-aos="fade-up"
           data-aos-delay="500"
-          className="max-w-3xl leading-relaxed font-300 text-xl text-left text-[#FFFFFFCC] tracking-wide"
+          className="max-w-3xl leading-relaxed font-300 text-xl text-left text-[#FFFFFFCC] tracking-wide ml-4"
         >
           To build sustainable solutions that empower Businesses by fostering
           Creativity, Innovation, and Impactful service delivery.
