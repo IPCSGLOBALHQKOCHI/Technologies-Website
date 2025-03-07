@@ -2,7 +2,7 @@ import React from "react";
 import Form from "../../src/Components/Form";
 import linkedin from "../../src/assets/images/linkedin-logo black.png";
 import contactImage from "../../src/assets/images/contact img.png";
-import { BsArrowRight } from "react-icons/bs";
+import booking from "../../src/assets/images/online-interview.png";
 
 const ConnectPage = () => {
   return (
@@ -40,29 +40,32 @@ const ConnectPage = () => {
                 <p className="text-sm sm:text-base font-300 text-[#171717CC] mt-0 mb-3 sm:mb-4">
                   Client Expert
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/akshay-rs-5bb145126/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={linkedin}
-                    alt="LinkedIn"
-                    className="w-5 sm:w-6 h-5 sm:h-6"
-                  />
-                </a>
+                <div className="flex">
+                  <a
+                    href="https://www.linkedin.com/in/akshay-rs-5bb145126/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="LinkedIn"
+                      className="w-5 sm:w-6 h-5 sm:h-6"
+                    />
+                  </a>
+                  <a
+                    href="https://calendly.com/akshay-ipcsglobal/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={booking}
+                      alt="booking  "
+                      className="w-5 sm:w-7 h-5 sm:h-7 ml-4"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <button className="bg-[#003ad6] text-white text-2xl w-60 h-14 px-6  py-2 mt-10 rounded-md border border-[#003ad6] transition-colors duration-300 md:ml-20 group">
-              <a
-                href="https://calendly.com/akshay-ipcsglobal/30min"
-                target="_blank"
-                className="flex items-center justify-center gap-6"
-              >
-                Book a Slot
-                <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-3" />
-              </a>
-            </button>
           </div>
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 sm:p-6 md:p-8 order-2 md:order-1">
             <Form />

@@ -3,6 +3,8 @@ import Logo from "../../src/assets/vectors/technoloies logo.png";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
+import { BsArrowRight } from "react-icons/bs";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -55,7 +57,7 @@ const Header = () => {
         ))}
 
         {/* Services Dropdown */}
-        <li className="relative group cursor-pointer list-none">
+        <li className="relative group cursor-pointer list-none ">
           <span onMouseEnter={() => setIsServicesOpen(true)}>SERVICES</span>
           <span
             className={`absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
@@ -65,7 +67,7 @@ const Header = () => {
 
           {isServicesOpen && (
             <div
-              className="fixed top-0 left-0 w-[90%] h-[80%] my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl"
+              className="fixed top-0 left-0 w-[90%] h-[80%] my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] "
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
@@ -76,9 +78,14 @@ const Header = () => {
                     We’ve got you all you need to turn your ideas into top-notch
                     digital products that drive growth.
                   </h4>
-                  <button className="bg-[#003ad6] text-[#FFFFFF] px-2 py-2 mt-7 w-44 rounded-md hover:bg-[#FFFFFF] hover:text-[#003ad6]">
-                    <a href="/connect-us">Connect Us</a>
+                  <div className="group">
+                  <button className=" bg-[#003ad6] text-[#FFFFFF] pr-4 py-2 mt-7 w-44 rounded-md">
+                    <a href="/connect-us" className="flex justify-around">
+                      Connect Us
+                      <BsArrowRight className="mt-1 transition-transform duration-300 group-hover:translate-x-4" />
+                    </a>
                   </button>
+                  </div>
                 </div>
                 <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-20 text-[#FFFFFF]">
                   {[

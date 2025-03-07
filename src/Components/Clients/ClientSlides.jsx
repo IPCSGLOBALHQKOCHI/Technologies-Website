@@ -16,7 +16,7 @@ import bhanoo from "../../../src/assets/images/whiteLogos/image 2 (1).png";
 import makayiram from "../../../src/assets/images/whiteLogos/mak lolgo 4.png";
 import kitex from "../../../src/assets/images/whiteLogos/Kitex BW 1 (1).png";
 //web
-import godrejBL from "../../../src/assets/images/blackLogos/Godrej_Logo.png";
+import godrejBL from "../../../src/assets/images/blackLogos/godrej-logo-vector.png";
 import easternBL from "../../../src/assets/images/blackLogos/Eastern-Logo.png";
 import kannanDevanBL from "../../../src/assets/images/blackLogos/kannandevan logo.jpeg";
 import keltronBL from "../../../src/assets/images/blackLogos/kel-logo.png";
@@ -28,11 +28,11 @@ import ebiBL from "../../../src/assets/images/blackLogos/ebi logo.jpg";
 import logroBL from "../../../src/assets/images/blackLogos/logro-main-logo 1 (3).jpg";
 import tripleBL from "../../../src/assets/images/blackLogos/triple-i-logo.svg";
 import glazeBL from "../../../src/assets/images/blackLogos/glaze logo.jpg";
-import bhanooBL from "../../../src/assets/images/blackLogos/bhanoo logo.webp";
+import bhanooBL from "../../../src/assets/images/blackLogos/LogoImage-bhanoo.png";
 import makayiramBL from "../../../src/assets/images/blackLogos/mak lolgo 5.png";
 import kitexBL from "../../../src/assets/images/blackLogos/kitex logo.avif";
-import bmgBL from "../../assets/images/blackLogos/best-money logo.jpg"
-import BsidesBL from "../../assets/images/blackLogos/besides-logo.png"
+import bmgBL from "../../assets/images/blackLogos/best-money logo.jpg";
+import BsidesBL from "../../assets/images/blackLogos/besides-logo.png";
 
 function ClientSlides() {
   const white = [
@@ -53,7 +53,7 @@ function ClientSlides() {
     kitex,
   ];
 
-  const Black=[
+  const Black = [
     godrejBL,
     easternBL,
     kannanDevanBL,
@@ -70,35 +70,42 @@ function ClientSlides() {
     makayiramBL,
     kitexBL,
     bmgBL,
-    BsidesBL
-  ]
+    BsidesBL,
+  ];
 
   return (
-    <div id="clients" className="bg-customBg md:bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none py-20">
-    <h2 className="text-[50px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center">
-      We Work With Brands
-    </h2>
-    <h2 className="text-[50px] md:text-[50px] font-400  md:font-600 text-[#FFFFFF] md:text-customBg mb-20 md:mb-10 text-center">
-      You Love
-    </h2>
-    <div className="hidden md:block relative overflow-hidden w-full max-w-[1200px] group my-6">
-      <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">
-        {[...Black, ...Black].map((src, i) => ( 
-          <div key={i} className="flex-shrink-0 w-[250px]">
-            <img src={src} alt={`Logo ${i}`} className="w-28 h-32 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 " />
+    <div
+      id="clients"
+      className="bg-customBg md:bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none py-16"
+    >
+      <h2 className="text-[50px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center">
+        Partnering with Brands You Trust.
+      </h2>
+      <div className="hidden md:block relative overflow-hidden w-full group mt-16">
+        <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">
+          {[...Black, ...Black].map((src, i) => (
+            <div key={i} className="flex-shrink-0 w-[220px]">
+              <img
+                src={src}
+                alt={`Logo ${i}`}
+                className="w-28 h-32 object-contain  transition-transform duration-300 ease-in-out hover:scale-110 "
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 w-full max-w-[500px] px-4 md:hidden">
+        {white.map((src, i) => (
+          <div key={i} className="flex justify-center">
+            <img
+              src={src}
+              alt={`Logo ${i}`}
+              className="w-16 h-20 object-contain"
+            />
           </div>
         ))}
       </div>
     </div>
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 w-full max-w-[500px] px-4 md:hidden">
-      {white.map((src, i) => (
-        <div key={i} className="flex justify-center">
-          <img src={src} alt={`Logo ${i}`} className="w-16 h-20 object-contain"/>
-        </div>
-      ))}
-    </div>
-  </div>
-  
   );
 }
 

@@ -47,14 +47,13 @@ const CookieComponent = () => {
         <div className="flex space-x-8 pr-8">
           <button
             onClick={handleAccept}
-            className="bg-[#25789B] text-[#FFFFFF] text-sm px-5 py-2 rounded-md border border-transparent 
-            hover:bg-[#FFFFFF] hover:text-black hover:border-[#25789B]"
+            className="bg-[#003ad6] text-[#FFFFFF] text-sm px-5 py-2 rounded-md border border-transparent"
           >
             Accept
           </button>
           <button
             onClick={handleDecline}
-            className="bg-red-600 hover:bg-[#FFFFFF] text-white hover:text-black  border border-transparent text-sm px-5 py-2 rounded-md hover:border-red-600"
+            className="bg-red-600 text-white border border-transparent text-sm px-5 py-2 rounded-md"
           >
             Decline
           </button>
