@@ -1,15 +1,15 @@
 import React, { forwardRef } from "react";
-import sisuLogo from "../../../src/assets/images/sisiu logo.png";
-import makayiramLogo from "../../../src/assets/images/maklogoclient.png";
-import image1 from "../../../src/assets/images/casestudyimage.png";
-import image2 from "../../../src/assets/images/bentoimage2.png";
-import figmaLogo from "../../../src/assets/images/figma logo.png";
-import jsLogo from "../../../src/assets/images/js logo.png";
-import reactLogo from "../../../src/assets/images/react logo.png";
-import globalLogo from "../../../src/assets/vectors/logo global.png";
-import highGraph from "../../../src/assets/images/high graph.png";
-import lowGraph from "../../../src/assets/images/low graph.png";
-import seoGraph from "../../../src/assets/images/seo graph.png";
+// import sisuLogo from "../../../src/assets/images/sisiu logo.png";
+// import makayiramLogo from "../../../src/assets/images/maklogoclient.png";
+// import image1 from "../../../src/assets/images/casestudyimage.png";
+// import image2 from "../../../src/assets/images/bentoimage2.png";
+// import figmaLogo from "../../../src/assets/images/figma logo.png";
+// import jsLogo from "../../../src/assets/images/js logo.png";
+// import reactLogo from "../../../src/assets/images/react logo.png";
+// import globalLogo from "../../../src/assets/vectors/logo global.png";
+// import highGraph from "../../../src/assets/images/high graph.png";
+// import lowGraph from "../../../src/assets/images/low graph.png";
+// import seoGraph from "../../../src/assets/images/seo graph.png";
 import CaseStudyMobile from "./CaseStudyMobile";
 
 const CaseStudySection = forwardRef((props, ref) => {
@@ -38,8 +38,16 @@ const CaseStudySection = forwardRef((props, ref) => {
           Impactful Execution.
         </p>
       </div>
-      <div className="md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-2 md:p-6 hidden">
-        {/* First Row */}
+      <div className="pt-10">
+        <CaseStudyMobile/>
+      </div>
+
+    </section>
+  );
+});
+
+export default CaseStudySection;
+{/* <div className="md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-2 md:p-6 hidden">
         <div className="col-span-1 md:col-span-2 bg-[#0B0B0B] p-4 md:p-6 rounded-3xl flex flex-col justify-center h-48 md:h-64 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-3xl md:text-5xl text-[#FFFFFF] font-300">
             Hi there!
@@ -49,7 +57,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Second Row */}
         <div className="p-4 md:p-6 rounded-3xl flex flex-col h-48 md:h-64 bg-[#0B0B0B] hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-xl md:text-2xl font-500 text-[#FDDA21] text-center">
             Branding
@@ -64,7 +71,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Third Row */}
         <div className="h-48 md:h-64 p-4 md:p-6 bg-[#0B0B0B] bg-[radial-gradient(circle_at_0%_top,rgba(41,51,39,0.6)_0%,transparent_100%)] hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)] rounded-3xl flex flex-col justify-center">
           <h2 className="text-lg md:text-xl font-500 text-[#A1FFAC] text-center">
             Landing Page
@@ -79,7 +85,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Fourth Row */}
         <div className="bg-[#0B0B0B] p-4 rounded-3xl h-48 md:h-64 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-2xl md:text-3xl text-center font-500 text-[#FFFFFFCC]">
             Tools We Use
@@ -90,7 +95,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Fifth Row */}
         <div className="rounded-3xl h-40 md:h-60 p-1 flex items-center justify-center">
           <img
             src={image1}
@@ -99,7 +103,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           />
         </div>
 
-        {/* Sixth Row */}
         <div className="bg-[#0B0B0B] col-span-1 md:col-span-2 mr-0 md:mr-[2%] p-4 md:p-6 pt-2 rounded-3xl flex flex-col space-x-4 h-40 md:h-60 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <div className="flex justify-between w-full">
             <div className="max-w-[50%]">
@@ -157,7 +160,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </div>
         </div>
 
-        {/* Seventh Row */}
         <div className="bg-[#0B0B0B] col-span-1 -ml-0 md:-ml-[2%] p-4 md:p-6 pt-6 md:pt-10 rounded-3xl flex flex-col h-40 md:h-60 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2 className="text-lg md:text-xl font-400 text-[#FFF]">
             Client:{" "}
@@ -170,7 +172,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Eighth Row */}
         <div className="flex flex-col h-40 md:h-52 space-y-2 md:space-y-4">
           <div className="flex flex-row space-x-2 md:space-x-4 px-4 md:px-6 pt-4 md:pt-8 justify-center">
             <div className="bg-[#000000] text-[#FFFFFFFF] text-xl md:text-2xl font-700 w-8 h-8 md:w-12 md:h-12 rounded-xl flex items-center justify-center border-[#00005B] border shadow-[0_0_1px_#9999FF,inset_0_0_1px_#9999FF,0_0_2px_#00005B,0_0_5px_#00005B,0_0_15px_#9999FF]">
@@ -204,7 +205,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </div>
         </div>
 
-        {/* Ninth Row */}
         <div className="col-span-1 md:col-span-2 bg-[#0B0B0B] p-4 md:p-6 rounded-3xl h-48 md:h-60 2xl:h-80 hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <div className="border-[1px] border-[#B659FF] rounded-full text-center justify-center mx-4 md:mx-8">
             <h2 className="text-2xl md:text-3xl font-200 text-center py-2 md:py-3 text-[#FFFFFF]">
@@ -216,7 +216,6 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Tenth Row */}
         <div className="bg-[#0B0B0B] col-span-1 -mr-0 md:-mr-[25%] text-white p-2 md:p-4 rounded-3xl flex flex-col hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <h2
             className="text-3xl md:text-5xl font-600 text-start"
@@ -235,22 +234,11 @@ const CaseStudySection = forwardRef((props, ref) => {
           </p>
         </div>
 
-        {/* Eleventh Row */}
         <div className="bg-[#0B0B0B] col-span-1 ml-0 md:ml-[25%] p-4 md:p-6 rounded-3xl flex flex-col justify-center hover:shadow-[0px_0px_20px_5px_rgba(0,169,255,0.3)]">
           <img src={globalLogo} alt="global logo" className="w-full h-auto" />
         </div>
 
-        {/* Twelfth Row */}
         <div className="rounded-3xl flex flex-col justify-center ">
           <img src={image2} alt="image 2" className="w-full h-40 md:h-60" />
         </div>
-      </div>
-      <div className="block md:hidden">
-        <CaseStudyMobile/>
-      </div>
-
-    </section>
-  );
-});
-
-export default CaseStudySection;
+      </div> */}

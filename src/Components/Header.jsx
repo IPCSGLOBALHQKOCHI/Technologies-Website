@@ -228,7 +228,7 @@ const Header = () => {
           <FaTimes size={24} />
         </button>
 
-        <ul className="mt-16 space-y-6 text-lg px-6">
+        <ul className="mt-16 space-y-6 text-lg px-6 bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px]">
           <li>
             <a href="/" className="block py-2">
               ABOUT

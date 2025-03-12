@@ -78,8 +78,8 @@ function ClientSlides() {
       id="clients"
       className="bg-customBg md:bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none py-16"
     >
-      <h2 className="text-[50px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center">
-        Partnering with Brands You Trust.
+      <h2 className="text-[45px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center mb">
+        Partnering with brands you trust. 
       </h2>
       <div className="hidden md:block relative overflow-hidden w-full group mt-16">
         <div className="flex w-max animate-scrollLeft whitespace-nowrap group-hover:[animation-play-state:paused] hover:">

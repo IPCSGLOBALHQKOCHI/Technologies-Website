@@ -1,7 +1,7 @@
 import besides from "../../src/assets/images/besides-logo.png";
 import bmg from "../../src/assets/images/best-money logo.jpg";
 import sisiulogo from "../../src/assets/images/sisiulogo.png";
-import bsidesbg from "../../src/assets/images/bsidesbg.png";
+import bsidesbg from "../../src/assets/images/bsidesbg.jpg";
 import bmgbg from "../../src/assets/images/bmgbg.png";
 import sisubg from "../../src/assets/images/sisiubg.png";
 
@@ -52,25 +52,25 @@ const ClientReviews = () => {
           achieve remarkable Success.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 mt-10 md:mt-20 px-3">
+      <div className="flex flex-wrap justify-center gap-4 mt-10 md:mt-20">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="w-full sm:w-72 md:w-80 h-auto rounded-2xl bg-[#FFFFFF] flex flex-col"
+            className="w-full sm:w-72 md:w-80 h-auto rounded-2xl bg-[#FFFFFF] flex flex-col mb-4 md:mt-0"
           >
             <div className="relative">
               <img
                 src={card.bgSrc}
                 alt="bg"
-                className="h-32 w-full rounded-t-xl"
+                className="h-48 w-full rounded-t-xl"
               />
               <img
                 src={card.imgSrc}
                 alt={card.title}
-                className="w-16 h-16 p-2 object-cover rounded-full bg-[#0B1215] absolute -translate-x-1/2 left-10 -bottom-8"
+                className="w-20 h-20 p-2 object-cover rounded-full bg-[#0B1215] absolute -translate-x-1/2 left-12 -bottom-8"
               />
             </div>
-            <h3 className="text-left font-500 text-xl sm:text-3xl text-[#0B1215] mt-10  px-2">
+            <h3 className="text-left font-500 text-xl sm:text-3xl text-[#0B1215] mt-10 px-4">
               {card.title}
             </h3>
             <p className="mt-1 text-base font-300 text-[#0B1215] p-3">

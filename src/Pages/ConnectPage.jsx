@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "../../src/Components/Form";
 import linkedin from "../../src/assets/images/linkedin-logo black.png";
-import contactImage from "../../src/assets/images/contact img.png";
+import contactImage from "../../src/assets/images/akshay sir.jpg";
 import booking from "../../src/assets/images/online-interview.png";
 
 const ConnectPage = () => {
