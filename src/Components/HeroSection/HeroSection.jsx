@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BgVideo from "../../assets/videos/Bento/homevideo.mp4";
-
+import bgImage from "../../assets/images/homebgimg.png"
 const HeroSection = React.forwardRef((props, ref) => {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-out", once: true });
@@ -28,6 +28,7 @@ const HeroSection = React.forwardRef((props, ref) => {
         muted
         preload="auto"
         playsInline
+        poster={bgImage}
       >
         <source src={BgVideo} type="video/mp4" />
       </video>
