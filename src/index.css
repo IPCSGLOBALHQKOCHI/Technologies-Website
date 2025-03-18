@@ -9,8 +9,9 @@ html {
   @apply bg-customBg;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch !important;
+  max-width: 1580px;
   width: 100% !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important;
   font-family: 'proxima-nova', sans-serif;
   /* font-family: 'Aspekta', sans-serif; */

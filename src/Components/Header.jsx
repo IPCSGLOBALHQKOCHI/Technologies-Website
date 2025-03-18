@@ -36,7 +36,7 @@ const Header = () => {
       </a>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex space-x-16 font-400 tracking-wide">
+      <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
         {[
           { name: "ABOUT", link: "" },
           { name: "CASE STUDY", link: "#casestudy" },

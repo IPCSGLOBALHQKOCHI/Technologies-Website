@@ -10,7 +10,7 @@ const Technology = () => {
       <div className="order-1 sm:order-2 text-[#FFFFFF] text-4xl sm:text-6xl md:text-8xl lg:text-[100px] xl:text-[100px] font-200 md:mt-8  mt-14 px-4">
           02
         </div>
-        <div className="order-2 sm:order-1 text-[#FFFFFF] text-6xl sm:text-8xl md:text-[120px] lg:text-[160px] xl:text-[200px] font-200 mt-8 sm:mt-20 md:mb-20 mb-6 px-2">
+        <div className="order-2 sm:order-1 text-[#FFFFFF] text-6xl sm:text-8xl md:text-[120px] lg:text-[160px] xl:text-[200px] font-200 mt-8 sm:mt-20 md:mb-20 mb -6 px-2">
           Technology
         </div>
       </div>

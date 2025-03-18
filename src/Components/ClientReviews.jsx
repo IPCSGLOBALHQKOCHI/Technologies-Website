@@ -56,13 +56,13 @@ const ClientReviews = () => {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="w-full sm:w-72 md:w-80 h-auto rounded-2xl bg-[#FFFFFF] flex flex-col mb-4 md:mt-0"
+            className="w-full sm:w-72 md:w-80 h-auto bg-[#FFFFFF] flex flex-col mb-4 md:mt-0"
           >
             <div className="relative">
               <img
                 src={card.bgSrc}
                 alt="bg"
-                className="h-48 w-full rounded-t-xl"
+                className="h-48 w-full "
               />
               <img
                 src={card.imgSrc}

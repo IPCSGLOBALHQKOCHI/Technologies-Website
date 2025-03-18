@@ -37,7 +37,7 @@ const ServicesSections = () => {
   ];
 
   return (
-    <section className="px-0 sm:px-6 pb-10 sm:pb-14 lg:pb-0 w-full">
+    <section className="px-0 sm:px-6 pb-10 sm:pb-14 lg:pb-0 w-full ">
       {sections.map((section, index) => (
         <div key={index} className="relative group mb-8">
           <div className="flex flex-col lg:flex-row items-center justify-between bg-customBg px-6 py-4 rounded-md ">
