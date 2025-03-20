@@ -52,17 +52,17 @@ const ClientReviews = () => {
           achieve remarkable Success.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 mt-10 md:mt-20">
+      <div className="flex flex-wrap justify-center gap-12 mt-10 md:mt-20">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="w-full sm:w-72 md:w-80 h-auto bg-[#FFFFFF] flex flex-col mb-4 md:mt-0"
+            className="w-full sm:w-72 md:w-96 h-auto bg-[#FFFFFF] flex flex-col mb-4 md:mt-0 rounded-lg"
           >
             <div className="relative">
               <img
                 src={card.bgSrc}
                 alt="bg"
-                className="h-48 w-full "
+                className="h-48 w-full rounded-t-md "
               />
               <img
                 src={card.imgSrc}
@@ -70,10 +70,10 @@ const ClientReviews = () => {
                 className="w-20 h-20 p-2 object-cover rounded-full bg-[#0B1215] absolute -translate-x-1/2 left-12 -bottom-8"
               />
             </div>
-            <h3 className="text-left font-500 text-xl sm:text-3xl text-[#0B1215] mt-10 px-4">
+            <h3 className="text-left font-500 text-xl sm:text-3xl text-[#0B1215] mt-10 px-6">
               {card.title}
             </h3>
-            <p className="mt-1 text-base font-300 text-[#0B1215] p-3">
+            <p className="mt-1 text-base font-300 text-[#0B1215] px-6 py-4">
               {card.description}
             </p>
           </div>

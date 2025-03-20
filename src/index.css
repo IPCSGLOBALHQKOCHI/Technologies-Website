@@ -18,3 +18,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
 }
+
+@keyframes gradient-fill {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.animate-gradient-fill {
+  background-size: 0% 100%;
+  animation: gradient-fill 2s ease-in-out forwards;
+}

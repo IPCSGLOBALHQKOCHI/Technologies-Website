@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[80vh] bg-[radial-gradient(50%_30%_at_30%_50%,#010741_-30%,rgba(2,6,52,0)_100%)] backdrop-blur-5xl">
+    <footer className="pt-10 sm:pt-16 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 h-auto bg-[radial-gradient(50%_30%_at_30%_50%,#010741_-30%,rgba(2,6,52,0)_100%)] backdrop-blur-5xl">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row items-center md:justify-center text-center md:text-left mb-8 ml-4 mr-4 md:mr-36">
         <div>

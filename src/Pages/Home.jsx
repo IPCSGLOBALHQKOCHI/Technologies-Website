@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import HeroSection from "../Components/HeroSection/HeroSection";
+import HeroSection from "../Components/HeroSectionHome";
 import HeroDownSection from "../Components/HomeDownSection";
 import Mission from "../Components/Mission";
 import Vision from "../Components/Vision";
 import CaseStudySection from "../Components/CaseStudy/CaseStudySection";
 import Services from "./Services";
-import ClientSlides from "../Components/Clients/ClientSlides";
+import ClientSlides from "../Components/ClientSlides";
 import ClientReviews from "../Components/ClientReviews";
 
 export default function Home() {

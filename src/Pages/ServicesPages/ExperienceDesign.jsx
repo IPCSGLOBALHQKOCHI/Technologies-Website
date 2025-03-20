@@ -58,9 +58,7 @@ const ExperienceDesign = () => {
         </div>
       </div>
 
-      {/* Video & Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 p-2 sm:p-4 md:p-6 pt-8 sm:pt-12">
-        {/* Row 1 */}
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 p-2 sm:p-4 md:p-6 pt-8 sm:pt-12">
         <div className="col-span-1 row-span-1 rounded-2xl sm:rounded-3xl bg-black overflow-hidden h-32 sm:h-48 md:h-60 lg:h-80">
           <img
             src="your-image-url.jpg"
@@ -89,7 +87,6 @@ const ExperienceDesign = () => {
           />
         </div>
 
-        {/* Row 2 */}
         <div className="col-span-1 row-span-2 rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col">
           <video
             src={Fonts}
@@ -128,7 +125,6 @@ const ExperienceDesign = () => {
           />
         </div>
 
-        {/* Row 3 */}
         <div className="col-span-2 row-span-1 rounded-2xl sm:rounded-3xl overflow-hidden h-32 sm:h-48 md:h-60">
           <video
             src={ipcsglobal}
@@ -139,7 +135,7 @@ const ExperienceDesign = () => {
             className="w-full h-full object-cover"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

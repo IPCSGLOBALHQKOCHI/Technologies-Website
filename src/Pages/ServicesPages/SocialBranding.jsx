@@ -58,9 +58,7 @@ const SocialBranding = () => {
         </div>
       </div>
 
-      {/* Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-4 sm:p-6 pt-12 sm:pt-24">
-        {/* Grid Item 1 */}
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-4 sm:p-6 pt-12 sm:pt-24">
         <div className="col-span-1 row-span-1 overflow-hidden rounded-3xl flex flex-col">
           <video
             src={Apple}
@@ -72,7 +70,6 @@ const SocialBranding = () => {
           />
         </div>
 
-        {/* Grid Item 2 */}
         <div className="col-span-1 row-span-1 bg-gray-100 rounded-3xl h-60">
           <img
             src="your-image-url.jpg"
@@ -81,7 +78,6 @@ const SocialBranding = () => {
           />
         </div>
 
-        {/* Grid Item 3 */}
         <div className="col-span-1 row-span-1 rounded-3xl overflow-hidden h-80">
           <video
             src={coconut}
@@ -93,19 +89,16 @@ const SocialBranding = () => {
           />
         </div>
 
-        {/* Grid Item 4 */}
         <div className="col-span-1 row-span-1 bg-black rounded-3xl flex flex-col h-60 p-4">
           <h2 className="text-white font-bold">SSU Eclipse</h2>
           <p className="text-gray-400">Brand Identity</p>
         </div>
 
-        {/* Grid Item 5 */}
         <div className="col-span-1 row-span-2 bg-gray-900 rounded-3xl flex flex-col h-64 p-4">
           <h2 className="text-white font-bold">SSU Eclipse</h2>
           <p className="text-gray-400">Brand Identity</p>
         </div>
 
-        {/* Grid Item 6 */}
         <div className="col-span-1 row-span-2 overflow-hidden rounded-3xl h-[340px] sm:-mt-20">
           <video
             src={jackfruit}
@@ -117,13 +110,11 @@ const SocialBranding = () => {
           />
         </div>
 
-        {/* Grid Item 7 */}
         <div className="col-span-1 row-span-2 bg-gray-900 rounded-3xl flex flex-col h-64 p-4">
           <h2 className="text-white font-bold">SSU Eclipse</h2>
           <p className="text-gray-400">Brand Identity</p>
         </div>
 
-        {/* Grid Item 8 */}
         <div className="col-span-1 row-span-2 overflow-hidden rounded-3xl h-[340px] sm:-mt-20">
           <video
             src={mango}
@@ -134,7 +125,7 @@ const SocialBranding = () => {
             className="w-full h-full object-cover"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

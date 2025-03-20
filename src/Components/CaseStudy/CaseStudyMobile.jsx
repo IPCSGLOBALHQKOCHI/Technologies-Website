@@ -34,14 +34,14 @@ const cardData = [
 
 const CaseStudyMobile = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6 md:gap-6 px-4">
+    <div className="flex flex-wrap justify-center gap-6 md:gap-6 ">
     {cardData.map(({ id, videoSrc, title1, title2, description, locat }) => (
       <div
         key={id}
-        className="w-full md:w-[48%] lg:w-[30%] bg-[#FFFFFF]  shadow-lg hover:shadow-xl transition-shadow duration-300"
+        className="w-full md:w-[48%] lg:w-[30%] bg-[#FFFFFF] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
       >
         <video
-          className="w-full h-48 sm:h-54 object-cover"
+          className="w-full h-52 sm:h-60 object-cover rounded-t-md"
           autoPlay
           loop
           muted
