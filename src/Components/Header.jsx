@@ -64,132 +64,153 @@ const Header = () => {
               isScrolled ? "bg-white" : "bg-white"
             }`}
           ></span>
-
-          {isServicesOpen && (
-            <div
-              className="fixed top-0 left-0 w-[90%] h-[80%] my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] "
-              onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
-            >
-              <div className="container mx-auto py-8 px-8 flex gap-x-6">
-                <div className="w-1/3 flex flex-col justify-center">
-                  <h2 className="text-3xl font-400 mb-4">Our Services</h2>
-                  <h4 className="text-lg text-[#FFFFFFCC] font-200">
-                    We’ve got you all you need to turn your ideas into top-notch
-                    digital products that drive growth.
-                  </h4>
-                  <div className="group">
-                  <button className=" bg-[#003ad6] text-[#FFFFFF] pr-4 py-2 mt-7 w-44 rounded-md">
-                    <a href="/connect-us" className="flex justify-around">
-                      Connect Us
-                      <BsArrowRight className="mt-1 transition-transform duration-300 group-hover:translate-x-4" />
-                    </a>
-                  </button>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+          >
+            {isServicesOpen && (
+              <div className="fixed top-0 left-0 max-w-6xl my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] ">
+                <div className="container mx-auto px-8 flex gap-x-6">
+                  <div className="w-1/3 flex flex-col justify-center">
+                    <h2 className="text-3xl font-400 mb-4">Our Services</h2>
+                    <h4 className="text-lg text-[#FFFFFFCC] font-200">
+                      We’ve got you all you need to turn your ideas into
+                      top-notch digital products that drive growth.
+                    </h4>
+                    <div className="group">
+                      <button className=" bg-[#003ad6] text-[#FFFFFF] pr-4 py-2 mt-7 w-44 rounded-md">
+                        <a href="/connect-us" className="flex justify-around">
+                          Connect Us
+                          <BsArrowRight className="mt-1 transition-transform duration-300 group-hover:translate-x-4" />
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-16 text-[#FFFFFF]">
+                    {[
+                      {
+                        heading: "Branding",
+                        link: "/branding",
+                        subItems: [
+                          { name: "Brand Consulting", link: "/branding" },
+                          { name: "Brand Identity", link: "/branding" },
+                          { name: "Logo Design", link: "/branding" },
+                          { name: "Brand Collateral", link: "/branding" },
+                          { name: "2D/3D Visualization", link: "/branding" },
+                          { name: "Product Design", link: "/branding" },
+                        ],
+                      },
+                      {
+                        heading: "Technology",
+                        link: "/technology",
+                        subItems: [
+                          { name: "Web Development", link: "/technology" },
+                          {
+                            name: "Mobile App Development",
+                            link: "/technology",
+                          },
+                          { name: "WebApp Developmet", link: "/technology" },
+                          { name: "E-Commerce", link: "/technology" },
+                          {
+                            name: "Coustom Software Development",
+                            link: "/technology",
+                          },
+                        ],
+                      },
+                      {
+                        heading: "Digital Marketing",
+                        link: "/digital-marketing",
+                        subItems: [
+                          {
+                            name: "Social Media Management",
+                            link: "/digital-marketing",
+                          },
+                          {
+                            name: "Performance Marketing",
+                            link: "/digital-marketing",
+                          },
+                          { name: "Meta Ads", link: "/digital-marketing" },
+                          { name: "SEO Strategy", link: "/digital-marketing" },
+                          {
+                            name: "Linkedin Campaigns",
+                            link: "/digital-marketing",
+                          },
+                          { name: "Google Ads", link: "/digital-marketing" },
+                        ],
+                      },
+                      {
+                        heading: "Social Branding",
+                        link: "/social-branding",
+                        subItems: [
+                          {
+                            name: "Content Marketing",
+                            link: "/social-branding",
+                          },
+                          {
+                            name: "Organic Creatives",
+                            link: "/social-branding",
+                          },
+                          {
+                            name: "Community Building",
+                            link: "/social-branding",
+                          },
+                          {
+                            name: "Social Media Management",
+                            link: "/social-branding",
+                          },
+                        ],
+                      },
+                      {
+                        heading: "Experience Design",
+                        link: "/experience-design",
+                        subItems: [
+                          {
+                            name: "Website Design",
+                            link: "/experience-design",
+                          },
+                          {
+                            name: "Mobile App Design",
+                            link: "/experience-design",
+                          },
+                          {
+                            name: "Web App Design",
+                            link: "/experience-design",
+                          },
+                          {
+                            name: "Software Design",
+                            link: "/experience-design",
+                          },
+                        ],
+                      },
+                    ].map((category, index) => (
+                      <div key={index} className="space-y-4">
+                        <h3 className="text-xl font-400 tracking-wide flex items-center group  transition-colors duration-300">
+                          <a href={category.link}>{category.heading}</a>
+                          <span className="ml-2">
+                            <BsArrowRight />
+                          </span>
+                        </h3>
+                        <ul className="space-y-2">
+                          {category.subItems.map((service, i) => (
+                            <li
+                              key={i}
+                              className="text-[#FFFFFFCC] font-100 text-lg tracking-wide relative hover:no-underline"
+                            >
+                              <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                                <a href={service.link}>{service.name}</a>
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-20 text-[#FFFFFF]">
-                  {[
-                    {
-                      heading: "Branding",
-                      subItems: [
-                        { name: "Brand Consulting", link: "/branding" },
-                        { name: "Brand Identity", link: "/branding" },
-                        { name: "Logo Design", link: "/branding" },
-                        { name: "Brand Collateral", link: "/branding" },
-                        { name: "2D/3D Visualization", link: "/branding" },
-                        { name: "Product Design", link: "/branding" },
-                      ],
-                    },
-                    {
-                      heading: "Digital Marketing",
-                      subItems: [
-                        {
-                          name: "Social Media Management",
-                          link: "/digital-marketing",
-                        },
-                        {
-                          name: "Performance Marketing",
-                          link: "/digital-marketing",
-                        },
-                        { name: "Meta Ads", link: "/digital-marketing" },
-                        { name: "SEO Strategy", link: "/digital-marketing" },
-                        {
-                          name: "Linkedin Campaigns",
-                          link: "/digital-marketing",
-                        },
-                        { name: "Google Ads", link: "/digital-marketing" },
-                      ],
-                    },
-                    {
-                      heading: "Social Branding",
-                      subItems: [
-                        { name: "Content Marketing", link: "/social-branding" },
-                        { name: "Organic Creatives", link: "/social-branding" },
-                        {
-                          name: "Community Building",
-                          link: "/social-branding",
-                        },
-                        {
-                          name: "Social Media Management",
-                          link: "/social-branding",
-                        },
-                      ],
-                    },
-                    {
-                      heading: "Technology",
-                      subItems: [
-                        { name: "Web Development", link: "/technology" },
-                        { name: "Mobile App Development", link: "/technology" },
-                        { name: "E-Commerce", link: "/technology" },
-                      ],
-                    },
-                    {
-                      heading: "Experience Design",
-                      subItems: [
-                        { name: "Website Design", link: "/experience-design" },
-                        {
-                          name: "Mobile App Design",
-                          link: "/experience-design",
-                        },
-                        { name: "Web App Design", link: "/experience-design" },
-                        { name: "Software Design", link: "/experience-design" },
-                      ],
-                    },
-                  ].map((category, index) => (
-                    <div key={index} className="space-y-4">
-                      <h3 className="text-xl font-400 tracking-wide">
-                        {category.heading}
-                      </h3>
-                      <ul className="space-y-2">
-                        {category.subItems.map((service, i) => (
-                          <li
-                            key={i}
-                            className="text-[#FFFFFFCC] font-100 text-lg tracking-wide relative hover:no-underline"
-                          >
-                            <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
-                              <a href={service.link}>{service.name}</a>
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </li>
-        {/* <li className="relative group transition-colors duration-300 list-none">
-          <a href="" className="cursor-pointer">
-            BLOG
-          </a>
-          <span
-            className={`absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
-              isScrolled ? "bg-white" : "bg-white"
-            }`}
-          ></span>
-        </li> */}
-
         <a
           href="/connect-us"
           className={`cursor-pointer px-5 py-2 -mt-1 transition-colors font-400 text-sm duration-300 rounded-md ${
@@ -230,54 +251,69 @@ const Header = () => {
 
         <ul className="mt-16 space-y-6 text-lg px-6 bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px]">
           <li>
-            <a href="/" className="block py-2">
+            <a href="/" className="block py-2 text-2xl font-400">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#casestudy" className="block py-2">
+            <a href="#casestudy" className="block py-2 text-2xl font-400 ">
               CASE STUDY
             </a>
           </li>
           <li className="relative">
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className="w-full text-left"
+              className="w-full text-left text-2xl font-400"
             >
               SERVICES
             </button>
             {isServicesOpen && (
               <ul className="ml-4 mt-2 space-y-3 text-base tracking-[0.60px]">
-                <li>
-                  <a href="/branding" className="block py-1">
+                <li className="flex">
+                  <a href="/branding" className="block py-1 text-xl">
                     Branding
                   </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
                 </li>
-                <li>
-                  <a href="/technology" className="block py-1">
+                <li className="flex">
+                  <a href="/technology" className="block py-1 text-xl">
                     Technology
                   </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
                 </li>
-                <li>
-                  <a href="/digital-marketing" className="block py-1">
+                <li className="flex">
+                  <a href="/digital-marketing" className="block py-1 text-xl">
                     Digital Marketing
                   </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
                 </li>
-                <li>
-                  <a href="/social-branding" className="block py-1">
+                <li className="flex">
+                  <a href="/social-branding" className="block py-1 text-xl">
                     Social Branding
                   </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
                 </li>
-                <li>
-                  <a href="/experience-design" className="block py-1">
+                <li className="flex">
+                  <a href="/experience-design" className="block py-1 text-xl">
                     Experience Design
                   </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <a href="" className="block py-2">
+            <a href="#" className="block py-2 text-2xl font-400">
               BLOG
             </a>
           </li>

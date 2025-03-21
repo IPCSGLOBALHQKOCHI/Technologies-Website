@@ -27,9 +27,9 @@ import aws from "../../assets/images/tools/technology/cloud/aws_e608d4dddb.webp"
 import Azure from "../../assets/images/tools/technology/cloud/Azure_c728911023.webp";
 import Google from "../../assets/images/tools/technology/cloud/GCP_fed2b546e1.webp";
 //Mobile
-import Android from "../../assets/images/tools/technology/mobile/Andriod_93da3c8b9c.webp";
+import Android from "../../assets/images/tools/technology/mobile/android.png";
 import Flutter from "../../assets/images/tools/technology/mobile/Flutter_0fd1e2bf71.webp";
-import ios from "../../assets/images/tools/technology/mobile/i_OS_05e9bfa42d.webp";
+import ios from "../../assets/images/tools/technology/mobile/ioslogo.png";
 import native from "../../assets/images/tools/technology/mobile/React_Native_0e5002dfca.webp";
 //Database
 import Mongodb from "../../assets/images/tools/technology/database/Mongo_DB_a0c4333c8d.webp";
@@ -39,7 +39,7 @@ import postgre from "../../assets/images/tools/technology/database/postgre_SQL_6
 import Postman from "../../assets/images/tools/technology/testing/postman_317fcd96f1.webp";
 import selenium from "../../assets/images/tools/technology/testing/Selenium_0a27b01dda.webp";
 import katalon from "../../assets/images/tools/technology/testing/katalon_91ab8f3abb.webp";
-
+import cypress from "../../assets/images/tools/technology/testing/cypress-1.svg";
 
 function StackAndTools() {
   const [activeTab, setActiveTab] = useState(0);
@@ -48,9 +48,9 @@ function StackAndTools() {
     {
       title: "Frontend",
       content: [
-        { image: bootstrap, name: "Bootstrap" },
-        { image: css, name: "CSS" },
         { image: html, name: "HTML" },
+        { image: css, name: "CSS" },
+        { image: bootstrap, name: "Bootstrap" },
         { image: js, name: "Javascript" },
         { image: ts, name: "Typescript" },
         { image: next, name: "Next.js" },
@@ -65,48 +65,49 @@ function StackAndTools() {
     {
       title: "Backend",
       content: [
-        { image: django,name: "Django"},
-        {image: express, name: "Express"},
-        {image: fasapi,name: "fastAPI"},
-        {image: flask,name: "Flask"},
-        {image: nest,name: "Nest.js"},
-        { image: node,name: "Node.js"},
-        { image: python, name: "Python"},
-        {image: wordpress,name: "WordPress"},
-        {image: drupal,name: "Drupal"},
+        { image: django, name: "Django" },
+        { image: express, name: "Express" },
+        { image: fasapi, name: "fastAPI" },
+        { image: flask, name: "Flask" },
+        { image: nest, name: "Nest.js" },
+        { image: node, name: "Node.js" },
+        { image: python, name: "Python" },
+        { image: wordpress, name: "WordPress" },
+        { image: drupal, name: "Drupal" },
       ],
     },
     {
       title: "Mobile",
       content: [
-        {image: Android,name: "Android" },
-        { image: Flutter,name: "Flutter" },
-          { image: ios, name: "IOS"},
-          {image: native, name: "React Native" },
+        { image: Android, name: "Android" },
+        { image: Flutter, name: "Flutter" },
+        { image: ios, name: "IOS" },
+        { image: native, name: "React Native" },
       ],
     },
     {
       title: "Cloud",
       content: [
-        {image: aws,name: "AWS"},
-        {image: Azure,name: "Azure"}, 
-            {image: Google,name: "GCP"},
+        { image: aws, name: "AWS" },
+        { image: Azure, name: "Azure" },
+        { image: Google, name: "GCP" },
       ],
     },
     {
-      title: "DB",
+      title: "Database",
       content: [
-        { image: Mongodb,name: "MongoDB"},
-        { image: sql,name: "MySQL"},
-        { image: postgre,name: "PostgreSQL"},
+        { image: Mongodb, name: "MongoDB" },
+        { image: sql, name: "MySQL" },
+        { image: postgre, name: "PostgreSQL" },
       ],
     },
     {
       title: "Testing",
       content: [
-        { image: Postman,name: "Postman"},
-        { image: selenium,name: "Selenium"},
-        { image: katalon,name: "Katalon"},
+        { image: Postman, name: "Postman" },
+        { image: selenium, name: "Selenium" },
+        { image: katalon, name: "Katalon" },
+        { image: cypress, name: "Cypress " },
       ],
     },
   ];
