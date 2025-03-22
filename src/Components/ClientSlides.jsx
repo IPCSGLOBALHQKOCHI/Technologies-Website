@@ -33,13 +33,12 @@ import glazeBL from "../../src/assets/images/blackLogos/glaze logo.png";
 // import bhanooBL from "../../src/assets/images/blackLogos/LogoImage-bhanoo.png";
 import makayiramBL from "../../src/assets/images/blackLogos/mak lolgo 5 (1).png";
 import kitexBL from "../../src/assets/images/blackLogos/Kitex BW 1 (3).png";
-import bmgBL from "../assets/images/blackLogos/best-money logo.png";
+// import bmgBL from "../assets/images/blackLogos/best-money logo.png";
 import BsidesBL from "../assets/images/blackLogos/besides-logo.png";
 // import skypower from "../assets/images/blackLogos/LOGO-HOME-PAGE 1.png";
 // import wagamon from "../assets/images/blackLogos/VAGAMON SAFARI FINAL-06 1.png";
-// import fernwoods from "../assets/images/blackLogos/PARAYS FINAL FILES_OCTOBER(ALL LOGOS)-04 1.png";
-import burgerin from "../assets/images/blackLogos/Burger-inn-logo-1 1.png";
-
+import fernwoods from "../assets/images/blackLogos/PARAYS FINAL FILES_OCTOBER(ALL LOGOS)-04 1.png";
+import burgerin from "../assets/images/blackLogos/Burger-inn-logo-1 1 (1).png";
 
 function ClientSlides() {
   const white = [
@@ -58,30 +57,30 @@ function ClientSlides() {
     besideswh,
     wagamonwh,
     fernwoodwh,
-    skypowerwh
+    skypowerwh,
   ];
 
   const Black = [
     easternBL,
-    kannanDevanBL,
-    doubleHorseBL,
-    bmgBL,
-    keltronBL,
+    milmaBL,
     ipcsBL,
+    glazeBL,
     godrejBL,
     marriotBL,
     BsidesBL,
-    milmaBL,
+    kitexBL,
+    doubleHorseBL,
     ebiBL,
+    kannanDevanBL,
     tripleBL,
-    glazeBL,
     // bhanooBL,
     makayiramBL,
-    kitexBL,
+    // bmgBL,
+    keltronBL,
     // skypower,
     // wagamon,
-    // fernwoods,
-    burgerin
+    fernwoods,
+    burgerin,
   ];
 
   return (
@@ -89,17 +88,22 @@ function ClientSlides() {
       id="clients"
       className="bg-customBg md:bg-[#FFFFFF] flex flex-col items-center justify-center mt-0 leading-none py-16"
     >
-      <h2 className="text-[45px] md:text-[60px] font-300 md:font-400 text-[#FFFFFF] md:text-customBg text-center mb">
-        Partnering with brands you trust.
-      </h2>
-      <div className="hidden md:block w-full mt-16 px-16">
+      <div className="text-[32px] sm:text-[45px] md:text-[60px] lg:text-[72px] xl:text-[80px] text-left font-light text-white md:text-customBg mb-6 lg:mb-8 px-10">
+        <h2>
+          Partnering with
+          <h2 className="ml-0 sm:ml-16 md:ml-28 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mt-2">
+            brands you trust.
+          </h2>
+        </h2>
+      </div>
+      <div className="hidden md:block w-full mt-16 px-24">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 place-items-center -space-x-12">
           {Black.map((src, i) => (
             <div key={i} className="flex justify-center p-2 mb-3">
               <img
                 src={src}
                 alt={`Logo ${i}`}
-                className="object-contain h-32 w-28 transition-transform duration-300 ease-in-out hover:scale-110"
+                className="object-contain h-36 w-36 transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
           ))}
@@ -116,15 +120,12 @@ function ClientSlides() {
           </div>
         ))}
       </div>
-        <button className="bg-[#003ad6] text-[#FFFFFF] px-8 py-4 w-72 rounded-md group mt-4">
-                <a
-                  href="#"
-                  className="text-2xl font-400 inline-flex items-center"
-                >
-                  View more
-                  <BsArrowRight className="ml-5 mt-1 transition-transform duration-300 group-hover:translate-x-3" />
-                </a>
-              </button>
+      <button className="md:bg-[#000000] md:text-[#ffffff] bg-[#ffffff] text-[#000000] px-6 py-3 w-52 rounded-md group mt-8">
+        <a href="#" className="text-xl font-400 inline-flex items-center">
+          Learn more
+          <BsArrowRight className="ml-5 mt-1 transition-transform duration-300 group-hover:translate-x-3" />
+        </a>
+      </button>
     </div>
   );
 }

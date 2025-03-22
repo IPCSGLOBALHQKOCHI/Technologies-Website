@@ -1,10 +1,12 @@
-import BhanooDesktop from "../../../src/assets/videos/Bento/Technology/Bhanoo Web.mp4";
-import BhanooMob from "../../../src/assets/videos/Bento/Technology/Bhanoo Mobile.mp4";
-import DMTools from "../../../src/assets/videos/Bento/Technology/DM Tools.mp4";
+// import BhanooDesktop from "../../../src/assets/videos/Bento/Technology/Bhanoo Web.mp4";
+// import BhanooMob from "../../../src/assets/videos/Bento/Technology/Bhanoo Mobile.mp4";
+// import DMTools from "../../../src/assets/videos/Bento/Technology/DM Tools.mp4";
 import HeroSection from "../../Components/TechnologyPageComponents/HeroSection";
 import AboutTechnology from "../../Components/TechnologyPageComponents/AboutTechnology";
 import ServicesTechno from "../../Components/TechnologyPageComponents/ServicesTechno";
 import StackAndTools from "../../Components/TechnologyPageComponents/StackAndTools";
+import OurProcess from "../../Components/TechnologyPageComponents/OurProcess";
+import FAQ from "../../Components/TechnologyPageComponents/FAQ";
 
 const Technology = () => {
   return (
@@ -13,6 +15,8 @@ const Technology = () => {
       <AboutTechnology/>
       <ServicesTechno/>
       <StackAndTools/>
+      <OurProcess/>
+      <FAQ/>
     {/* <div className="flex flex-col p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20"> */}
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 p-4 sm:p-6 pt-12 sm:pt-24">
         <div className="col-span-1 row-span-2 overflow-hidden rounded-3xl flex flex-col h-[440px]">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 //Frontend
 import angular from "../../assets/images/tools/technology/frontend/angularlogo.png";
 import bootstrap from "../../assets/images/tools/technology/frontend/Bootstrap_e32f140742.webp";
@@ -35,6 +36,7 @@ import native from "../../assets/images/tools/technology/mobile/React_Native_0e5
 import Mongodb from "../../assets/images/tools/technology/database/Mongo_DB_a0c4333c8d.webp";
 import sql from "../../assets/images/tools/technology/database/My_SQL_dd77c61a24.webp";
 import postgre from "../../assets/images/tools/technology/database/postgre_SQL_6cd865db16.webp";
+import strapi from "../../assets/images/tools/technology/database/strapi-icon-logo-png.png";
 //Testing
 import Postman from "../../assets/images/tools/technology/testing/postman_317fcd96f1.webp";
 import selenium from "../../assets/images/tools/technology/testing/Selenium_0a27b01dda.webp";
@@ -43,7 +45,6 @@ import cypress from "../../assets/images/tools/technology/testing/cypress-1.svg"
 
 function StackAndTools() {
   const [activeTab, setActiveTab] = useState(0);
-
   const tabs = [
     {
       title: "Frontend",
@@ -99,6 +100,7 @@ function StackAndTools() {
         { image: Mongodb, name: "MongoDB" },
         { image: sql, name: "MySQL" },
         { image: postgre, name: "PostgreSQL" },
+        { image: strapi, name: "Strapi" },
       ],
     },
     {
@@ -111,14 +113,54 @@ function StackAndTools() {
       ],
     },
   ];
-
+  const toggleDropdown = (index) => {
+    if (activeTab === index) {
+      setActiveTab(null);
+    } else {
+      setActiveTab(index);
+    }
+  };
   return (
-    <div className="min-h-screen p-20 bg-[#ffffff]">
-      <h1 className="text-[#000000] text-center font-500 text-5xl leading-tight ">
+    <div className="h-auto px-6 py-16 md:p-20 bg-[#ffffff]">
+      <h1 className="text-[#000000] text-left md:text-center font-500 text-2xl md:text-5xl leading-tight ">
         Advancing Development Using <br />
         Strong Technology Stack
       </h1>
-      <div className="flex justify-around">
+      {/* Dropdown for mobile devices */}
+      <div className="block md:hidden mt-10 p-3">
+        {tabs.map((tab, index) => (
+          <div key={index}>
+            {/* Button for each tab, toggling the dropdown */}
+            <button
+              onClick={() => toggleDropdown(index)}
+              className="w-full flex items-center justify-between py-3 px-4 text-xl font-semibold bg-gray-200 rounded-md mt-4"
+            >
+              {tab.title}
+              <IoIosArrowDown className="text-lg" />
+            </button>
+            {/* Show the content only if the tab is active */}
+            {activeTab === index && (
+              <div className="mt-4 grid grid-cols-2 ">
+                {tab.content.map((item, idx) => (
+                  <div key={idx} className=" items-center text-center py-4">
+                    <div className="flex justify-center items-center">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-20 h-20 object-cover"
+                      />
+                    </div>
+                    <p className="text-lg">{item.name}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Tab buttons for larger screens */}
+      <div className="hidden md:flex justify-around mt-4">
         {tabs.map((tab, index) => (
           <h2
             key={index}
@@ -133,9 +175,11 @@ function StackAndTools() {
           </h2>
         ))}
       </div>
-      <div className="mt-8 mx-10">
+
+      {/* Content for larger screens */}
+      <div className="mt-8 mx-10 hidden md:block">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-          {tabs[activeTab].content.map((item, idx) => (
+          {tabs[activeTab]?.content.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center text-center">
               <div className="w-40 h-40 flex justify-center items-center">
                 <img

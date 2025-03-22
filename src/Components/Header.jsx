@@ -38,7 +38,7 @@ const Header = () => {
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
         {[
-          { name: "ABOUT", link: "" },
+          { name: "ABOUT", link: "/" },
           { name: "CASE STUDY", link: "#casestudy" },
         ].map((item, index) => (
           <li
@@ -64,13 +64,11 @@ const Header = () => {
               isScrolled ? "bg-white" : "bg-white"
             }`}
           ></span>
-          <div
-            className="relative"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
-          >
             {isServicesOpen && (
-              <div className="fixed top-0 left-0 max-w-6xl my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] ">
+              <div className="fixed top-0 left-0 2xl:left-1/4 max-w-6xl my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] "
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+              >
                 <div className="container mx-auto px-8 flex gap-x-6">
                   <div className="w-1/3 flex flex-col justify-center">
                     <h2 className="text-3xl font-400 mb-4">Our Services</h2>
@@ -209,7 +207,6 @@ const Header = () => {
                 </div>
               </div>
             )}
-          </div>
         </li>
         <a
           href="/connect-us"
