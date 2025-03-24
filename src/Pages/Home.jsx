@@ -13,9 +13,8 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollingMode, setScrollingMode] = useState("controlled");
   const isScrolling = useRef(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Detect mobile on initial render
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
 
-  // Update isMobile state on window resize
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 850);
@@ -26,18 +25,16 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (isMobile) return; // Disable scroll effect for mobile
+    if (isMobile) return; 
 
     const caseStudySection = sections.current[4];
 
     const checkForScrollMode = () => {
       const rect = caseStudySection.getBoundingClientRect();
       
-      // Enable normal scroll when reaching CaseStudySection
       if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
         setScrollingMode("normal");
       } 
-      // Switch back to controlled scrolling when going back up
       else if (window.scrollY < sections.current[3].offsetTop) {
         setScrollingMode("controlled");
       }
@@ -48,7 +45,7 @@ export default function Home() {
   }, [isMobile]);
 
   useEffect(() => {
-    if (isMobile) return; // Disable scroll effect for mobile
+    if (isMobile) return; 
 
     const handleScroll = (event) => {
       if (scrollingMode === "normal") return;
@@ -75,7 +72,7 @@ export default function Home() {
   }, [currentIndex, scrollingMode, isMobile]);
 
   useEffect(() => {
-    if (isMobile) return; // Disable scroll effect for mobile
+    if (isMobile) return; 
 
     if (sections.current[currentIndex]) {
       sections.current[currentIndex].scrollIntoView({

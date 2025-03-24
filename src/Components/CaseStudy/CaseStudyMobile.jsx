@@ -1,70 +1,49 @@
-import React,{useRef} from "react";
-import makVideo from "../../assets/videos/Bento/Experience design/Makayiram Web.mp4";
-import bhanooVideo from "../../assets/videos/Bento/Technology/Bhanoo Web.mp4";
-import skypower from "../../assets/videos/Bento/Branding/SISU Logo.mp4"
-import bhanoothumb from "../../assets/images/bhanoothumb.png"
-import sisuthumb from "../../assets/images/sisuthumb.png"
-import makthumb from "../../assets/images/makayriamthumb.png"
-
-const cardData = [
-  {
-    id: 1,
-    videoSrc: makVideo,
-    title1: "Makayiram Retreat",
-    title2: "Hospitality",
-    thumbnail:makthumb,
-    description:
-      "We revamped the resort's website based on a wild and luxury concept. The design reflects the environment and enhances the customer experience on the property.",
-  },
-  {
-    id: 2,
-    videoSrc: bhanooVideo,
-    title1: "Bhanoo Hospital & Eye Care",
-    title2: "Health Care",
-    thumbnail:bhanoothumb,
-    description:
-      "We have completed the rebranding process for the entire website, making it more meaningful, functional, and user-friendly. It now enables users to act faster and connect more easily with departments and doctors.",
-  },
-  {
-    id: 3,
-    videoSrc: skypower,
-    title1: "Sisu Eclipse",
-    title2: "Art Dealer",
-    thumbnail:sisuthumb,
-    description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
-  },
-];
+import React, { useRef } from "react";
+import { cardData } from "../../constants/Constants";
+import { BsArrowRight } from "react-icons/bs";
 
 const CaseStudyMobile = () => {
   const videoRefs = useRef([]);
   return (
     <div className="flex flex-wrap justify-center gap-6 md:gap-6">
-      {cardData.map(({ id, videoSrc, title1, title2, description,thumbnail }, index) => (
-        <div
-          key={id}
-          className="w-full md:w-[48%] lg:w-[30%] bg-[#FFFFFF] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-        >
-          <video
-            ref={(el) => (videoRefs.current[index] = el)}
-            className="w-full h-52 sm:h-60 object-cover rounded-t-md"
-            preload="auto"
-            playsInline
-            autoPlay={false}
-            muted
-            poster={thumbnail}
-            onMouseEnter={(e) => e.target.play()} 
-            onMouseLeave={(e) => e.target.pause()} 
+      {cardData.map(
+        ({ id, videoSrc, title1, title2, description, thumbnail }, index) => (
+          <div
+            key={id}
+            className="w-full md:w-[48%] lg:w-[30%]  transition-shadow duration-300"
           >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-          <div className="p-4">
-            <h1 className="text-[#121212] text-xl font-bold">{title1}</h1>
-            <h1 className="text-[#121212] font-semibold text-lg mt-1">{title2}</h1>
-            <p className="text-[#121212] mt-2 text-sm">{description}</p>
+            <video
+              ref={(el) => (videoRefs.current[index] = el)}
+              className="sm:w-80 w-72 h-72 sm:h-80 object-cover"
+              preload="auto"
+              playsInline
+              autoPlay={false}
+              muted
+              poster={thumbnail}
+              onMouseEnter={(e) => e.target.play()}
+              onMouseLeave={(e) => e.target.pause()}
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </video>
+            <div className="py-4 pr-8">
+              <h1 className="text-[#ffffff] text-2xl font-400">{title1}</h1>
+              <h1 className="text-[#cccccc] font-300 text-xl mt-1">{title2}</h1>
+              <p className="text-[#bbbbbbcc] mt-2 font-200 text-base">
+                {description}
+              </p>
+              <div className=" group">
+                <a
+                  href=""
+                  className="flex items-center space-x-4 text-[#ffffff] mt-4 transition-all duration-300 group-hover:text-[#003ad6]"
+                >
+                  <span className="text-xl">Learn More</span>
+                  <BsArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-4" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      )}
     </div>
   );
 };

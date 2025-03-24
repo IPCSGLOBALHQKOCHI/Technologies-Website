@@ -71,9 +71,9 @@ function OurProcess() {
             .map((step) => (
               <div
                 key={step.id}
-                className="relative bg-[linear-gradient(81deg,#132025_0.63%,rgba(9,29,127,0.60)_39.18%,#4B5A7B_97.78%)] backdrop-blur-[1px] rounded-lg mb-48 p-6"
+                className="relative bg-[linear-gradient(81deg,#132025_0.63%,rgba(9,29,127,0.60)_39.18%,#4B5A7B_97.78%)] backdrop-blur-[1px] rounded-lg mb-52 p-6"
               >
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4">
                   <div className="flex flex-col items-center">
                     <span className="text-6xl font-400 text-[#D6DBFF] mb-14">
                       {String(step.id).padStart(2, "0")}
@@ -89,7 +89,7 @@ function OurProcess() {
                   </div>
                 </div>
                 <button
-                  className="absolute bottom-4 left-4 ml-6 text-[#D6DBFF] transition-transform duration-300"
+                  className="absolute bottom-4 left-4  text-[#D6DBFF] transition-transform duration-300"
                   onClick={() => toggleDropdown(step.id)}
                 >
                   {openDropdown === step.id ? (

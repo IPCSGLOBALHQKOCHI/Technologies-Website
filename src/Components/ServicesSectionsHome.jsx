@@ -1,44 +1,11 @@
 import React from "react";
 // import { HiMiniArrowUpRight } from "react-icons/hi2";
 import { BsArrowRight } from "react-icons/bs";
-
+import { servicesSections } from "../constants/Constants";
 const ServicesSections = () => {
-  const sections = [
-    {
-      id: "01",
-      title: "Branding",
-      desc: "From defining identity and values to creating premium logos, cohesive materials, immersive visuals, and functional product designs that captivate and leave a lasting impression.",
-      href: "/branding",
-    },
-    {
-      id: "02",
-      title: "Technology",
-      desc: "Building dynamic, high-performance websites, designing scalable mobile apps, and delivering complete e-commerce solutions to drive business growth and enhance user experiences.",
-      href: "/technology",
-    },
-    {
-      id: "03",
-      title: "Digital Marketing",
-      desc: "Creating powerful social strategies, executing data-driven campaigns, and enhancing SEO to boost visibility and drive measurable growth across all platforms.",
-      href: "/digital-marketing",
-    },
-    {
-      id: "04",
-      title: "Social Branding",
-      desc: "Creating valuable, audience-focused content, producing innovative visuals, and building communities that engage and foster brand loyalty for lasting connections and impact.",
-      href: "/social-branding",
-    },
-    {
-      id: "05",
-      title: "Experience Design",
-      desc: "Designing intuitive UI/UX, crafting visually appealing websites, and ensuring seamless mobile experiences for engaging, user-friendly interactions across all platforms.",
-      href: "/experience-design",
-    },
-  ];
-
   return (
     <section className="px-0 sm:px-6 pb-10 sm:pb-14 lg:pb-0 w-full ">
-      {sections.map((section, index) => (
+      {servicesSections.map((section, index) => (
         <div key={index} className="relative group mb-8">
           <div className="flex flex-col lg:flex-row items-center justify-between bg-customBg px-6 py-4 rounded-md ">
             {index % 2 === 0 ? (

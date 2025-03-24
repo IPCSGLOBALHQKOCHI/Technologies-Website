@@ -1,3 +1,4 @@
+//our process
 export const steps = [
   {
     id: 1,
@@ -9,7 +10,7 @@ export const steps = [
   },
   {
     id: 2,
-    title: "Planning & Strategy",
+    title: "Planning ",
     description: "Creating a roadmap with strategies and defined milestones.",
     dropdown:
       "Creating a detailed roadmap with strategic plans and milestones to guide project execution, ensuring timely delivery and success.",
@@ -59,4 +60,267 @@ export const steps = [
       "Providing continuous support to address technical issues, ensure system stability, and implement updates for optimal performance post-launch.",
     side: "left",
   },
+];
+
+//case study
+import makVideo from "../assets/videos/Bento/Experience design/Makayiram Web.mp4";
+import bhanooVideo from "../assets/videos/Bento/Technology/Bhanoo Web.mp4";
+import skypower from "../assets/videos/Bento/Branding/SISU Logo.mp4";
+import bhanoothumb from "../assets/images/bhanoothumb.png";
+import sisuthumb from "../assets/images/sisuthumb.png";
+import makthumb from "../assets/images/makayriamthumb.png";
+export const cardData = [
+  {
+    id: 1,
+    videoSrc: makVideo,
+    title1: "Makayiram Retreat",
+    title2: "Hospitality",
+    thumbnail: makthumb,
+    description:
+      "We revamped the resort's website based on a wild and luxury concept. The design reflects the environment, enhances the customer experience on the property, and captures the essence of luxury and adventure.",
+  },
+  {
+    id: 2,
+    videoSrc: bhanooVideo,
+    title1: "Bhanoo Hospital & Eye Care",
+    title2: "Health Care",
+    thumbnail: bhanoothumb,
+    description:
+      "We have completed the rebranding process for the entire website, making it more meaningful, functional, and user-friendly. It now enables users to act faster and connect more easily with departments and doctors.",
+  },
+  {
+    id: 3,
+    videoSrc: skypower,
+    title1: "Sisu Eclipse",
+    title2: "Art Dealer",
+    thumbnail: sisuthumb,
+    description:
+      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+  },
+];
+
+//faq technologies
+export const servicesfaq = [
+  {
+    title: "How long does it take to develop a custom software solution?",
+    details:
+      "The development time depends on the complexity of the project, features required, and the technologies used. Typically, it can take anywhere from a few weeks to several months.",
+  },
+  {
+    title: "How much does it cost to develop a website or web application?",
+    details:
+      "The cost varies based on the complexity, design, features, and technologies used. Simple websites may cost less, while complex web apps or e-commerce solutions with advanced functionalities can require a larger budget. It’s best to get a detailed estimate after discussing the requirements.",
+  },
+  {
+    title:
+      "What is the difference between WordPress websites and custom React websites?",
+    details:
+      "Template-based WordPress websites are built using pre-designed themes, which can be customized but are limited in flexibility and scalability. They are quicker and more affordable to develop. In contrast, custom React websites are built from scratch with React.js, offering a higher degree of customization, faster performance, and scalability, but requiring more time and expertise to develop.",
+  },
+  {
+    title:
+      "What is the advantage of using a template design v/s a custom design for my website?",
+    details:
+      "Template designs are cost-effective, quicker to implement, and require less design effort, but they lack uniqueness and customization. Custom designs are tailored to your brand’s identity, provide a unique user experience, and can be built to meet specific functionality and design needs, offering greater flexibility and long-term scalability.",
+  },
+  {
+    title:
+      "What is the difference between a conventional app and a hybrid app?",
+    details:
+      "Conventional language-based apps are developed using native programming languages like Swift (for iOS) or Kotlin (for Android), ensuring optimal performance and full access to device features. Hybrid apps, on the other hand, are built using web technologies like HTML, CSS, and JavaScript, allowing them to work across multiple platforms (iOS, Android) with a single codebase, but often with slightly reduced performance and access to device features compared to native apps.",
+  },
+  {
+    title: "What is the difference between Shared Hosting and VPS Hosting?",
+    details:
+      "Shared Hosting is budget-friendly and ideal for small websites, offering limited resources and control. VPS Hosting provides dedicated resources, better performance, and more control, making it perfect for growing websites, but comes at a higher cost and requires more management.",
+  },
+];
+
+//services technology page
+export const servicesTechno = [
+  [
+    {
+      title: "Web Development",
+      description: "Building dynamic, high-performance websites.",
+      details:
+        "We specialize in creating responsive, high-performance websites using modern technologies. Our services cover front-end and back-end development, ensuring seamless user experiences, fast load times, and scalable solutions tailored to meet your business’s unique needs.",
+    },
+    {
+      title: "Mobile App Development",
+      description: "Designing scalable and user-friendly apps.",
+      details:
+        "We design and develop user-friendly, scalable mobile applications for both iOS and Android platforms. Our solutions prioritize seamless user experience, intuitive interfaces, and high performance, helping your business engage users effectively while providing innovative and reliable mobile solutions.",
+    },
+    {
+      title: "WebApp Development",
+      description: "End-to-end delivery of high-end web applications.",
+      details:
+        "We build robust, scalable, and feature-rich web applications tailored to your business needs. Our web apps are designed for seamless performance across devices, providing users with a smooth experience while ensuring security, flexibility, and long-term scalability.",
+    },
+  ],
+  [
+    {
+      title: "E-Commerce",
+      description: "Delivering complete e-commerce solutions for businesses.",
+      details:
+        "We create customized e-commerce solutions that drive business growth. Our services include building secure, user-friendly online stores with seamless payment integration, product management, and inventory control. We focus on enhancing the shopping experience to increase conversions and customer loyalty.",
+    },
+    {
+      title: "Custom Software Development",
+      description: "Build required custom software like CRM, HRMS, ERP.",
+      details:
+        "We design and develop tailored software solutions to meet your business's unique requirements. From CRM systems to enterprise applications, our custom software enhances efficiency, automates processes, and provides scalability to help your business grow and adapt seamlessly.",
+    },
+  ],
+];
+
+//client reviews
+import besides from "../assets/images/besides-logo.png";
+import bmg from "../assets/images/best-money logo.jpg";
+import sisiulogo from "../assets/images/sisiulogo.png";
+export const cardDataReviews = [
+  {
+    imgSrc: besides,
+    title: "Bsides",
+    category: "Event Branding",
+    description:
+      "We worked closely with the BSides team to develop a cohesive visual identity for the event, ensuring that the curtain raiser, branding board, brochures, and standees not only aligned with the conference theme but also effectively engaged attendees by reflecting the dynamic and innovative spirit of the cybersecurity hackathon community.",
+  },
+  {
+    imgSrc: bmg,
+    title: "Best Money Gold",
+    category: "Finance",
+    description:
+      "Best Money is a gold seller in the finance industry. We managed their Google campaigns for a long term, driving significant sales growth and multiplying their revenue compared to the previous financial year.Through strategic ad placements and data-driven optimization, we helped them reach the right audience.",
+  },
+  {
+    imgSrc: sisiulogo,
+    title: "Sisu Eclipse",
+    category: "ART Dealer",
+    description:
+      "Sisu Eclipse is a distinguished art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform, ensuring a seamless and visually engaging interface. The logo creatively reflects the themes of an eclipse and paintings, capturing the essence of their artistic vision and brand identity.",
+  },
+];
+
+//services home
+export const servicesSections = [
+  {
+    id: "01",
+    title: "Branding",
+    desc: "From defining identity and values to creating premium logos, cohesive materials, immersive visuals, and functional product designs that captivate and leave a lasting impression.",
+    href: "/branding",
+  },
+  {
+    id: "02",
+    title: "Technology",
+    desc: "Building dynamic, high-performance websites, designing scalable mobile apps, and delivering complete e-commerce solutions to drive business growth and enhance user experiences.",
+    href: "/technology",
+  },
+  {
+    id: "03",
+    title: "Digital Marketing",
+    desc: "Creating powerful social strategies, executing data-driven campaigns, and enhancing SEO to boost visibility and drive measurable growth across all platforms.",
+    href: "/digital-marketing",
+  },
+  {
+    id: "04",
+    title: "Social Branding",
+    desc: "Creating valuable, audience-focused content, producing innovative visuals, and building communities that engage and foster brand loyalty for lasting connections and impact.",
+    href: "/social-branding",
+  },
+  {
+    id: "05",
+    title: "Experience Design",
+    desc: "Designing intuitive UI/UX, crafting visually appealing websites, and ensuring seamless mobile experiences for engaging, user-friendly interactions across all platforms.",
+    href: "/experience-design",
+  },
+];
+
+//services branding page
+export const servicesBranding = [
+  [
+    {
+      title: "Brand Consulting",
+      description: "Helping businesses define their identity and values.",
+      details:
+        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+    },
+    {
+      title: "Brand Identity",
+      description: "Crafting a narrative that reflects the brand's essence.",
+      details:
+        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+    },
+    {
+      title: "Logo Design",
+      description: "Designing globally adaptable and premium-quality logos.",
+      details:
+        "Logo design focuses on creating globally adaptable, high-quality logos that resonate with your brand’s identity. We craft distinctive, versatile, and timeless designs that ensure strong recognition across diverse markets and platforms.",
+    },
+  ],
+  [
+    {
+      title: " Product Design",
+      description: "Designing products that are both functional and stylish.",
+      details:
+        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+    },
+    {
+      title: "2D/3D Visualization",
+      description: "Creating visuals that enhance brand impact.",
+      details:
+        "2D/3D visualization transforms concepts into realistic, eye-catching visuals that elevate brand impact. We create detailed, dynamic representations of products or ideas, helping clients showcase their vision with clarity and appeal.",
+    },
+    {
+      title: "Brand Collateral",
+      description: "Delivering cohesive marketing materials.",
+      details:
+        "Brand collateral involves creating cohesive marketing materials such as brochures, business cards, and banners that reflect your brand’s identity. We ensure all assets align with your brand’s message and aesthetic for consistency and impact.",
+    },
+  ],
+];
+
+
+//services DM page
+export const servicesDM = [
+  [
+    {
+      title: "Social Media Management",
+      description: "Strategizing and Executing Social Media Campaigns.",
+      details:
+        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+    },
+    {
+      title: "Performance Marketing",
+      description: "Data-driven ad Campaigns to achieve measurable results.",
+      details:
+        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+    },
+    {
+      title: "Meta Ads",
+      description: "Reach Targeted Audiences through Facebook and Insta Ads.",
+      details:
+        "Logo design focuses on creating globally adaptable, high-quality logos that resonate with your brand’s identity. We craft distinctive, versatile, and timeless designs that ensure strong recognition across diverse markets and platforms.",
+    },
+  ],
+  [
+    {
+      title: " Linkedin Campaigns",
+      description: "Generate high-quality Leads for your B2B needs.",
+      details:
+        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+    },
+    {
+      title: "Google Ads",
+      description: "Drive Traffic, Reach Targets and Achieve Flexible Results.",
+      details:
+        "2D/3D visualization transforms concepts into realistic, eye-catching visuals that elevate brand impact. We create detailed, dynamic representations of products or ideas, helping clients showcase their vision with clarity and appeal.",
+    },
+    {
+      title: "SEO Strategy",
+      description: "Enhancing Online Visibility through Search Engine Optimization.",
+      details:
+        "Brand collateral involves creating cohesive marketing materials such as brochures, business cards, and banners that reflect your brand’s identity. We ensure all assets align with your brand’s message and aesthetic for consistency and impact.",
+    },
+  ],
 ];
