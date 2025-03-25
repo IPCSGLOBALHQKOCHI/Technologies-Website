@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/aboutus"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 About

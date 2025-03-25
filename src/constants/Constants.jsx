@@ -324,3 +324,68 @@ export const servicesDM = [
     },
   ],
 ];
+
+//services social branding page
+export const servicesSocialBranding = [
+  [
+    {
+      title: "Content Marketing",
+      description: "Creating Valuable, Audience-focused content.",
+      details:
+        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+    },
+    {
+      title: "Organic Creatives",
+      description: "Producing Innovative and Impactful visuals.",
+      details:
+        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+    }
+  ],
+  [
+    {
+      title: "Social Media Management",
+      description: "Strategizing and executing social media campaigns.",
+      details:
+        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+    },
+    {
+      title: "Community Building",
+      description: "Engaging audiences to foster brand loyalty.",
+      details:
+        "Logo design focuses on creating globally adaptable, high-quality logos that resonate with your brand’s identity. We craft distinctive, versatile, and timeless designs that ensure strong recognition across diverse markets and platforms.",
+    },
+  ],
+];
+
+
+//services ExpeDesign page
+export const servicesExpeDesign = [
+  [
+    {
+      title: "Website Design",
+      description: "Tailored Strategies to Boost Conversions and Maximize ROI.",
+      details:
+        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+    },
+    {
+      title: "Web App Design",
+      description: "Functional, intuitive interfaces to optimize user engagement.",
+      details:
+        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+    },
+  ],
+  [
+    {
+      title: " Mobile App Design",
+      description: "Smart, efficient solutions to enhance operational flow.",
+      details:
+        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+    },
+    {
+      title: "Software Design",
+      description: "Industry-specific workflows designed for operational efficiency.",
+      details:
+        "2D/3D visualization transforms concepts into realistic, eye-catching visuals that elevate brand impact. We create detailed, dynamic representations of products or ideas, helping clients showcase their vision with clarity and appeal.",
+    }
+  ],
+];

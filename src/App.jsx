@@ -2,17 +2,18 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import "./App.css";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
-import Branding from './Pages/ServicesPages/Branding';
-import Technology from './Pages/ServicesPages/Technology';
-import DigitalMarketing from './Pages/ServicesPages/DigitalMarketing';
-import SocialBranding from './Pages/ServicesPages/SocialBranding';
-import ExperienceDesign from './Pages/ServicesPages/ExperienceDesign';
+import Branding from './Pages/ServicesPages/Branding.jsx';
+import Technology from './Pages/ServicesPages/Technology.jsx';
+import DigitalMarketing from './Pages/ServicesPages/DigitalMarketing.jsx';
+import SocialBranding from './Pages/ServicesPages/SocialBranding.jsx';
+import ExperienceDesign from './Pages/ServicesPages/ExperienceDesign.jsx';
 import Footer from './Components/Footer';
 import ConnectUs from './Components/ConnectUs';
 import ConnectPage from './Pages/ConnectPage';
 import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage.jsx";
 import TermsOfUse from './Pages/TermsOfUse';
 import CookieComponent from './Components/CookieComponent';
+import AboutPage from './Pages/AboutPage.jsx';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function MainContent() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />

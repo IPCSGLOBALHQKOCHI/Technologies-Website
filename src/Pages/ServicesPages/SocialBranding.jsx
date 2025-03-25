@@ -2,50 +2,16 @@ import Apple from "../../../src/assets/videos/Bento/Social Branding/Apple.mp4";
 import coconut from "../../../src/assets/videos/Bento/Social Branding/Coconut.mp4";
 import jackfruit from "../../../src/assets/videos/Bento/Social Branding/Jackfruit.mp4";
 import mango from "../../../src/assets/videos/Bento/Social Branding/Mango.mp4";
+import AboutSocialbranding from "../../Components/SocialBrandingPages/AboutSocialbranding";
 import HeroSection from "../../Components/SocialBrandingPages/HeroSection";
+import ServicesSocialBranding from "../../Components/SocialBrandingPages/ServicesSocialBranding";
 
 const SocialBranding = () => {
   return (
-    <div className="flex flex-col p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+    <div>
  <HeroSection/>
-
-      {/* <div className="text-[#FFFFFF] p-4 sm:p-6 mt-4 sm:mt-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
-          <div className="space-y-4 sm:space-y-8">
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-400">Content Marketing</h3>
-              <p className="text-lg sm:text-xl text-[#FFFFFF99] mt-2">
-                Creating Valuable, Audience-focused content.
-              </p>
-              <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
-            </div>
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-400">Organic Creatives</h3>
-              <p className="text-lg sm:text-xl text-[#FFFFFF99] mt-2">
-                Producing Innovative and Impactful visuals.
-              </p>
-              <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
-            </div>
-          </div>
-          <div className="space-y-4 sm:space-y-8 text-left sm:ml-8">
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-400">Community Building</h3>
-              <p className="text-lg sm:text-xl text-[#FFFFFF99] mt-2">
-                Engaging audiences to foster brand loyalty.
-              </p>
-              <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
-            </div>
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-400">Social Media Management</h3>
-              <p className="text-lg sm:text-xl text-[#FFFFFF99] mt-2">
-                Strategizing and executing social media campaigns.
-              </p>
-              <div className="w-full border-b-[2px] border-[#3A3A3A] mt-1"></div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+ <AboutSocialbranding/>
+<ServicesSocialBranding/>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-4 sm:p-6 pt-12 sm:pt-24">
         <div className="col-span-1 row-span-1 overflow-hidden rounded-3xl flex flex-col">
           <video
