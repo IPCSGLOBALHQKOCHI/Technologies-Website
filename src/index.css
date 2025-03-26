@@ -19,7 +19,7 @@ html {
   -moz-osx-font-smoothing: grayscale; 
 }
 
-@keyframes gradient-fill {
+/* @keyframes gradient-fill {
   0% {
     background-size: 0% 100%;
   }
@@ -31,4 +31,18 @@ html {
 .animate-gradient-fill {
   background-size: 0% 100%;
   animation: gradient-fill 2s ease-in-out forwards;
+} */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+

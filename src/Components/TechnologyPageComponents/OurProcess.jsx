@@ -25,23 +25,23 @@ function OurProcess() {
             .map((step) => (
               <div
                 key={step.id}
-                className="relative bg-[linear-gradient(81deg,#132025_0.63%,rgba(9,29,127,0.60)_39.18%,#4B5A7B_97.78%)] backdrop-blur-[1px] rounded-lg mb-48 p-6"
+                className="relative bg-[#FFFFFF] rounded-lg mb-48 p-6"
               >
                 <div className="flex justify-between items-center">
                   <div>
-                    <h2 className="text-4xl font-500 text-[#ffffff]">
+                    <h2 className="text-4xl font-600 text-[#121212]">
                       {step.title}
                     </h2>
-                    <p className="text-[#ffffffcc] text-xl font-300 mt-4">
+                    <p className="text-[#000000] text-xl font-500 mt-4">
                       {step.description}
                     </p>
                   </div>
-                  <span className="text-6xl font-400 text-[#D6DBFF] mb-14">
+                  <span className="text-6xl font-400 text-[#121212] mb-14">
                     {String(step.id).padStart(2, "0")}
                   </span>
                 </div>
                 <button
-                  className="absolute bottom-4 right-4 mr-2 text-[#D6DBFF] transition-transform duration-300"
+                  className="absolute bottom-4 right-4 mr-2 text-[#000000] transition-transform duration-300"
                   onClick={() => toggleDropdown(step.id)}
                 >
                   {openDropdown === step.id ? (
@@ -57,7 +57,7 @@ function OurProcess() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="text-white text-lg rounded-lg mr-4">
+                  <div className="text-[#000000] font-400 text-lg rounded-lg mr-4">
                     <p>{step.dropdown}</p>
                   </div>
                 </div>
@@ -71,25 +71,25 @@ function OurProcess() {
             .map((step) => (
               <div
                 key={step.id}
-                className="relative bg-[linear-gradient(81deg,#132025_0.63%,rgba(9,29,127,0.60)_39.18%,#4B5A7B_97.78%)] backdrop-blur-[1px] rounded-lg mb-52 p-6"
+                className="relative bg-[#FFFFFF] rounded-lg mb-52 p-6"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex flex-col items-center">
-                    <span className="text-6xl font-400 text-[#D6DBFF] mb-14">
+                    <span className="text-6xl font-400 text-[#121212] mb-14">
                       {String(step.id).padStart(2, "0")}
                     </span>
                   </div>
                   <div>
-                    <h2 className="text-4xl font-500 text-[#ffffff]">
+                    <h2 className="text-4xl font-600 text-[#121212]">
                       {step.title}
                     </h2>
-                    <p className="text-[#ffffffcc] text-xl font-300 mt-4">
+                    <p className="text-[#000000] text-xl font-500 mt-4">
                       {step.description}
                     </p>
                   </div>
                 </div>
                 <button
-                  className="absolute bottom-4 left-4  text-[#D6DBFF] transition-transform duration-300"
+                  className="absolute bottom-4 left-4  text-[#000000] transition-transform duration-300"
                   onClick={() => toggleDropdown(step.id)}
                 >
                   {openDropdown === step.id ? (
@@ -105,7 +105,7 @@ function OurProcess() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="text-white text-lg  rounded-lg ml-24">
+                  <div className="text-[#121212] text-lg font-400 rounded-lg ml-20">
                     <p>{step.dropdown}</p>
                   </div>
                 </div>

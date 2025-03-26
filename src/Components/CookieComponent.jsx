@@ -27,9 +27,9 @@ const CookieComponent = () => {
   return (
     <>
       <div className="fixed inset-0 bg-black/10 backdrop-blur-sm z-50"></div>
-      <div className="fixed bottom-0 left-0 right-0 bg-white/70  rounded-t-xl text-[#0B0B0BCC] p-4 shadow-lg flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 z-50">
+      <div className="fixed bottom-10 left-0 right-0 bg-[#ffffff]  rounded-lg text-[#0B0B0BCC] p-4 shadow-lg flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 z-50">
         <div className="flex flex-col text-center md:text-left ml-10 mt-4">
-          <h2 className="text-2xl font-600 text-black mb-4">
+          <h2 className="text-2xl font-600 text-[#121212] mb-4">
             We Value Your Privacy
           </h2>
           <p className="text-base mr-10">
@@ -47,13 +47,13 @@ const CookieComponent = () => {
         <div className="flex space-x-8 pr-8">
           <button
             onClick={handleAccept}
-            className="bg-[#003ad6] text-[#FFFFFF] text-sm px-5 py-2 rounded-md border border-transparent"
+            className="bg-[#121212] text-[#FFFFFF] text-sm px-5 py-2 rounded-md border  border-black"
           >
             Accept
           </button>
           <button
             onClick={handleDecline}
-            className="bg-red-600 text-white border border-transparent text-sm px-5 py-2 rounded-md"
+            className="bg-[#ffffff] text-[#121212] border border-black text-sm px-5 py-2 rounded-md"
           >
             Decline
           </button>

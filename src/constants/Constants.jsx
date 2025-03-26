@@ -389,3 +389,25 @@ export const servicesExpeDesign = [
     }
   ],
 ];
+
+import xaviDev from "../assets/images/xaviteam.png";
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Saviyola Shajan",
+    role: "Web Developer",
+    image: xaviDev,
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    role: "UI/UX Designer",
+    image: xaviDev,
+  },
+  {
+    id: 3,
+    name: "Jane Smith",
+    role: "Software Engineer",
+    image: xaviDev,
+  },
+];
