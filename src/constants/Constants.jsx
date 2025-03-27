@@ -1,9 +1,9 @@
 //our process
-export const steps = [
+export const technologyProcess = [
   {
     id: 1,
-    title: "Requirement Analysis",
-    description: "Analyzing client needs to define scope and requirements",
+    title: "Evaluation",
+    description: "Analyzing client needs to define project scope, goals, and requirements.",
     dropdown:
       "We understand client needs, gather requirements, analyze feasibility, define scope, set goals, and ensure alignment with stakeholders for successful execution.",
     side: "left",
@@ -46,7 +46,7 @@ export const steps = [
   {
     id: 6,
     title: "Deployment",
-    description: "Deploying applications for smooth launch and user access.",
+    description: "Deploying applications to ensure a smooth launch and user accessibility.",
     dropdown:
       "Deploying applications to production environments, ensuring smooth launch, optimal performance, and seamless user access with minimal downtime.",
     side: "right",
@@ -288,19 +288,19 @@ export const servicesDM = [
       title: "Social Media Management",
       description: "Strategizing and Executing Social Media Campaigns.",
       details:
-        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+        "We specialize in strategizing and executing social media campaigns to boost engagement, strengthen brand presence, and drive audience growth, ensuring impactful digital marketing that maximizes reach, fosters connections, and enhances overall online visibility.",
     },
     {
       title: "Performance Marketing",
       description: "Data-driven ad Campaigns to achieve measurable results.",
       details:
-        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+        "Drive growth with performance marketing, using data-driven ad campaigns on Google Ads, Meta Ads, and LinkedIn to achieve measurable results and maximize ROI",
     },
     {
       title: "Meta Ads",
       description: "Reach Targeted Audiences through Facebook and Insta Ads.",
       details:
-        "Logo design focuses on creating globally adaptable, high-quality logos that resonate with your brand’s identity. We craft distinctive, versatile, and timeless designs that ensure strong recognition across diverse markets and platforms.",
+        "Leverage Meta Ads to effectively reach targeted audiences through Facebook and Instagram ads. Drive engagement, increase conversions, and boost brand visibility with tailored campaigns for maximum impact.",
     },
   ],
   [
@@ -308,19 +308,19 @@ export const servicesDM = [
       title: " Linkedin Campaigns",
       description: "Generate high-quality Leads for your B2B needs.",
       details:
-        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+        "Maximize your B2B growth with LinkedIn campaigns. Generate high-quality leads through targeted ads and content strategies, helping you connect with decision-makers and drive business growth.",
     },
     {
       title: "Google Ads",
       description: "Drive Traffic, Reach Targets and Achieve Flexible Results.",
       details:
-        "2D/3D visualization transforms concepts into realistic, eye-catching visuals that elevate brand impact. We create detailed, dynamic representations of products or ideas, helping clients showcase their vision with clarity and appeal.",
+        "Harness the power of Google Ads to drive targeted traffic, reach your audience effectively, and achieve flexible, measurable results that align with your business goals and boost conversions.",
     },
     {
       title: "SEO Strategy",
       description: "Enhancing Online Visibility through Search Engine Optimization.",
       details:
-        "Brand collateral involves creating cohesive marketing materials such as brochures, business cards, and banners that reflect your brand’s identity. We ensure all assets align with your brand’s message and aesthetic for consistency and impact.",
+        "Boost your online visibility with a tailored SEO strategy. Optimize your website’s content and structure to rank higher on search engines, drive organic traffic, and improve your brand’s digital presence.",
     },
   ],
 ];
@@ -332,13 +332,13 @@ export const servicesSocialBranding = [
       title: "Content Marketing",
       description: "Creating Valuable, Audience-focused content.",
       details:
-        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+        "Elevate your social branding with content marketing. Create valuable, audience-focused content that resonates with your target market, drives engagement, and strengthens your brand's presence across digital platforms.",
     },
     {
       title: "Organic Creatives",
       description: "Producing Innovative and Impactful visuals.",
       details:
-        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+        "Enhance your social branding with organic creatives. Produce innovative and impactful visuals that captivate your audience, foster engagement, and elevate your brand’s presence across social media platforms.",
     }
   ],
   [
@@ -346,13 +346,13 @@ export const servicesSocialBranding = [
       title: "Social Media Management",
       description: "Strategizing and executing social media campaigns.",
       details:
-        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+        "Boost your social branding with expert social media management. Strategize and execute impactful campaigns that increase brand visibility, engage your audience, and build a strong, authentic online presence.",
     },
     {
       title: "Community Building",
       description: "Engaging audiences to foster brand loyalty.",
       details:
-        "Logo design focuses on creating globally adaptable, high-quality logos that resonate with your brand’s identity. We craft distinctive, versatile, and timeless designs that ensure strong recognition across diverse markets and platforms.",
+        "Strengthen your social branding through community building. Engage your audience by creating meaningful interactions, fostering brand loyalty, and cultivating a dedicated community that supports and advocates for your brand.",
     },
   ],
 ];
@@ -365,13 +365,13 @@ export const servicesExpeDesign = [
       title: "Website Design",
       description: "Tailored Strategies to Boost Conversions and Maximize ROI.",
       details:
-        "Brand consulting helps businesses establish a strong identity by defining their values, mission, and visual aesthetics. We craft strategies to enhance brand positioning, ensuring consistency, recognition, and long-term success in the market.",
+        "Enhance user experience with website design tailored to your goals. Create intuitive, visually appealing websites that boost conversions, maximize ROI, and deliver seamless, engaging experiences for your audience.",
     },
     {
       title: "Web App Design",
       description: "Functional, intuitive interfaces to optimize user engagement.",
       details:
-        "Brand identity involves creating a cohesive narrative that captures the essence of your brand. From logos to messaging, we design visuals and storytelling elements that establish a strong, memorable presence across all platforms.",
+        "Craft seamless web app design with functional, intuitive interfaces that optimize user engagement. Enhance user experience through thoughtful design, ensuring easy navigation and improved interaction with your digital platform.",
     },
   ],
   [
@@ -379,13 +379,13 @@ export const servicesExpeDesign = [
       title: " Mobile App Design",
       description: "Smart, efficient solutions to enhance operational flow.",
       details:
-        "Product design combines functionality and aesthetics to create innovative, user-friendly solutions. We craft visually appealing, high-performance products that enhance user experience while aligning with your brand’s identity and market demands.",
+       " Create impactful mobile app design with smart, efficient solutions that enhance operational flow. Optimize user experience through intuitive interfaces, ensuring smooth interactions and increased functionality for better user engagement.",
     },
     {
       title: "Software Design",
       description: "Industry-specific workflows designed for operational efficiency.",
       details:
-        "2D/3D visualization transforms concepts into realistic, eye-catching visuals that elevate brand impact. We create detailed, dynamic representations of products or ideas, helping clients showcase their vision with clarity and appeal.",
+        "Develop software design with industry-specific workflows to enhance operational efficiency. Create tailored solutions that streamline processes, improve user experience, and drive productivity through intuitive, effective design.",
     }
   ],
 ];

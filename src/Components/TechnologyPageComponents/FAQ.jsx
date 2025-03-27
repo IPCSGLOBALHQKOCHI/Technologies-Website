@@ -10,7 +10,7 @@ function FAQ() {
   };
 
   return (
-    <div className="min-h-screen py-24 px-6 sm:px-6 md:px-16 lg:px-32 xl:px-40 2xl:px-48 bg-white">
+    <div className="min-h-screen py-12 md:py-24 px-6 sm:px-6 md:px-16 lg:px-32 xl:px-40 2xl:px-48 bg-white">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-[#000000] mb-8 md:mb-12">
         FAQ
       </h1>

@@ -30,6 +30,8 @@ const ClientReviews = () => {
           <h2 className="ml-10 sm:ml-16 md:ml-20 text-[80px] sm:text-[100px] md:text-[130px] font-300 text-[#FFFFFF]">
             Impact
           </h2>
+          Impact That Drives Growth
+          The Impact We Make
         </div>
         <div className="leading-none block md:hidden">
           <h2 className="text-[44px] font-300 text-[#FFFFFF]">Our Impact</h2>

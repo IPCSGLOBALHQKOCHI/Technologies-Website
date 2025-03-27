@@ -4,15 +4,17 @@ function AboutBranding() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="h-auto p-6 sm:p-10 md:p-16 lg:p-24 text-[#FFFFFF] flex flex-col sm:flex-row">
-      <div className="w-full sm:w-2/5 flex flex-col font-500 mb-8 sm:mb-0">
+      <div className="w-full sm:w-2/5 flex flex-col font-500 mb-8 sm:mb-0"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      >
         <h1
           className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-left mb-6 sm:mb-8 lg:mb-10 bg-clip-text text-transparent transition-all duration-[2s] ease-in-out ${
             isHovered
               ? "bg-gradient-to-r from-[#003ad6] to-[#ff0080] animate-gradient-fill"
               : "bg-gradient-to-r from-[#ffffff] to-[#ffffff]"
           }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          
         >
           Rethink.
         </h1>
