@@ -38,34 +38,35 @@ function AboutBanner() {
   }, [letterIndex, isDeleting, wordIndex]);
 
   return (
-    <div className="relative h-60 sm:h-72 md:h-[30rem] xl:h-[35rem] max-w-[1580px] mx-auto bg-cover bg-center flex items-center justify-center">
-  <img
-    src={banner}
-    alt="techno"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
-    
-    <div className="text-[#FFFFFF] bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] bg-clip-text text-transparent text-lg sm:text-2xl md:text-4xl lg:text-5xl xl:text-8xl  font-medium mt-4 min-h-24 flex items-center">
-      {displayText}
+    <div className="relative h-80 md:h-[26rem] xl:h-[30rem] max-w-[1580px] mx-auto bg-cover bg-center flex items-center justify-center">
+      <img
+        src={banner}
+        alt="techno"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
+        <div className="text-[#FFFFFF] bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] bg-clip-text text-transparent text-4xl md:text-6xl lg:text-7xl xl:text-8xl  font-medium mt-4 min-h-24 flex items-center">
+          {displayText}
+        </div>
+
+        <p className="text-[#ffffff] font-300 text-sm md:text-lg lg:text-xl max-w-4xl mt-0 sm:mt-6 px-4 text-left md:text-center">
+          Our approach is rooted in a deep understanding of user behavior,
+          market trends, enabling us to create experiences that are not just
+          visually compelling but also functionally seamless and strategically
+          driven.
+        </p>
+
+        <button className="bg-[#003ad6] text-[#ffffff] px-2 sm:px-6 py-1 sm:py-3 w-40 sm:w-52 rounded-md group mt-6 sm:mt-8">
+          <a
+            href="#"
+            className="text-lg sm:text-xl font-normal inline-flex items-center"
+          >
+            Learn more
+            <BsArrowRight className="ml-3 sm:ml-5 mt-0.5 sm:mt-1 transition-transform duration-300 group-hover:translate-x-3" />
+          </a>
+        </button>
+      </div>
     </div>
-
-    <p className="text-[#ffffff] font-light text-sm sm:text-lg md:text-xl lg:text-2xl max-w-4xl mt-4 sm:mt-6 px-4">
-      Our approach is rooted in a deep understanding of user behavior,
-      market trends, and evolving digital landscapes, enabling us to create
-      experiences that are not just visually compelling but also
-      functionally seamless and strategically driven.
-    </p>
-
-    <button className="bg-[#003ad6] text-[#ffffff] px-4 sm:px-6 py-2 sm:py-3 w-20 sm:w-52 rounded-md group mt-6 sm:mt-8">
-      <a href="#" className="text-lg sm:text-xl font-normal inline-flex items-center">
-        Learn more
-        <BsArrowRight className="ml-3 sm:ml-5 mt-0.5 sm:mt-1 transition-transform duration-300 group-hover:translate-x-3" />
-      </a>
-    </button>
-
-  </div>
-</div>
   );
 }
 

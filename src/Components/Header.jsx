@@ -38,7 +38,7 @@ const Header = () => {
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
         {[
-          { name: "ABOUT", link: "/aboutus" },
+          { name: "ABOUT", link: "" },
           { name: "CASE STUDY", link: "#casestudy" },
         ].map((item, index) => (
           <li
@@ -248,7 +248,7 @@ const Header = () => {
 
         <ul className="mt-16 space-y-6 text-lg px-6 bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px]">
           <li>
-            <a href="/aboutus" className="block py-2 text-2xl font-400">
+            <a href="" className="block py-2 text-2xl font-400">
               ABOUT
             </a>
           </li>

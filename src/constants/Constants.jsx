@@ -176,18 +176,26 @@ export const servicesTechno = [
 
 //client reviews
 import besides from "../assets/images/besides-logo.png";
-import bmg from "../assets/images/best-money logo.jpg";
+import bmg from "../assets/images/bmg.png";
 import sisiulogo from "../assets/images/sisiulogo.png";
+import skylogo from "../assets/images/skypower.png";
+import bmgreview from "../assets/images/bmgreview.jpg";
+import sisiuReview from "../assets/images/sisiureviw.jpg";
+import besidesReview from "../assets/images/besidesreview.jpg";
+import skyReview from "../assets/images/skyreview.jpg";
+
 export const cardDataReviews = [
   {
     imgSrc: besides,
+    bgImg:besidesReview,
     title: "Bsides",
     category: "Event Branding",
     description:
-      "We worked closely with the BSides team to develop a cohesive visual identity for the event, ensuring that the curtain raiser, branding board, brochures, and standees not only aligned with the conference theme but also effectively engaged attendees by reflecting the dynamic and innovative spirit of the cybersecurity hackathon community.",
+      "We worked closely with the BSides team to develop a visual identity for the event, ensuring that branding board, brochures, and standees not only aligned with the conference theme but also effectively engaged attendees by reflecting the dynamic and innovative spirit of the cybersecurity hackathon community.",
   },
   {
     imgSrc: bmg,
+    bgImg:bmgreview,
     title: "Best Money Gold",
     category: "Finance",
     description:
@@ -195,10 +203,19 @@ export const cardDataReviews = [
   },
   {
     imgSrc: sisiulogo,
+    bgImg:sisiuReview,
     title: "Sisu Eclipse",
     category: "ART Dealer",
     description:
       "Sisu Eclipse is a distinguished art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform, ensuring a seamless and visually engaging interface. The logo creatively reflects the themes of an eclipse and paintings, capturing the essence of their artistic vision and brand identity.",
+  },
+  {
+    imgSrc: skylogo,
+    bgImg:skyReview,
+    title: "Sky Power Energy",
+    category: "Energy ",
+    description:
+      " We improved SEO through keyword research, on-page optimization, site speed enhancement, and backlink building. These strategies boosted search rankings, organic traffic, and lead generation for their renewable energy services",
   },
 ];
 

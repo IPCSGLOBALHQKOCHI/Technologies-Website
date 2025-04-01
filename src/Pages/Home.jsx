@@ -91,7 +91,7 @@ export default function Home() {
       <CaseStudySection ref={(el) => (sections.current[4] = el)} />
       <Services />
       <ClientSlides/>
-      {/* <ClientReviews/> */}
+      <ClientReviews/>
     </div>
   );
 }

@@ -40,7 +40,7 @@ function MissionVission() {
       </div>
 
       {/* Vision Section */}
-      <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-0 md:gap-10 my-16 md:mt-16">
+      <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-0 md:gap-10 mt-16 md:mt-16">
         <div className="flex-1">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-gray-300 mx-0 sm:mx-14">
             Our <span className="text-white font-semibold">Vision</span>

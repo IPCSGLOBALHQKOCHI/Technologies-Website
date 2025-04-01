@@ -15,7 +15,7 @@ function AboutPage() {
       <MissionVission/>
       <AboutBanner/>
       <Team/>
-    </div>
+    </div>  
   )
 }
 
