@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiOutlineMinus } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
 import { technologyProcess } from "../../constants/Constants";
+import { BsArrowRight } from "react-icons/bs";
 
 function OurProcess() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -23,7 +24,7 @@ function OurProcess() {
           {technologyProcess
             .filter((step) => step.side === "left")
             .map((step) => (
-                <div
+              <div
                 key={step.id}
                 className="relative border rounded-lg border-[#c0bebe99]
                 hover:bg-[linear-gradient(79deg,rgba(19,32,37,0)_0%,rgba(0,28,160,0.5)_100%)]
@@ -31,8 +32,12 @@ function OurProcess() {
               >
                 <div className="flex justify-between items-center">
                   <div>
-                    <h2 className="text-4xl font-600 text-[#ffffff]">{step.title}</h2>
-                    <p className="text-[#ffffffcc] text-xl font-500 mt-4">{step.description}</p>
+                    <h2 className="text-4xl font-600 text-[#ffffff]">
+                      {step.title}
+                    </h2>
+                    <p className="text-[#ffffffcc] text-xl font-500 mt-4">
+                      {step.description}
+                    </p>
                     <div className="w-full border-b-[1px] border-[#3A3A3A] mt-3"></div>
                   </div>
                   <span className="text-6xl font-400 text-[#FFFFFF] mb-14">
@@ -51,7 +56,9 @@ function OurProcess() {
                 </button>
                 <div
                   className={`transition-all duration-300 overflow-hidden ${
-                    openDropdown === step.id ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
+                    openDropdown === step.id
+                      ? "max-h-40 opacity-100 mt-4"
+                      : "max-h-0 opacity-0"
                   }`}
                 >
                   <div className="text-[#FFFFFF99] font-400 text-lg rounded-lg mr-4">
@@ -59,7 +66,6 @@ function OurProcess() {
                   </div>
                 </div>
               </div>
-              
             ))}
         </div>
 
@@ -67,14 +73,18 @@ function OurProcess() {
           {technologyProcess
             .filter((step) => step.side === "right")
             .map((step) => (
-                <div
+              <div
                 key={step.id}
                 className="relative border border-[#c0bebe99] rounded-lg mb-8 p-6 transition-all duration-300 group hover:bg-[linear-gradient(79deg,rgba(19,32,37,0)_0%,rgba(0,28,160,0.5)_100%)]"
               >
                 <div className="flex justify-between items-center">
                   <div>
-                    <h2 className="text-4xl font-600 text-[#ffffff]">{step.title}</h2>
-                    <p className="text-[#ffffffcc] text-xl font-500 mt-4">{step.description}</p>
+                    <h2 className="text-4xl font-600 text-[#ffffff]">
+                      {step.title}
+                    </h2>
+                    <p className="text-[#ffffffcc] text-xl font-500 mt-4">
+                      {step.description}
+                    </p>
                     <div className="w-full border-b-[1px] border-[#3A3A3A] mt-3"></div>
                   </div>
                   <span className="text-6xl font-400 text-[#ffffff] mb-14">
@@ -93,7 +103,9 @@ function OurProcess() {
                 </button>
                 <div
                   className={`transition-all duration-300 overflow-hidden ${
-                    openDropdown === step.id ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
+                    openDropdown === step.id
+                      ? "max-h-40 opacity-100 mt-4"
+                      : "max-h-0 opacity-0"
                   }`}
                 >
                   <div className="text-[#ffffff99] font-400 text-lg rounded-lg mr-4">
@@ -101,7 +113,6 @@ function OurProcess() {
                   </div>
                 </div>
               </div>
-              
             ))}
         </div>
       </div>
@@ -111,8 +122,8 @@ function OurProcess() {
           <div
             key={step.id}
             className={`relative border border-[#c0bebe99] bg-[linear-gradient(79deg,rgba(19,32,37,0)_0%,rgba(0,28,160,0.5)_100%)] rounded-lg p-6 flex flex-col ${
-            index % 2 === 0 ? "items-start" : "items-end"
-          }`}
+              index % 2 === 0 ? "items-start" : "items-end"
+            }`}
           >
             <div className="w-full flex justify-between">
               <h2 className="text-2xl font-500 text-[#ffffff]">{step.title}</h2>
@@ -131,13 +142,13 @@ function OurProcess() {
                 onClick={() => toggleDropdown(step.id)}
               >
                 {openDropdown === step.id ? (
-                    <HiOutlineMinus className="w-5 h-5" />
+                  <HiOutlineMinus className="w-5 h-5" />
                 ) : (
-                    <AiOutlinePlus className="w-5 h-5" />
+                  <AiOutlinePlus className="w-5 h-5" />
                 )}
               </button>
             </div>
-                <div className="w-full border-b-[1px] border-[#3A3A3A] mt-3"></div>
+            <div className="w-full border-b-[1px] border-[#3A3A3A] mt-3"></div>
             <div
               className={`transition-all duration-300 overflow-hidden ${
                 openDropdown === step.id
@@ -151,6 +162,14 @@ function OurProcess() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="text-center items-center justify-center mt-0 md:mt-10">
+        <button className="bg-[#003ad6] text-white w-60 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300  group">
+          <a href="#connect" className="flex text-2xl items-center justify-center gap-6">
+            Connect
+            <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-3" />
+          </a>
+        </button>
       </div>
     </div>
   );

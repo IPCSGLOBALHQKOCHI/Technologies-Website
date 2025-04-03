@@ -121,13 +121,13 @@ function StackAndTools() {
     }
   };
   return (
-    <div className="h-auto px-6 py-16 md:p-20 bg-[#ffffff]">
+    <div className="h-auto px-6  py-8 md:py-16 md:p-20 bg-[#ffffff]">
       <h1 className="text-[#000000] text-left md:text-center font-500 text-2xl md:text-5xl leading-tight ">
         Advancing Development Using <br />
         Strong Technology Stack
       </h1>
       {/* Dropdown for mobile devices */}
-      <div className="block md:hidden mt-10 p-3">
+      <div className="block md:hidden mt-2 p-3">
         {tabs.map((tab, index) => (
           <div key={index}>
             {/* Button for each tab, toggling the dropdown */}

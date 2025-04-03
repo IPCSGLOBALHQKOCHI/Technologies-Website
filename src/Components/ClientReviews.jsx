@@ -1,18 +1,17 @@
-import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useState, useEffect } from "react";
 import { cardDataReviews } from "../constants/Constants";
 
 const ClientReviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalReviews = cardDataReviews.length;
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalReviews);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalReviews);
+    }, 4000);
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalReviews) % totalReviews);
-  };
+    return () => clearInterval(interval);
+  }, [totalReviews]);
 
   return (
     <div
@@ -58,16 +57,6 @@ const ClientReviews = () => {
             </div>
           );
         })}
-      </div>
-
-      {/* Navigation Buttons */}
-      <div className="flex justify-center mt-6 space-x-4">
-        <button onClick={handlePrev} className="bg-white text-black p-2 rounded-full">
-          <FaArrowLeft />
-        </button>
-        <button onClick={handleNext} className="bg-white text-black p-2 rounded-full">
-          <FaArrowRight />
-        </button>
       </div>
 
       <div className="w-full border-b-[2px] border-[#3A3A3A] mt-10 md:mt-20"></div>

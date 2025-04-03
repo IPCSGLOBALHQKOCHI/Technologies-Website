@@ -5,7 +5,7 @@ import contactImage from "../../src/assets/images/akshay sir.jpg";
 
 const ConnectUs = () => {
   return (
-    <div className="min-h-screen bg-[#FFFFFF] w-full flex items-center justify-center py-12 sm:py-4">
+    <div id="connect" className="min-h-screen bg-[#FFFFFF] w-full flex items-center justify-center py-12 sm:py-4">
       <div className="w-full sm:mx-8 md:mx-16 lg:mx-24 flex flex-col md:flex-row rounded-lg px-4 my-4 md:my-10 ">
         <div className="w-full md:w-1/2 px-6 sm:px-8 md:px-10 py-6 md:py-8 flex flex-col text-left order-1 sm:order-1">
           <h2 className="text-6xl sm:text-7xl md:text-[80px] lg:text-[120px] font-400 md:font-300 text-[#0B0B0BCC] leading-none">

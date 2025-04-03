@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import BgVideo from "../assets/videos/Bento/homevideo.mp4";
+// import BgVideo from "../assets/videos/Bento/homevideo.mp4";
+const BgVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1743683894/homevideo_cczzof.mp4"
 import bgImage from "../assets/images/homebgimg.png"
 const HeroSection = React.forwardRef((props, ref) => {
   useEffect(() => {

@@ -8,7 +8,7 @@ const CookieComponent = () => {
     if (!consent) {
       setTimeout(() => {
         setIsVisible(true);
-      }, 22000);
+      }, 20000);
     }
   }, []);
 
@@ -32,7 +32,7 @@ const CookieComponent = () => {
           <h2 className="text-2xl font-600 text-[#121212] mb-4">
             We Value Your Privacy
           </h2>
-          <p className="text-base mr-10">
+          <p className="text-base mr-10 line-clamp-5 md:line-clamp-none">
             We use necessary cookies and technologies to operate this website
             and provide personalized services to you, both through this website
             and other media. Additionally, IPCS Technologies uses optional
