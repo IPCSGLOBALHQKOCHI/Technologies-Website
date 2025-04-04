@@ -15,7 +15,7 @@ function OurProcess() {
     <div className="min-h-screen py-24 px-6 sm:px-6 md:px-16 lg:px-32 xl:px-40 2xl:px-48  ">
       <h1 className="text-5xl md:text-8xl text-[#D6DBFF] font-300">
         Our{" "}
-        <span className="font-500 bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] bg-clip-text text-transparent">
+        <span className="font-500 bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] bg-clip-text text-transparent">
           Process
         </span>
       </h1>

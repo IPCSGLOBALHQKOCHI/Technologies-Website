@@ -15,7 +15,7 @@ const Vision = forwardRef((props, ref) => {
     >
       {/* Desktop View with Animation */}
       <div className="hidden lg:block">
-        <h1 data-aos="fade-up" className="text-[250px] font-200 leading-none">
+        <h1 data-aos="fade-up" className="text-[250px] font-200 leading-none bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
           Vision
         </h1>
         <p
@@ -30,7 +30,7 @@ const Vision = forwardRef((props, ref) => {
 
       {/* Mobile View without Animation */}
       <div className="lg:hidden text-left">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-200 leading-none mb-4">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-200 leading-none mb-4 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
           Vision
         </h1>
         <p className="max-w-xl leading-normal font-200 text-base sm:text-lg text-left text-[#FFFFFFCC]">

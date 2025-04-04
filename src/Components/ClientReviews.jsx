@@ -21,12 +21,12 @@ const ClientReviews = () => {
       <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="leading-none hidden md:block">
           <h2 className="text-[80px] sm:text-[100px] md:text-[130px] font-200 text-[#FFFFFFCC]">Our</h2>
-          <h2 className="ml-10 sm:ml-16 md:ml-20 text-[80px] sm:text-[100px] md:text-[130px] font-300 text-[#FFFFFF]">
+          <h2 className="ml-10 sm:ml-16 md:ml-20 text-[80px] sm:text-[100px] md:text-[130px] font-300 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
             Impact
           </h2>
         </div>
         <div className="leading-none block md:hidden">
-          <h2 className="text-[44px] font-300 text-[#FFFFFF]">Our Impact</h2>
+          <h2 className="text-[44px] font-300 text-[#FFFFFF]">Our <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">Impact</span></h2>
         </div>
         <p className="mt-6 lg:mt-0 lg:ml-20 font-200 text-lg sm:text-xl max-w-xl text-[#FFFFFFCC] leading-relaxed tracking-[0.85px]">
           Hear from those who’ve experienced the Transformation. See how our Unique Approach has empowered Brands to

@@ -1,5 +1,5 @@
 import React from 'react'
-import socialbrandigImg from "../../assets/images/Pages/socialbranding.jpg"
+import socialbrandigImg from "../../assets/images/Pages/socialbranding.png"
 function HeroSection() {
   return (
    <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

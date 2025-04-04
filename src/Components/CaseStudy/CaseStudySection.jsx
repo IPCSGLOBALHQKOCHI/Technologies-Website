@@ -24,12 +24,12 @@ const CaseStudySection = forwardRef((props, ref) => {
           <h2 className="text-[50px] md:text-[130px] font-200 text-[#FFFFFFCC]">
             Case
           </h2>
-          <h2 className="ml-14 text-[50px] md:text-[130px] font-300 text-[#FFFFFF]">
+          <h2 className="ml-14 text-[50px] md:text-[130px] font-300 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
             Study
           </h2>
         </div>
         <div className="block md:hidden">
-          <h2 className="text-[#FFFFFF] text-5xl font-300 mb-4">Case Study</h2>
+          <h2 className="text-[#FFFFFF] text-5xl font-300 mb-4">Case <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">Study</span></h2>
         </div>
         <p className="mt-2 md:px-20 font-200 md:font-200 text-base sm:text-lg md:text-xl text-[#FFFFFFCC] tracking-[1px] md:tracking-[0.86px] leading-relaxed">
           This case study highlights the transformative solutions we have

@@ -34,7 +34,7 @@ function MainContent() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/aboutus" element={<AboutPage />} /> */}
+          <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />

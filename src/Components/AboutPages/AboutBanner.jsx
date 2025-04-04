@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import banner from "../../assets/images/Pages/technology.jpg";
+import banner from "../../assets/images/Pages/Abouttechnology.png";
 import { BsArrowRight } from "react-icons/bs";
 
 function AboutBanner() {
@@ -38,14 +38,14 @@ function AboutBanner() {
   }, [letterIndex, isDeleting, wordIndex]);
 
   return (
-    <div className="relative h-80 md:h-[26rem] xl:h-[30rem] max-w-[1580px] mx-auto bg-cover bg-center flex items-center justify-center">
+    <div className="relative h-80 md:h-[20rem] xl:h-[30rem] max-w-[1580px] mx-auto bg-cover bg-center flex items-center justify-center">
       <img
         src={banner}
         alt="techno"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
-        <div className="text-[#FFFFFF] bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] bg-clip-text text-transparent text-4xl md:text-6xl lg:text-7xl xl:text-8xl  font-medium mt-4 min-h-24 flex items-center">
+        <div className="text-[#FFFFFF] bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent text-4xl md:text-6xl lg:text-7xl xl:text-8xl  font-medium mt-4 min-h-24 flex items-center">
           {displayText}
         </div>
 

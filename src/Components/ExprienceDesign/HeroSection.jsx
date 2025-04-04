@@ -1,5 +1,5 @@
 import React from 'react'
-import expedesgnImg from "../../assets/images/Pages/expdesign.jpg"
+import expedesgnImg from "../../assets/images/Pages/expedesign.png"
 
 function HeroSection() {
   return (

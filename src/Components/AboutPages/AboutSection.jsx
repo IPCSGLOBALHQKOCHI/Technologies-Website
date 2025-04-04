@@ -1,5 +1,5 @@
 import React from "react";
-import About2Img from "../../assets/images/about2img.png";
+import About2Img from "../../assets/images/about1.png";
 function AboutSection() {
   return (
     <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 lg:py-24">
@@ -20,7 +20,7 @@ function AboutSection() {
     <img 
       src={About2Img} 
       alt="team" 
-      className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-5xl  p-4 sm:p-8 " 
+      className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-5xl h-[100vh]  p-4 sm:p-8 " 
     />
   </div>
 

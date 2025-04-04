@@ -1,5 +1,5 @@
 import React from 'react'
-import DMimage from "../../assets/images/Pages/DM.jpg"
+import DMimage from "../../assets/images/Pages/DM main.png"
 function HeroSection() {
   return (
  <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

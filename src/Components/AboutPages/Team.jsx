@@ -26,7 +26,7 @@ function Team() {
           <div className="w-full lg:w-1/2 font-200 text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#ffffffcc]">
             Expert
             <br />
-            <span className="font-300 text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#ffffff] ml-12 sm:ml-20 md:ml-28 lg:ml-36">
+            <span className="font-500 text-6xl sm:text-7xl md:text-8xl lg:text-9xl bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent ml-12 sm:ml-20 md:ml-28 lg:ml-36">
               Team
             </span>
           </div>

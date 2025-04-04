@@ -13,17 +13,17 @@ const CaseStudy = forwardRef((props, ref) => {
       className="lg:h-screen flex flex-col items-center justify-center leading-normal text-4xl tracking-[0.05em] text-[#FFFFFF]"
     >
       <div className="text-left hidden lg:block">
-        <p data-aos="fade-up" data-aos-delay="100" className="font-300">
-          This case study highlights transformative solutions
+        <p data-aos="fade-up" data-aos-delay="100" className="font-400">
+        We are a business reputation management company,
         </p>
-        <p data-aos="fade-up" data-aos-delay="300" className="font-300">
-          we have implemented, showcasing the Growth,
+        <p data-aos="fade-up" data-aos-delay="300" className="font-400">
+        delivering results for the past 10 years with
         </p>
-        <p data-aos="fade-up" data-aos-delay="500" className="font-300">
-          Success and Positive changes we have driven for
+        <p data-aos="fade-up" data-aos-delay="500" className="font-400">
+        end-to-end solutions that drive growth, success,
         </p>
-        <p data-aos="fade-up" data-aos-delay="700" className="font-300">
-          our Clients.
+        <p data-aos="fade-up" data-aos-delay="700" className="font-400">
+        and positive change for businesses.
         </p>
       </div>
       {/* <div className="text-left hidden text-xl p-12 pt-20 ">
@@ -38,6 +38,3 @@ const CaseStudy = forwardRef((props, ref) => {
 });
 
 export default CaseStudy;
-
-
-

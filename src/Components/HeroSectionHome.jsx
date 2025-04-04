@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { BsArrowRight } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import BgVideo from "../assets/videos/Bento/homevideo.mp4";
-const BgVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1743683894/homevideo_cczzof.mp4"
-import bgImage from "../assets/images/homebgimg.png"
+const BgVideo =
+  "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1743683894/homevideo_cczzof.mp4";
+import bgImage from "../assets/images/homebgimg.png";
 const HeroSection = React.forwardRef((props, ref) => {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-out", once: true });
@@ -63,15 +65,18 @@ const HeroSection = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className={`absolute bottom-4 flex justify-center w-full pb-28 md:pb-14 transition-opacity duration-1000 transform ${
+          className={`absolute bottom-4 flex group justify-center w-full pb-28 md:pb-14 transition-opacity duration-1000 transform ${
             showButton ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <a
             href="/connect-us"
-            className="block bg-[#003ad6] text-white px-4 py-2 w-40 rounded-md text-lg text-center"
+            className="block bg-[#003ad6] text-white px-4 py-2 w-44 rounded-md text-lg text-center"
           >
-            Connect
+            <div className="flex items-center justify-center gap-3">
+              Let's Connect
+              <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2" />
+            </div>
           </a>
         </div>
       </div>

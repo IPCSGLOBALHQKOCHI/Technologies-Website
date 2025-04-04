@@ -1,5 +1,5 @@
 import React from 'react'
-import brandingimg from "../../assets/images/Pages/branding.jpg"
+import brandingimg from "../../assets/images/Pages/branding.png"
 function HeroSection() {
   return (
  <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

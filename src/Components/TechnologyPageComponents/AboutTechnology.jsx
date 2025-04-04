@@ -11,14 +11,14 @@ function AboutTechnology() {
         <h1
           className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center md:text-left mb-6 sm:mb-8 lg:mb-10 bg-clip-text text-transparent transition-all duration-[2s] ease-in-out ${
             isHovered
-              ? "bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] animate-gradient-fill"
+              ? "bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] animate-gradient-fill"
               : "bg-gradient-to-r from-[#ffffff] to-[#ffffff]"
           }`}
         >
           Innovate.
         </h1>
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 sm:mb-8 lg:mb-10 bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] bg-clip-text text-transparent text-center md:text-left transition-colors duration-300 hover:text-[#FFFFFF] cursor-pointer"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 sm:mb-8 lg:mb-10 bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] bg-clip-text text-transparent text-center md:text-left transition-colors duration-300 hover:text-[#FFFFFF] cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -27,7 +27,7 @@ function AboutTechnology() {
         <h1
           className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center md:text-left bg-clip-text text-transparent transition-all duration-[2s] ease-in-out ${
             isHovered
-              ? "bg-gradient-to-r from-[#001BCB] to-[#B7C0FF] animate-gradient-fill"
+              ? "bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] animate-gradient-fill"
               : "bg-gradient-to-r from-[#ffffff] to-[#ffffff]"
           }`}
         >
