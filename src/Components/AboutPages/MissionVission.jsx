@@ -13,18 +13,21 @@ function MissionVission() {
       <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
         <div className="flex-1">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-300 text-gray-300">
-            Our <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-500">Mission</span>
+            Our{" "}
+            <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-500">
+              Mission
+            </span>
           </h1>
           <p className="mt-4 text-[#ffffffcc] text-base sm:text-lg leading-relaxed max-w-3xl">
-            Our mission is to set the benchmark as a Trusted Partner in
-            delivering visionary and impactful digital experiences that not only
-            meet but exceed expectations. By combining cutting-edge technology,
-            creative excellence, and strategic insights, we craft immersive
-            digital solutions that resonate with audiences and leave a lasting
-            impression. Our approach is rooted in a deep understanding of user
-            behavior, market trends, and evolving digital landscapes, enabling
-            us to create experiences that are not just visually compelling but
-            also functionally seamless and strategically driven.{" "}
+            Our mission is to build sustainable solutions that empower
+            businesses to thrive in a dynamic and evolving landscape. We believe
+            in fostering creativity as a catalyst for original thinking and
+            breakthrough ideas. Through continuous innovation, we develop
+            strategies and tools that address real-world challenges with
+            long-term value. Our focus on impactful service delivery ensures
+            that every solution we provide creates measurable and meaningful
+            results. By combining sustainability, creativity, innovation, and
+            excellence, we help businesses grow with purpose and resilience.{" "}
           </p>
         </div>
         <div className="hidden lg:block w-28 h-28 sm:w-36 sm:h-36 md:w-72 md:h-72 mt-2">
@@ -55,18 +58,22 @@ function MissionVission() {
       <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-0 md:gap-10 mt-16 md:mt-16">
         <div className="flex-1">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-300 text-gray-300 mx-0 lg:mx-14">
-            Our <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-500">Vision</span>
+            Our{" "}
+            <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-500">
+              Vision
+            </span>
           </h1>
           <p className="mt-4 text-[#ffffffcc] text-base sm:text-lg leading-relaxed mx-0 lg:mx-14">
-            Our vision is to set the benchmark as a Trusted Partner in
-            delivering visionary and impactful digital experiences that not only
-            meet but exceed expectations. By combining cutting-edge technology,
-            creative excellence, and strategic insights, we craft immersive
-            digital solutions that resonate with audiences and leave a lasting
-            impression. Our approach is rooted in a deep understanding of user
-            behavior, market trends, and evolving digital landscapes, enabling
-            us to create experiences that are not just visually compelling but
-            also functionally seamless and strategically driven.{" "}
+            Our vision is to set the benchmark as a trusted partner in
+            delivering transformative digital experiences. We aim to go beyond
+            conventional solutions by crafting visionary strategies that
+            anticipate future needs. Every experience we design is meant to
+            resonate deeply with audiences, leaving a lasting impression that
+            inspires action. Trust, innovation, and impact form the foundation
+            of our approach, ensuring meaningful connections between brands and
+            their customers. By consistently exceeding expectations, we strive
+            to redefine what it means to be a digital partner in today’s
+            ever-evolving landscape.{" "}
           </p>
         </div>
 

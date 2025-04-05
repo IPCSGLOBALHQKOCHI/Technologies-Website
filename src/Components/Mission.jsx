@@ -30,7 +30,7 @@ const Mission = forwardRef((props, ref) => {
 
       {/* Mobile View */}
       <div className="lg:hidden text-left">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-200 leading-none mb-5 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-400 leading-none mb-5 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
           Mission
         </h1>
         <p className="max-w-xl leading-normal font-200 text-base sm:text-lg text-left text-[#FFFFFFCC]">

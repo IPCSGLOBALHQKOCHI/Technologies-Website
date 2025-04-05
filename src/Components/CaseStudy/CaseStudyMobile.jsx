@@ -41,7 +41,7 @@ const CaseStudyMobile = () => {
         <div key={id} className="w-full md:w-[48%] lg:w-[30%] transition-shadow duration-300">
           <video
             ref={(el) => (videoRefs.current[index] = el)}
-            className="sm:w-80 w-72 h-72 sm:h-80 object-cover"
+            className="w-80 h-72 sm:h-80 object-cover"
             preload="auto"
             playsInline
             loop

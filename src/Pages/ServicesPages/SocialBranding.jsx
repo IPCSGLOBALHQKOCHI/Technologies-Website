@@ -1,7 +1,7 @@
-import Apple from "../../../src/assets/videos/Bento/Social Branding/Apple.mp4";
-import coconut from "../../../src/assets/videos/Bento/Social Branding/Coconut.mp4";
-import jackfruit from "../../../src/assets/videos/Bento/Social Branding/Jackfruit.mp4";
-import mango from "../../../src/assets/videos/Bento/Social Branding/Mango.mp4";
+// import Apple from "../../../src/assets/videos/Bento/Social Branding/Apple.mp4";
+// import coconut from "../../../src/assets/videos/Bento/Social Branding/Coconut.mp4";
+// import jackfruit from "../../../src/assets/videos/Bento/Social Branding/Jackfruit.mp4";
+// import mango from "../../../src/assets/videos/Bento/Social Branding/Mango.mp4";
 import AboutSocialbranding from "../../Components/SocialBrandingPages/AboutSocialbranding";
 import HeroSection from "../../Components/SocialBrandingPages/HeroSection";
 import ServicesSocialBranding from "../../Components/SocialBrandingPages/ServicesSocialBranding";

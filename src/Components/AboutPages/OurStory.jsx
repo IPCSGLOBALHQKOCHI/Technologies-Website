@@ -7,7 +7,10 @@ function OurStory() {
   return (
     <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-24 py-6 md:py-16 ">
       <h1 className="font-300 text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-[#FFFFFFCC] text-left">
-        Our <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-400">Story</span>
+        Our{" "}
+        <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent font-400">
+          Story
+        </span>
       </h1>
       <p className="font-300 text-base sm:text-lg md:text-xl text-[#ffffff] my-6 sm:my-8 max-w-4xl text-left leading-relaxed">
         Creating valuable, audience-focused content, producing innovative
@@ -26,8 +29,9 @@ function OurStory() {
             Years Of Excellence
           </h2>
           <p className="text-base sm:text-lg text-[#ffffffcc] font-300">
-            Hear from those who’ve experienced the transformation. See how our
-            unique approach makes an impact.
+            IPCS Technologies: Pioneering cutting-edge IT solutions for over a
+            decade. We empower businesses with scalable, secure, and
+            future-ready digital infrastructure.
           </p>
         </div>
         <div className="p-6 sm:p-8 text-left" ref={projects.ref}>
@@ -39,14 +43,12 @@ function OurStory() {
             Projects Globally
           </h2>
           <p className="text-base sm:text-lg text-[#ffffffcc] font-light">
-            Hear from those who’ve experienced the transformation. See how our
-            unique approach makes an impact.
+            With over 100 successful projects delivered globally, we bring
+            proven experience and a deep understanding of diverse business needs
+            across industries and regions.
           </p>
         </div>
-        <div
-          className="p-6 sm:p-8 text-left"
-          ref={countries.ref}
-        >
+        <div className="p-6 sm:p-8 text-left" ref={countries.ref}>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-400 text-center text-[#ffffff]">
             {countries.count}+
           </h1>
@@ -55,8 +57,9 @@ function OurStory() {
             Countries
           </h2>
           <p className="text-base sm:text-lg text-[#ffffffcc] font-light">
-            Hear from those who’ve experienced the transformation. See how our
-            unique approach makes an impact.
+            We are proud to have earned the trust of clients from over 15
+            countries, reflecting our global reach and commitment to delivering
+            exceptional value across diverse markets.
           </p>
         </div>
         <div className="p-6 sm:p-8 text-left">
@@ -68,8 +71,9 @@ function OurStory() {
             Projects Valuation
           </h2>
           <p className="text-base sm:text-lg text-[#ffffffcc] font-light">
-            Hear from those who’ve experienced the transformation. See how our
-            unique approach makes an impact.
+            We have successfully executed projects worth over $1 million
+            globally, demonstrating our capability to deliver high-value
+            solutions that drive measurable impact for clients worldwide.
           </p>
         </div>
       </div>
