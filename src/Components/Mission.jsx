@@ -15,7 +15,7 @@ const Mission = forwardRef((props, ref) => {
     >
       {/* Desktop View */}
       <div className="hidden lg:block">
-        <h1 data-aos="fade-up" className="text-[250px] font-200 leading-none bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
+        <h1 data-aos="fade-up" className="text-[250px] font-300 leading-none bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
           Mission
         </h1>
         <p

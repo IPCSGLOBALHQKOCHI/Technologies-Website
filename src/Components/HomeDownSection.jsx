@@ -17,7 +17,7 @@ const CaseStudy = forwardRef((props, ref) => {
         We are a business reputation management company,
         </p>
         <p data-aos="fade-up" data-aos-delay="300" className="font-400">
-        delivering results for the past 10 years with
+        delivering results for the past 9 years with
         </p>
         <p data-aos="fade-up" data-aos-delay="500" className="font-400">
         end-to-end solutions that drive growth, success,

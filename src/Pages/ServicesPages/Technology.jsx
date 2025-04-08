@@ -7,6 +7,7 @@ import ServicesTechno from "../../Components/TechnologyPageComponents/ServicesTe
 import StackAndTools from "../../Components/TechnologyPageComponents/StackAndTools";
 import OurProcess from "../../Components/TechnologyPageComponents/OurProcess";
 import FAQ from "../../Components/TechnologyPageComponents/FAQ";
+import Portfolio from "../../Components/TechnologyPageComponents/Portfolio";
 
 const Technology = () => {
   return (
@@ -14,6 +15,7 @@ const Technology = () => {
       <HeroSection/>
       <AboutTechnology/>
       <ServicesTechno/>
+      <Portfolio/>
       <StackAndTools/>
       <OurProcess/>
       <FAQ/>

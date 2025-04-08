@@ -164,9 +164,9 @@ function OurProcess() {
         ))}
       </div>
       <div className="text-center items-center justify-center mt-0 md:mt-10">
-        <button className="bg-[#003ad6] text-white w-60 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300  group">
-          <a href="#connect" className="flex text-2xl items-center justify-center gap-6">
-            Connect
+        <button className="bg-[#003ad6] text-white w-72 h-14 px-6 sm:px-8 py-2 mt-6 sm:mt-8 md:mt-0 rounded-md border border-[#003ad6] transition-colors duration-300  group">
+          <a href="#connect" className="flex text-2xl items-center justify-center gap-8">
+           Let's Connect
             <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-3" />
           </a>
         </button>

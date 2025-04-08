@@ -24,7 +24,7 @@ const CaseStudySection = forwardRef((props, ref) => {
           <h2 className="text-[50px] md:text-[130px] font-200 text-[#FFFFFFCC]">
             Case
           </h2>
-          <h2 className="ml-14 text-[50px] md:text-[130px] font-300 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
+          <h2 className="ml-14 text-[50px] md:text-[130px] font-400 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
             Study
           </h2>
         </div>

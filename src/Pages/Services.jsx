@@ -13,7 +13,7 @@ const Services = () => {
             <h2 className="text-[50px] sm:text-[80px] lg:text-[130px] font-200 text-[#FFFFFFCC]">
               Our
             </h2>
-            <h2 className="ml-6 sm:ml-14 text-[50px] sm:text-[80px] lg:text-[130px] font-300 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
+            <h2 className="ml-6 sm:ml-14 text-[50px] sm:text-[80px] lg:text-[130px] font-400 bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
               Services
             </h2>
           </div>

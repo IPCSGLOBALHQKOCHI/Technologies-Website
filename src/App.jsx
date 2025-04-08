@@ -14,6 +14,7 @@ import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage.jsx";
 import TermsOfUse from './Pages/TermsOfUse';
 import CookieComponent from './Components/CookieComponent';
 import AboutPage from './Pages/AboutPage.jsx';
+import CaseStudyPage from './Pages/CaseStudyPage.jsx';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function MainContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutPage />} />
+          <Route path="/casestudy" element={<CaseStudyPage />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />

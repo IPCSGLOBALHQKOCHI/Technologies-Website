@@ -39,7 +39,7 @@ const Header = () => {
       <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
         {[
           { name: "ABOUT", link: "/aboutus" },
-          { name: "CASE STUDY", link: "#casestudy" },
+          { name: "CASE STUDY", link: "/" },
         ].map((item, index) => (
           <li
             key={index}
@@ -65,7 +65,7 @@ const Header = () => {
             }`}
           ></span>
             {isServicesOpen && (
-              <div className="fixed top-0 left-0 2xl:left-1/4 max-w-[76rem] my-16 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] "
+              <div className="fixed top-0 left-0 2xl:left-1/4 max-w-[76rem] h-auto my-20 ml-16 flex items-center justify-center bg-[#0B0B0B] text-white z-50 rounded-b-xl bg-[radial-gradient(50%_50%_at_0%_50%,#010741_0%,rgba(2,6,52,0)_100%)] backdrop-blur-[50px] "
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
               >
@@ -85,7 +85,7 @@ const Header = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-16 text-[#FFFFFF]">
+                  <div className="w-2/3 grid grid-cols-3 grid-rows-2 gap-8 mt-8 text-[#FFFFFF]">
                     {[
                       {
                         heading: "Branding",
@@ -121,7 +121,7 @@ const Header = () => {
                         link: "/digital-marketing",
                         subItems: [
                           {
-                            name: "Social Media Management",
+                            name: "Social Media Marketing",
                             link: "/digital-marketing",
                           },
                           {
@@ -183,25 +183,25 @@ const Header = () => {
                       },
                     ].map((category, index) => (
                       <div key={index} className="space-y-4">
-                        <h3 className="text-xl font-400 tracking-wide flex items-center group  transition-colors duration-300">
-                          <a href={category.link}>{category.heading}</a>
-                          <span className="ml-2">
-                            <BsArrowRight />
-                          </span>
-                        </h3>
-                        <ul className="space-y-2">
-                          {category.subItems.map((service, i) => (
-                            <li
-                              key={i}
-                              className="text-[#FFFFFFCC] font-100 text-lg tracking-wide relative hover:no-underline"
-                            >
-                              <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
-                                <a href={service.link}>{service.name}</a>
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      <h3 className="text-xl font-400 tracking-wide flex items-center transition-colors duration-300 group">
+                        <a href={category.link}>{category.heading}</a>
+                        <span className="ml-2">
+                          <BsArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
+                        </span>
+                      </h3>
+                      <ul className="space-y-2">
+                        {category.subItems.map((service, i) => (
+                          <li
+                            key={i}
+                            className="text-[#FFFFFFCC] font-100 text-lg tracking-wide relative hover:no-underline"
+                          >
+                            <span className="relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+                              <a href={service.link}>{service.name}</a>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>                                        
                     ))}
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#casestudy" className="block py-2 text-xl font-400 ">
+            <a href="/" className="block py-2 text-xl font-400 ">
               CASE STUDY
             </a>
           </li>
