@@ -4,29 +4,40 @@ import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
-
+import { useLocation } from 'react-router-dom';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const location = useLocation();
+
+  const noScrollPaths = [`/blog/:id`,]; 
 
   useEffect(() => {
+    if (noScrollPaths.includes(location.pathname)) {
+      return; 
+    }
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [location.pathname]);
+  const shouldIgnoreScroll = 
+  noScrollPaths.some(path => location.pathname === path) ||
+  location.pathname.startsWith('/blog/'); 
   return (
     <nav
-      className={`fixed w-full flex items-center justify-between z-40 px-6 md:px-16 py-3 transition-all duration-300 ${
-        isScrolled
-          ? "bg-[#0B0B0B] shadow-md text-white"
+      className={`fixed w-full flex items-center bg-black justify-between z-40 px-6 md:px-16 py-3 transition-all duration-300 ${
+        shouldIgnoreScroll 
+        ? "bg-[#000000] text-white" 
+        : isScrolled 
+          ? "bg-[#0B0B0B] shadow-md text-white" 
           : "bg-transparent text-white"
       }`}
     >
-      {/* Logo */}
       <a href="/">
         <img
           src={Logo}
@@ -39,7 +50,7 @@ const Header = () => {
       <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
         {[
           { name: "ABOUT", link: "/aboutus" },
-          { name: "CASE STUDY", link: "/" },
+          { name: "CASE STUDY", link: "/casestudy" },
         ].map((item, index) => (
           <li
             key={index}
@@ -253,7 +264,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="/" className="block py-2 text-xl font-400 ">
+            <a href="/casestudy" className="block py-2 text-xl font-400 ">
               CASE STUDY
             </a>
           </li>

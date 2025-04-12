@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { RxCross2 } from "react-icons/rx";
 const CookieComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -8,7 +8,7 @@ const CookieComponent = () => {
     if (!consent) {
       setTimeout(() => {
         setIsVisible(true);
-      }, 20000);
+      }, 50000);
     }
   }, []);
 
@@ -28,11 +28,18 @@ const CookieComponent = () => {
     <>
       <div className="fixed inset-0 bg-black/10 backdrop-blur-sm z-50"></div>
       <div className="fixed bottom-10 left-0 right-0 bg-[#ffffff]  rounded-lg text-[#0B0B0BCC] p-4 shadow-lg flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 z-50">
+        <button
+          onClick={handleDecline}
+          className="absolute top-4 right-4 text-black"
+          aria-label="Close"
+        >
+          <RxCross2 className="w-5 h-5"/>
+        </button>
         <div className="flex flex-col text-center md:text-left ml-10 mt-4">
-          <h2 className="text-2xl font-600 text-[#121212] mb-4">
+          <h2 className="text-2xl font-600 text-[#121212] mb-4 text-left">
             We Value Your Privacy
           </h2>
-          <p className="text-base mr-10 line-clamp-5 md:line-clamp-none">
+          <p className="text-base mr-10 line-clamp-5 mb-4 text-left">
             We use necessary cookies and technologies to operate this website
             and provide personalized services to you, both through this website
             and other media. Additionally, IPCS Technologies uses optional
@@ -44,7 +51,7 @@ const CookieComponent = () => {
             website, please refer to our Privacy Policy.{" "}
           </p>
         </div>
-        <div className="flex space-x-8 pr-8">
+        <div className="flex space-x-12 justify-end">
           <button
             onClick={handleAccept}
             className="bg-[#121212] text-[#FFFFFF] text-sm px-5 py-2 rounded-md border  border-black"

@@ -13,10 +13,18 @@ function Casestudies() {
   };
 
   return (
-    <div className="h-auto py-24 px-20">
-      <h1 className="text-7xl text-[#ffffff] font-400 px-8 mb-8">
-        Case Studies
-      </h1>
+    <div className="h-auto py-24 px-20 ">
+      <div className="flex flex-row">
+        <h1 className="text-7xl text-white hover:bg-gradient-to-r hover:from-[#001BCB] hover:to-[#CC92FF] hover:bg-clip-text hover:text-transparent font-normal px-8 mb-8 transition-all duration-300">
+          Give.
+        </h1>
+        <h1 className="text-7xl bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent hover:text-white hover:bg-none font-normal px-8 mb-8 transition-all duration-300">
+          Impact.
+        </h1>
+        <h1 className="text-7xl text-white hover:bg-gradient-to-r hover:from-[#001BCB] hover:to-[#CC92FF] hover:bg-clip-text hover:text-transparent font-normal px-8 mb-8 transition-all duration-300">
+          Delivered.
+        </h1>
+      </div>
       <div className="flex flex-wrap justify-center gap-6 md:gap-6">
         {cardData.map(
           ({ id, videoSrc, title1, description, thumbnail, sector }) => (

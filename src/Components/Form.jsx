@@ -17,6 +17,8 @@ const Form = () => {
     phone: Yup.string()
       .matches(/^\+?[1-9]\d{1,4}\d{10}$/, "Enter a valid phone number")
       .required("Phone number is required"),
+      services: Yup.string().required("Please select a service"),
+      message: Yup.string().required("Please tell us about your need...!")
   });
 
   const formik = useFormik({
@@ -25,8 +27,10 @@ const Form = () => {
       email: "",
       phone: "",
       message: "",
+      services: "",
       timestamp: "",
     },
+    
     validationSchema,
     onSubmit: async (values, { resetForm }) => {
       try {
@@ -40,10 +44,9 @@ const Form = () => {
           {
             headers: {
               "Content-Type": "application/json",
-            },
+            }, 
           }
         );
-
         if (response.status === 200) {
           setModalType("success");
           setModalMessage(
@@ -67,68 +70,93 @@ const Form = () => {
         Get a <span className="font-700">FREE 30-minutes</span> consultation
       </h2>
       <form onSubmit={formik.handleSubmit} className="space-y-4">
-        <div className="pt-4">
-          <label className="block text-[#0B0B0B]">Name*</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Charles David"
-            className="w-full px-3 py-3 border text-base focus:outline-none border-[#727272cc] border-b-[#0B0B0B] border-b-2  "
-            {...formik.getFieldProps("name")}
-          />
-          {formik.touched.name && formik.errors.name && (
-            <div className="text-red-500 text-sm">{formik.errors.name}</div>
-          )}
-        </div>
-        <div className="pt-4">
-          <label className="block text-[#0B0B0B]">Email*</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="name@example.com"
-            className="w-full px-3 py-3 border text-base focus:outline-none border-[#727272cc] border-b-[#0B0B0B] border-b-2 "
-            {...formik.getFieldProps("email")}
-          />
-          {formik.touched.email && formik.errors.email && (
-            <div className="text-red-500 text-sm">{formik.errors.email}</div>
-          )}
-        </div>
-        <div className="pt-4">
-          <label className="block text-[#0B0B0B]">Phone Number*</label>
-          <div className="border border-[#727272cc] border-b-[#0B0B0B] border-b-2">
-            <PhoneInput
-              country={"in"}
-              value={formik.values.phone}
-              onChange={(phone) => {
-                formik.setFieldValue("phone", phone);
-                formik.setFieldTouched("phone", true, false);
-              }}
-              inputClass="!w-full !py-6 !px-20 !border-none !text-black focus:outline-none"
-              buttonClass="!bg-white !p-3 "
-              containerClass="!w-full"
-            />
-          </div>
-          {formik.touched.phone && formik.errors.phone && (
-            <div className="text-red-500 text-sm">{formik.errors.phone}</div>
-          )}
-        </div>
-        <div className="pt-4">
-          <label className="block text-[#0B0B0B]">Tell Us More</label>
-          <textarea
-            name="message"
-            placeholder="Tell More Us About Your Vision"
-            className="w-full px-3 py-3 border border-[#727272cc] border-b-[#000000] text-base focus:outline-none border-b-2"
-            rows="3"
-            {...formik.getFieldProps("message")}
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full sm:w-40 bg-[#003ad6] text-white p-2 rounded-md"
-        >
-          Submit
-        </button>
-      </form>
+  <div className="pt-4">
+    <label className="block text-[#0B0B0B]">Name*</label>
+    <input
+      type="text"
+      name="name"
+      placeholder="Charles David"
+      className="w-full px-3 py-3 border text-base focus:outline-none border-[#727272cc] border-b-[#0B0B0B] border-b-2"
+      {...formik.getFieldProps("name")}
+    />
+    {formik.touched.name && formik.errors.name && (
+      <div className="text-red-500 text-sm">{formik.errors.name}</div>
+    )}
+  </div>
+
+  <div className="pt-4 flex flex-col sm:flex-row gap-4">
+    <div className="w-full sm:w-1/2">
+      <label className="block text-[#0B0B0B]">Email*</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="name@example.com"
+        className="w-full px-3 py-3 border text-base focus:outline-none border-[#727272cc] border-b-[#0B0B0B] border-b-2"
+        {...formik.getFieldProps("email")}
+      />
+      {formik.touched.email && formik.errors.email && (
+        <div className="text-red-500 text-sm">{formik.errors.email}</div>
+      )}
+    </div>
+
+    <div className="w-full sm:w-1/2">
+      <label className="block text-[#0B0B0B]">Phone Number*</label>
+      <div className="border border-[#727272cc] border-b-[#0B0B0B] border-b-2">
+        <PhoneInput
+          country={"in"}
+          value={formik.values.phone}
+          onChange={(phone) => {
+            formik.setFieldValue("phone", phone);
+            formik.setFieldTouched("phone", true, false);
+          }}
+          inputClass="!w-full !py-6 !pl-20 !border-none !text-black focus:outline-none"
+          buttonClass="!bg-white !p-3"
+          containerClass="!w-full"
+        />
+      </div>
+      {formik.touched.phone && formik.errors.phone && (
+        <div className="text-red-500 text-sm">{formik.errors.phone}</div>
+      )}
+    </div>
+  </div>
+  <div className="pt-4">
+  <label className="block text-[#0B0B0B]">Services*</label>
+  <select
+    name="services"
+    className="w-full px-3 py-3 border border-[#727272cc] border-b-[#000000] text-black/80 text-base focus:outline-none border-b-2 rounded-none"
+    {...formik.getFieldProps("services")}
+  >
+    <option value="">Select a service</option>
+    <option value="branding">Branding</option>
+    <option value="technology">Technology</option>
+    <option value="digitalmarketing">Digital Marketing</option>
+    <option value="experiencedesign">Experience Design</option>
+    <option value="socialbranding">Social Branding</option>
+  </select>
+  {formik.touched.services && formik.errors.services && (
+    <div className="text-red-500 text-sm">{formik.errors.services}</div>
+  )}
+</div>
+  <div className="pt-4">
+    <label className="block text-[#0B0B0B]">Tell Us More*</label>
+    <textarea
+      name="message"
+      placeholder="Tell More Us About Your Vision"
+      className="w-full px-3 py-3 border border-[#727272cc] border-b-[#000000] text-base focus:outline-none border-b-2"
+      rows="3"
+      {...formik.getFieldProps("message")}
+    ></textarea>
+      {formik.touched.message && formik.errors.message && (
+      <div className="text-red-500 text-sm">{formik.errors.message}</div>
+    )}
+  </div>
+  <button
+    type="submit"
+    className="w-full sm:w-40 bg-[#003ad6] text-white p-2 rounded-md"
+  >
+    Submit
+  </button>
+</form>
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}

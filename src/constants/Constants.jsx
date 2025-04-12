@@ -69,6 +69,14 @@ import sisuVideo from "../assets/videos/Bento/Branding/SISU Logo.mp4";
 import bhanoothumb from "../assets/images/bhanoothumb.png";
 import sisuthumb from "../assets/images/sisuthumb.png";
 import makthumb from "../assets/images/makayriamthumb.png";
+import bsidesthumb from "../assets/images/besides.jpg";
+import triplepleithumb from "../assets/images/3plei.jpg";
+import bmgthumb from "../assets/images/bmg.jpg";
+import frenwoodsthumb from "../assets/images/fernwoods.jpg";
+import skypowethumb from "../assets/images/skypower.jpg";
+import thoughtlightthumb from "../assets/images/thoughtlight.jpg";
+
+//casestudy
 export const cardData = [
   {
     id: 1,
@@ -102,69 +110,54 @@ export const cardData = [
   },
   {
     id: 4,
-    videoSrc: sisuVideo,
     title1: "Sky Power Energy",
     title2: "Energy",
-    thumbnail: sisuthumb,
+    thumbnail: skypowethumb,
     sector:"SEO",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
   },
   {
     id: 5,
-    videoSrc: sisuVideo,
     title1: "Bsides",
     title2: "Education",
-    thumbnail: sisuthumb,
+    thumbnail: bsidesthumb,
     sector:"Event Branding",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
   },
+  
   {
     id: 6,
-    videoSrc: sisuVideo,
     title1: "Best Money Gold",
     title2: "Jewellery",
-    thumbnail: sisuthumb,
+    thumbnail: bmgthumb,
     sector:"Google Ads",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
   },
   {
     id: 7,
-    videoSrc: sisuVideo,
     title1: "FernWoods",
     title2: "Hospitality / Resort",
-    thumbnail: sisuthumb,
+    thumbnail: frenwoodsthumb,
     sector:"Logo Development",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
   },  {
     id: 8,
-    videoSrc: sisuVideo,
     title1: "Triplei",
     title2: "Education",
-    thumbnail: sisuthumb,
+    thumbnail: triplepleithumb,
     sector:"Meta Ads",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
   },
   {
     id: 9,
-    videoSrc: sisuVideo,
     title1: "Thoughtlight",
     title2: "Digital Encyclopedia",
-    thumbnail: sisuthumb,
-    sector:"Content Marketing",
-    description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
-  },
-  {
-    id: 10,
-    videoSrc: sisuVideo,
-    title1: "Wagmon Safari",
-    title2: "Hospitality/Resort",
-    thumbnail: sisuthumb,
+    thumbnail: thoughtlightthumb,
     sector:"Content Marketing",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
@@ -500,3 +493,15 @@ export const teamMembers = [
     image: xaviDev,
   },
 ];
+
+
+<a
+href="/privacy-policy"
+className="underline text-blue-600 hover:text-blue-800"
+target="_blank"
+rel="noopener noreferrer"
+>
+Privacy Policy
+</a>
+
+
