@@ -115,7 +115,7 @@ export const cardData = [
     thumbnail: skypowethumb,
     sector:"SEO",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We rebranded and optimized Sky Power Energy’s website to improve SEO, making it more functional, user-friendly, and search-friendly—helping users connect faster while boosting organic visibility and lead conversions in Australia.",
   },
   {
     id: 5,
@@ -124,7 +124,7 @@ export const cardData = [
     thumbnail: bsidesthumb,
     sector:"Event Branding",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We made the BSides event experience with impactful visuals and cohesive branding—making it more engaging, recognizable, and consistent across all touchpoints, while enhancing attendee interaction and strengthening the event’s overall identity.",
   },
   
   {
@@ -134,7 +134,7 @@ export const cardData = [
     thumbnail: bmgthumb,
     sector:"Google Ads",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We crafted and optimized Google Ads campaigns for Best Money Gold Jewellery, driving high-intent traffic, increasing store visits, and boosting conversions—resulting in improved online visibility and stronger customer engagement.",
   },
   {
     id: 7,
@@ -143,7 +143,7 @@ export const cardData = [
     thumbnail: frenwoodsthumb,
     sector:"Logo Development",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We developed a distinctive logo for Fernwoods, capturing the essence of their resort and hotel brand—blending elegance with nature to create a strong, memorable identity that resonates with their target audience.",
   },  {
     id: 8,
     title1: "Triplei",
@@ -151,7 +151,7 @@ export const cardData = [
     thumbnail: triplepleithumb,
     sector:"Meta Ads",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We managed Meta Ads for Triplei Commerce Academy, targeting students with engaging educational content—boosting inquiries, increasing enrollments, and enhancing the academy’s online presence in the competitive education space.",
   },
   {
     id: 9,
@@ -160,7 +160,7 @@ export const cardData = [
     thumbnail: thoughtlightthumb,
     sector:"Content Marketing",
     description:
-      "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
+      "We delivered strategic content marketing and compelling video production for Thoughtlight, boosting brand awareness, driving engagement, and effectively communicating their message across digital platforms to reach and resonate with their target audience.",
   },
 ];
 
@@ -472,25 +472,25 @@ export const servicesExpeDesign = [
   ],
 ];
 
-import xaviDev from "../assets/images/xaviteam.png";
+// import xaviDev from "../assets/images/xaviteam.png";
 export const teamMembers = [
   {
     id: 1,
     name: "Saviyola Shajan",
     role: "Web Developer",
-    image: xaviDev,
+    // image: xaviDev,
   },
   {
     id: 2,
     name: "John Doe",
     role: "UI/UX Designer",
-    image: xaviDev,
+    // image: xaviDev,
   },
   {
     id: 3,
     name: "Jane Smith",
     role: "Software Engineer",
-    image: xaviDev,
+    // image: xaviDev,
   },
 ];
 

@@ -80,7 +80,7 @@ const AllBlogs = () => {
                         {category.name}
                       </p>
                     )}
-                    <div className="flex justify-between mt-4 text-white/60 text-sm sm:text-base">
+                    <div className="flex justify-between mt-4 text-white/60 text-sm sm:text-base bottom-0">
                       <p>By {author}</p>
                       <p>{date}</p>
                     </div>

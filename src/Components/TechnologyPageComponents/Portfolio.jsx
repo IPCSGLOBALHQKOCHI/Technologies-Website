@@ -1,50 +1,78 @@
 import React, { useEffect, useRef } from "react";
 import showreel from "../../assets/videos/Showreel 60 FPS.mp4";
+import showreelhorizontl from "../../assets/videos/Showreel Horizontal Compressed.mp4";
 
 function Portfolio() {
-  const videoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
+  const desktopVideoRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          videoRef.current?.play();
-        } else {
-          videoRef.current?.pause();
-        }
-      },
-      { threshold: 0.5 } 
-    );
+    const handleIntersection = (ref) => ([entry]) => {
+      if (entry.isIntersecting) {
+        ref.current?.play();
+      } else {
+        ref.current?.pause();
+      }
+    };
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
+    const options = { threshold: 0.5 };
+
+    const observers = [];
+
+    if (mobileVideoRef.current) {
+      const observer = new IntersectionObserver(handleIntersection(mobileVideoRef), options);
+      observer.observe(mobileVideoRef.current);
+      observers.push(observer);
+    }
+
+    if (desktopVideoRef.current) {
+      const observer = new IntersectionObserver(handleIntersection(desktopVideoRef), options);
+      observer.observe(desktopVideoRef.current);
+      observers.push(observer);
     }
 
     return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
-      }
+      if (mobileVideoRef.current) observers[0]?.unobserve(mobileVideoRef.current);
+      if (desktopVideoRef.current) observers[1]?.unobserve(desktopVideoRef.current);
     };
   }, []);
 
   return (
-    <div className="block sm:hidden px-6 py-16 min-h-screen mb-20">
-      <h1 className="text-5xl font-light text-white mb-8">
+    <div className="px-4 sm:px-6 md:px-20 py-8 md:py-20 min-h-screen relative flex flex-col">
+      <h1 className="text-3xl sm:text-4xl md:text-7xl font-light text-white mb-8 text-left">
         Our{" "}
         <span className="bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] bg-clip-text text-transparent font-medium">
           Works
         </span>
       </h1>
-      <video
-        ref={videoRef}
-        className="absolute w-80 h-[26rem] object-cover"
-        muted
-        loop
-        preload="auto"
-        playsInline
-      >
-        <source src={showreel} type="video/mp4" />
-      </video>
+      
+      {/* Mobile Video */}
+      <div className="w-full max-w-xs sm:max-w-md md:hidden">
+        <video
+          ref={mobileVideoRef}
+          className="w-full h-auto object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          preload="auto"
+          playsInline
+        >
+          <source src={showreel} type="video/mp4" />
+        </video>
+      </div>
+
+      {/* Desktop Video */}
+      <div className="w-full hidden md:block max-w-6xl">
+        <video
+          ref={desktopVideoRef}
+          className="w-full h-auto object-cover rounded-lg shadow-xl"
+          muted
+          loop
+          preload="auto"
+          playsInline
+        >
+          <source src={showreelhorizontl} type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 }
