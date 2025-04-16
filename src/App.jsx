@@ -18,6 +18,7 @@ import AboutPage from './Pages/AboutPage.jsx';
 import CaseStudyPage from './Pages/CaseStudyPage.jsx';
 import AllBlogs from './Components/Blogs/AllBlogs.jsx';
 import SingleBlogPage from './Components/Blogs/SingleBlogPage.jsx';
+import ServicePagehome from './Pages/ServicePagehome.jsx';
 
 function App() {
   return (
@@ -40,13 +41,14 @@ function MainContent() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/casestudy" element={<CaseStudyPage />} />
+          <Route path="/services" element={<ServicePagehome />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/technology" element={<Technology />} />
-          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />x``
           <Route path="/social-branding" element={<SocialBranding />} />
           <Route path="/experience-design" element={<ExperienceDesign />} />
           <Route path='/blogs' element={<AllBlogs />} />
-          <Route path='/blog/:id' element={<SingleBlogPage />} />
+          <Route path='/blog/:slug' element={<SingleBlogPage />} />
           <Route path='/connect-us' element={<ConnectPage />} />
           <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
           <Route path='/terms-of-use' element={<TermsOfUse />} />

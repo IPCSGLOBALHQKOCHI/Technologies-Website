@@ -68,8 +68,8 @@ const Header = () => {
         ))}
 
         {/* Services Dropdown */}
-        <li className="relative group cursor-pointer list-none ">
-          <span onMouseEnter={() => setIsServicesOpen(true)}>SERVICES</span>
+        <li className="relative group cursor-pointer list-none">
+          <span onMouseEnter={() => setIsServicesOpen(true)}><a href="/services">SERVICES</a></span>
           <span
             className={`absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${
               isScrolled ? "bg-white" : "bg-white"

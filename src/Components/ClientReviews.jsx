@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 import { cardDataReviews } from "../constants/Constants";
+import { LuCircleArrowRight,LuCircleArrowLeft } from "react-icons/lu"; // Optional: Replace with any icon set you prefer
 
 const ClientReviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,13 +18,22 @@ const ClientReviews = () => {
   const cardsPerPage = screenWidth < 768 ? 1 : 2;
   const totalPages = Math.ceil(totalReviews / cardsPerPage);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + cardsPerPage) % totalReviews);
-    }, 4000);
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () =>
+      setCurrentIndex((prev) => (prev + cardsPerPage) % totalReviews),
+    onSwipedRight: () =>
+      setCurrentIndex((prev) => (prev - cardsPerPage + totalReviews) % totalReviews),
+    preventDefaultTouchmoveEvent: true,
+    trackTouch: true,
+  });
 
-    return () => clearInterval(interval);
-  }, [totalReviews, cardsPerPage]);
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - cardsPerPage + totalReviews) % totalReviews);
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + cardsPerPage) % totalReviews);
+  };
 
   return (
     <div
@@ -47,8 +58,19 @@ const ClientReviews = () => {
         </p>
       </div>
 
-      {/* Responsive Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-2 md:p-6 justify-center items-center max-w-[1580px] mx-0 md:mx-20">
+      <div className="hidden md:flex justify-end gap-2 mr-24">
+        <button onClick={goToPrev} className="text-white hover:text-[#CC92FF] transition">
+          <LuCircleArrowLeft size={32} />
+        </button>
+        <button onClick={goToNext} className="text-white hover:text-[#CC92FF] transition">
+          <LuCircleArrowRight size={32} />
+        </button>
+      </div>
+
+      <div
+        {...swipeHandlers}
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 p-2 md:p-6 justify-center items-center max-w-[1580px] mx-0 md:mx-20"
+      >
         {Array.from({ length: cardsPerPage }).map((_, i) => {
           const index = (currentIndex + i) % totalReviews;
           const project = cardDataReviews[index];
@@ -71,8 +93,6 @@ const ClientReviews = () => {
           );
         })}
       </div>
-
-      {/* Dots Indicator */}
       <div className="flex justify-center items-center mt-6 gap-2">
         {Array.from({ length: totalPages }).map((_, idx) => (
           <div

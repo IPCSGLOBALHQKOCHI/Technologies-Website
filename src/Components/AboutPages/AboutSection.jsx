@@ -20,7 +20,7 @@ function AboutSection() {
     <img 
       src={About2Img} 
       alt="team" 
-      className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-5xl h-[100vh]  p-4 sm:p-8 " 
+      className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-5xl h-[50vh] md:h-[100vh]  p-4 sm:p-8 " 
     />
   </div>
 

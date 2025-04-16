@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">
       <img
-        src={TechnoImg}
+        src={TechnoImg} 
         alt="techno"
         className="absolute inset-0 w-full h-full object-cover"
       />

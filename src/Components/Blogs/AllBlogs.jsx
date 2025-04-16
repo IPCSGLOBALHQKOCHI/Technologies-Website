@@ -44,7 +44,7 @@ const AllBlogs = () => {
         </h1>
 
         {loading ? (
-          <p className="text-white">Loading...</p>
+          <p className="text-white text-5xl font-400">Loading...</p>
         ) : posts.length === 0 ? (
           <p className="text-white">No blog posts found.</p>
         ) : (
@@ -54,14 +54,14 @@ const AllBlogs = () => {
               const author = post?.yoast_head_json?.author;
               const date = new Date(post.date).toLocaleDateString();
               const title = post?.yoast_head_json?.og_title;
+              const slug =post.slug
               const category = categories.find(
                 (cat) => cat.id === post.categories?.[0]
               );
-
               return (
                 <div key={post.id} className="overflow-hidden p-1">
                   {image && (
-                    <Link to={`/blog/${post.id}`}>
+                    <Link to={`/blog/${slug}`}>
                       <img
                         src={image}
                         alt="Post Thumbnail"
@@ -70,7 +70,7 @@ const AllBlogs = () => {
                     </Link>
                   )}
                   <div className="mt-4">
-                    <Link to={`/blog/${post.id}`}>
+                    <Link to={`/blog/${slug}`}>
                       <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-white hover:underline">
                         {title}
                       </h2>

@@ -70,11 +70,11 @@ const HeroSection = React.forwardRef((props, ref) => {
           }`}
         >
           <a
-            href="/connect-us"
+            href="#services"
             className="block bg-[#003ad6] text-white px-4 py-2 w-44 rounded-md text-lg text-center"
           >
             <div className="flex items-center justify-center gap-3">
-              Let's Connect
+              Our services
               <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2" />
             </div>
           </a>
