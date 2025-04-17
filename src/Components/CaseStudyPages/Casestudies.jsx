@@ -66,7 +66,7 @@ function Casestudies() {
 
                     <button
                       onClick={() => handlePlayPause(id)}
-                      className="absolute inset-0 flex items-center justify-center transition-colors duration-300 z-10"
+                      className="absolute inset-0 flex items-center justify-center hover:bg-black/50 transition-colors duration-300 z-10"
                     >
                       <svg
                         className="w-14 h-14 text-white"

@@ -3,7 +3,8 @@ export const technologyProcess = [
   {
     id: 1,
     title: "Evaluation",
-    description: "Analyzing client needs to define project scope, goals, and requirements.",
+    description:
+      "Analyzing client needs to define project scope, goals, and requirements.",
     dropdown:
       "We understand client needs, gather requirements, analyze feasibility, define scope, set goals, and ensure alignment with stakeholders for successful execution.",
     side: "left",
@@ -46,7 +47,8 @@ export const technologyProcess = [
   {
     id: 6,
     title: "Deployment",
-    description: "Deploying applications to ensure a smooth launch and user accessibility.",
+    description:
+      "Deploying applications to ensure a smooth launch and user accessibility.",
     dropdown:
       "Deploying applications to production environments, ensuring smooth launch, optimal performance, and seamless user access with minimal downtime.",
     side: "right",
@@ -84,9 +86,38 @@ export const cardData = [
     title1: "Makayiram Retreat",
     title2: "Hospitality",
     thumbnail: makthumb,
-    sector:"Website Development",
+    sector: "Website Development",
     description:
       "We revamped the resort's website based on a wild and luxury concept. The design reflects the environment, enhances the customer experience on the property, and captures the essence of luxury and adventure.",
+  },
+
+  {
+    id: 4,
+    title1: "Sky Power Energy",
+    title2: "Energy",
+    thumbnail: skypowethumb,
+    sector: "SEO",
+    description:
+      "We rebranded and optimized Sky Power Energy’s website to improve SEO, making it more functional, user-friendly, and search-friendly—helping users connect faster while boosting organic visibility and lead conversions in Australia.",
+  },
+
+  {
+    id: 5,
+    title1: "Bsides",
+    title2: "Education",
+    thumbnail: bsidesthumb,
+    sector: "Event Branding",
+    description:
+      "We made the BSides event experience with impactful visuals and cohesive branding—making it more engaging, recognizable, and consistent across all touchpoints, while enhancing attendee interaction and strengthening the event’s overall identity.",
+  },
+  {
+    id: 6,
+    title1: "Best Money Gold",
+    title2: "Jewellery",
+    thumbnail: bmgthumb,
+    sector: "Google Ads",
+    description:
+      "We crafted and optimized Google Ads campaigns for Best Money Gold Jewellery, driving high-intent traffic, increasing store visits, and boosting conversions—resulting in improved online visibility and stronger customer engagement.",
   },
   {
     id: 2,
@@ -94,9 +125,27 @@ export const cardData = [
     title1: "Bhanoo Hospital & Eye Care",
     title2: "Health Care",
     thumbnail: bhanoothumb,
-    sector:"Rebranding",
+    sector: "Rebranding",
     description:
       "We have completed the rebranding process for the entire website, making it more meaningful, functional, and user-friendly. It now enables users to act faster and connect more easily with departments and doctors.",
+  },
+  {
+    id: 7,
+    title1: "FernWoods",
+    title2: "Hospitality / Resort",
+    thumbnail: frenwoodsthumb,
+    sector: "Logo Development",
+    description:
+      "We developed a distinctive logo for Fernwoods, capturing the essence of their resort and hotel brand—blending elegance with nature to create a strong, memorable identity that resonates with their target audience.",
+  },
+  {
+    id: 8,
+    title1: "Triplei",
+    title2: "Education",
+    thumbnail: triplepleithumb,
+    sector: "Meta Ads",
+    description:
+      "We managed Meta Ads for Triplei Commerce Academy, targeting students with engaging educational content—boosting inquiries, increasing enrollments, and enhancing the academy’s online presence in the competitive education space.",
   },
   {
     id: 3,
@@ -104,61 +153,16 @@ export const cardData = [
     title1: "Sisu Eclipse",
     title2: "Art Dealer",
     thumbnail: sisuthumb,
-    sector:"Logo Development",
+    sector: "Logo Development",
     description:
       "Sisu Eclipse is an art dealer from Ireland. We designed their logo and developed the user experience for their eCommerce platform. The logo reflects the themes of an eclipse and paintings.",
-  },
-  {
-    id: 4,
-    title1: "Sky Power Energy",
-    title2: "Energy",
-    thumbnail: skypowethumb,
-    sector:"SEO",
-    description:
-      "We rebranded and optimized Sky Power Energy’s website to improve SEO, making it more functional, user-friendly, and search-friendly—helping users connect faster while boosting organic visibility and lead conversions in Australia.",
-  },
-  {
-    id: 5,
-    title1: "Bsides",
-    title2: "Education",
-    thumbnail: bsidesthumb,
-    sector:"Event Branding",
-    description:
-      "We made the BSides event experience with impactful visuals and cohesive branding—making it more engaging, recognizable, and consistent across all touchpoints, while enhancing attendee interaction and strengthening the event’s overall identity.",
-  },
-  
-  {
-    id: 6,
-    title1: "Best Money Gold",
-    title2: "Jewellery",
-    thumbnail: bmgthumb,
-    sector:"Google Ads",
-    description:
-      "We crafted and optimized Google Ads campaigns for Best Money Gold Jewellery, driving high-intent traffic, increasing store visits, and boosting conversions—resulting in improved online visibility and stronger customer engagement.",
-  },
-  {
-    id: 7,
-    title1: "FernWoods",
-    title2: "Hospitality / Resort",
-    thumbnail: frenwoodsthumb,
-    sector:"Logo Development",
-    description:
-      "We developed a distinctive logo for Fernwoods, capturing the essence of their resort and hotel brand—blending elegance with nature to create a strong, memorable identity that resonates with their target audience.",
-  },  {
-    id: 8,
-    title1: "Triplei",
-    title2: "Education",
-    thumbnail: triplepleithumb,
-    sector:"Meta Ads",
-    description:
-      "We managed Meta Ads for Triplei Commerce Academy, targeting students with engaging educational content—boosting inquiries, increasing enrollments, and enhancing the academy’s online presence in the competitive education space.",
   },
   {
     id: 9,
     title1: "Thoughtlight",
     title2: "Digital Encyclopedia",
     thumbnail: thoughtlightthumb,
-    sector:"Content Marketing",
+    sector: "Content Marketing",
     description:
       "We delivered strategic content marketing and compelling video production for Thoughtlight, boosting brand awareness, driving engagement, and effectively communicating their message across digital platforms to reach and resonate with their target audience.",
   },
@@ -252,7 +256,7 @@ import skyReview from "../assets/images/skyreview.jpg";
 export const cardDataReviews = [
   {
     imgSrc: besides,
-    bgImg:besidesReview,
+    bgImg: besidesReview,
     title: "Bsides",
     category: "Event Branding",
     description:
@@ -260,7 +264,7 @@ export const cardDataReviews = [
   },
   {
     imgSrc: bmg,
-    bgImg:bmgreview,
+    bgImg: bmgreview,
     title: "Best Money Gold",
     category: "Finance",
     description:
@@ -268,7 +272,7 @@ export const cardDataReviews = [
   },
   {
     imgSrc: sisiulogo,
-    bgImg:sisiuReview,
+    bgImg: sisiuReview,
     title: "Sisu Eclipse",
     category: "ART Dealer",
     description:
@@ -276,7 +280,7 @@ export const cardDataReviews = [
   },
   {
     imgSrc: skylogo,
-    bgImg:skyReview,
+    bgImg: skyReview,
     title: "Sky Power Energy",
     category: "Energy ",
     description:
@@ -362,7 +366,6 @@ export const servicesBranding = [
   ],
 ];
 
-
 //services DM page
 export const servicesDM = [
   [
@@ -400,7 +403,8 @@ export const servicesDM = [
     },
     {
       title: "SEO Strategy",
-      description: "Enhancing Online Visibility through Search Engine Optimization.",
+      description:
+        "Enhancing Online Visibility through Search Engine Optimization.",
       details:
         "Boost your online visibility with a tailored SEO strategy. Optimize your website’s content and structure to rank higher on search engines, drive organic traffic, and improve your brand’s digital presence.",
     },
@@ -421,7 +425,7 @@ export const servicesSocialBranding = [
       description: "Producing Innovative and Impactful visuals.",
       details:
         "Enhance your social branding with organic creatives. Produce innovative and impactful visuals that captivate your audience, foster engagement, and elevate your brand’s presence across social media platforms.",
-    }
+    },
   ],
   [
     {
@@ -439,7 +443,6 @@ export const servicesSocialBranding = [
   ],
 ];
 
-
 //services ExpeDesign page
 export const servicesExpeDesign = [
   [
@@ -451,7 +454,8 @@ export const servicesExpeDesign = [
     },
     {
       title: "Web App Design",
-      description: "Functional, intuitive interfaces to optimize user engagement.",
+      description:
+        "Functional, intuitive interfaces to optimize user engagement.",
       details:
         "Craft seamless web app design with functional, intuitive interfaces that optimize user engagement. Enhance user experience through thoughtful design, ensuring easy navigation and improved interaction with your digital platform.",
     },
@@ -461,14 +465,15 @@ export const servicesExpeDesign = [
       title: " Mobile App Design",
       description: "Smart, efficient solutions to enhance operational flow.",
       details:
-       " Create impactful mobile app design with smart, efficient solutions that enhance operational flow. Optimize user experience through intuitive interfaces, ensuring smooth interactions and increased functionality for better user engagement.",
+        " Create impactful mobile app design with smart, efficient solutions that enhance operational flow. Optimize user experience through intuitive interfaces, ensuring smooth interactions and increased functionality for better user engagement.",
     },
     {
       title: "Software Design",
-      description: "Industry-specific workflows designed for operational efficiency.",
+      description:
+        "Industry-specific workflows designed for operational efficiency.",
       details:
         "Develop software design with industry-specific workflows to enhance operational efficiency. Create tailored solutions that streamline processes, improve user experience, and drive productivity through intuitive, effective design.",
-    }
+    },
   ],
 ];
 
@@ -493,15 +498,81 @@ export const teamMembers = [
     // image: xaviDev,
   },
 ];
+import dmservice from "../assets/images/dmservice.jpg";
+import brandingservice from "../assets/images/brandingservice.jpg";
+import techservice from "../assets/images/technologyservice.jpg";
+import socialservice from "../assets/images/socialservice.jpg";
+import expedesignservice from "../assets/images/expedesignservice.jpg";
 
-
-<a
-href="/privacy-policy"
-className="underline text-blue-600 hover:text-blue-800"
-target="_blank"
-rel="noopener noreferrer"
->
-Privacy Policy
-</a>
-
-
+export const ServicesDatas = [
+  {
+    title: "Branding",
+    description:
+      "From defining identity and values to creating premium logos, cohesive materials, immersive visuals, and functional product designs that captivate and leave a lasting impression.",
+    imageUrl: brandingservice,
+    services: [
+      "Brand Consulting",
+      "Brand Identity",
+      "Logo Design",
+      "Brand Collateral",
+      "2D/3D Visualization",
+      "Product Design",
+    ],
+    link: "/branding",
+  },
+  {
+    title: "Technology",
+    description:
+      "Building dynamic, high-performance websites, designing scalable mobile apps, and delivering complete e-commerce solutions to drive business growth and enhance user experiences.",
+    imageUrl:techservice,
+    services: [
+      "Web Development",
+      "Mobile App Development",
+      "WebApp Developmet",
+      " E-Commerce",
+      "Coustom Software Development",
+    ],
+    link: "/technology",
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Creating powerful social strategies, executing data-driven campaigns, and enhancing SEO to boost visibility and drive measurable growth across all platforms.",
+    imageUrl: dmservice,
+    services: [
+      "Social Media Marketing",
+      "Performance Marketing",
+      "Meta Ads",
+      "SEO Strategy",
+      "Linkedin Campaigns",
+      "Google Ads",
+    ],
+    link: "/digital-marketing",
+  },
+  {
+    title: "Social Branding",
+    description:
+      "Creating valuable, audience-focused content, producing innovative visuals, and building communities that engage and foster brand loyalty for lasting connections and impact.",
+    imageUrl: socialservice,
+    services: [
+      "Content Marketing",
+      "Organic Creatives",
+      "Community Building",
+      "Social Media Management",
+    ],
+    link: "/social-branding",
+  },
+  {
+    title: "Experience Design",
+    description:
+      "Designing intuitive UI/UX, crafting visually appealing websites, and ensuring seamless mobile experiences for engaging, user-friendly interactions across all platforms.",
+    imageUrl: expedesignservice,
+    services: [
+      "Website Design",
+      "Mobile App Design",
+      "Web App Design",
+      "Software Design",
+    ],
+    link: "/experience-design",
+  },
+];
