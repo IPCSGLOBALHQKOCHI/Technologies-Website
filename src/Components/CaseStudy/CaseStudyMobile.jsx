@@ -86,6 +86,15 @@ const CaseStudyMobile = () => {
             </div>
           </div>
         ))}
+      <button className="bg-[#003ad6] text-[#ffffff] px-6 py-3 w-52 rounded-md group mt-8">
+        <a
+          href="/casestudy"
+          className="text-xl font-400 inline-flex items-center"
+        >
+          View More
+          <BsArrowRight className="ml-5 mt-1 transition-transform duration-300 group-hover:translate-x-3" />
+        </a>
+      </button>
     </div>
   );
 };

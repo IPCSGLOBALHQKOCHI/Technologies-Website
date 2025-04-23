@@ -47,7 +47,7 @@ const Header = () => {
       </a>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex space-x-16 font-400 tracking-wide 2xl:mx-auto">
+      <div className="hidden md:flex space-x-16 font-400 tracking-wide">
         {[
           { name: "ABOUT", link: "/aboutus" },
           { name: "CASE STUDY", link: "/casestudy" },
@@ -277,6 +277,14 @@ const Header = () => {
             </button>
             {isServicesOpen && (
               <ul className="ml-4 mt-2 space-y-3 text-base tracking-[0.60px]">
+                 <li className="flex">
+                  <a href="/services" className="block py-1 text-xl bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
+                  Summary 
+                  </a>
+                  <span className="ml-2 mt-2">
+                    <BsArrowRight />
+                  </span>
+                </li>
                 <li className="flex">
                   <a href="/branding" className="block py-1 text-xl">
                     Branding

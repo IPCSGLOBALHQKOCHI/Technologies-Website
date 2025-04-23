@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesDM } from "../../constants/Constants";
+// import DMVideo from "../../assets/videos/DMVideo.mp4"
 function ServicesDM() {
   const [openIndexes, setOpenIndexes] = useState([null, null]);
 
@@ -52,6 +53,18 @@ function ServicesDM() {
           ))}
         </div>
       </div>
+      {/* <div className="w-full h-auto mt-20 hidden md:block">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={DMVideo} type="video/mp4" />
+        </video>
+      </div> */}
     </div>
   );
 }

@@ -498,6 +498,8 @@ export const teamMembers = [
     // image: xaviDev,
   },
 ];
+
+//services page
 import dmservice from "../assets/images/dmservice.jpg";
 import brandingservice from "../assets/images/brandingservice.jpg";
 import techservice from "../assets/images/technologyservice.jpg";
@@ -574,5 +576,60 @@ export const ServicesDatas = [
       "Software Design",
     ],
     link: "/experience-design",
+  },
+];
+
+
+//DM process
+import image1 from "../assets/images/img1.png"
+import image2 from "../assets/images/img2.png"
+import image3 from "../assets/images/img3.png"
+import image4 from "../assets/images/img4.png"
+import image5 from "../assets/images/img5.png"
+import image6 from "../assets/images/img6.png"
+import image7 from "../assets/images/img7.png"
+
+export const DmProcess = [
+  {
+    title: "Research & Strategy",
+    description:
+      "Understanding your business, audience, and market is the first step to digital success. We begin by gathering valuable insights through careful research—studying your competitors, industry trends, and customer needs. With this knowledge, we create a clear, goal-driven strategy that guides every part of your digital marketing journey.",
+    image: image1, 
+  },
+  {
+    title: "Website & SEO Optimization",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image:image2, 
+  },
+  {
+    title: "Content Marketing",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image: image3, 
+  },
+  {
+    title: "Social Media Marketing",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image:image4, 
+  },
+  {
+    title: "Paid Advertising",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image: image5, 
+  },
+  {
+    title: "Email Marketing",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image:image6, 
+  },
+  {
+    title: "Performance Tracking",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
+    image: image7, 
   },
 ];

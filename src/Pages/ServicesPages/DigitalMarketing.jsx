@@ -1,5 +1,6 @@
 import AboutDM from "../../Components/DMPages/AboutDM";
 import HeroSection from "../../Components/DMPages/HeroSection";
+import ProcessDM from "../../Components/DMPages/ProcessDM";
 import ServicesDM from "../../Components/DMPages/ServicesDM";
 
 const DigitalMarketing = () => {
@@ -8,6 +9,7 @@ const DigitalMarketing = () => {
       <HeroSection />
       <AboutDM />
       <ServicesDM />
+      <ProcessDM/>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-4 sm:p-6 pt-12 sm:pt-24">
         <div className="col-span-1 row-span-2 rounded-3xl bg-black overflow-hidden">
           <img

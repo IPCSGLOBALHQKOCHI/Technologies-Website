@@ -1,29 +1,30 @@
 import React from "react";
-import servicesbg from "../assets/images/servicesbg.png";
+// import servicesVideo from "../assets/videos/servicevideo.mp4"
 import { GoArrowRight } from "react-icons/go";
 import { ServicesDatas } from "../constants/Constants";
-
+const serviceVideo =
+  "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745382250/servicevideo_rkseoj.mp4";
 function ServicePagehome() {
   return (
     <>
-      <div className="relative h-60 sm:h-72 md:h-96 bg-cover bg-center flex items-center justify-center">
-        <img
-          src={servicesbg}
-          alt="techno"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <div className="text-[#FFFFFF] text-4xl sm:text-6xl md:text-[100px] lg:text-[140px] xl:text-[180px] font-200 mt-12 md:mt-6 leading-none">
-            Services
-          </div>
-        </div>
+      <div className="relative h-96 lg:h-screen bg-cover bg-center flex items-center justify-center">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          preload="auto"
+          playsInline
+        >
+          <source src={serviceVideo} type="video/mp4" />
+        </video>
       </div>
 
       <div className="px-6 md:px-10 lg:px-20 py-16 sm:py-20">
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-normal text-white/80 mb-8 transition-all duration-300">
-          Our{" "}
-          <span className="bg-gradient-to-r from-[#001BCB] to-[#CC92FF] bg-clip-text text-transparent">
-            Services
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-500 text-white/80 mb-8 transition-all duration-300">
+          Core{" "}
+          <span className="bg-gradient-to-r from-[#001BCB] to-[#FF8D89] animate-gradient-fill bg-clip-text text-transparent">
+            Expertise
           </span>
         </h1>
 
@@ -44,7 +45,7 @@ function ServicePagehome() {
               </div>
 
               <div className="w-full lg:w-1/2">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-600 bg-gradient-to-r from-[#6A7AFF] to-[#B158FF] bg-clip-text text-transparent">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#001BCB] to-[#f31d1d] animate-gradient-fill bg-clip-text text-transparent">
                   {section.title}
                 </h2>
                 <p className="text-[#ffffff]/70 font-400 mt-4 mb-6 text-sm sm:text-base">

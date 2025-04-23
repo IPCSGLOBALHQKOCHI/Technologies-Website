@@ -22,7 +22,7 @@ const HeroSection = React.forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className="relative h-screen bg-cover bg-center snap-start">
+    <div className="relative h-screen bg-cover bg-center snap-start shadow-xl">
       <video
         ref={ref}
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -65,7 +65,7 @@ const HeroSection = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className={`absolute bottom-4 flex justify-center w-full gap-4 pb-28 md:pb-14 transition-opacity duration-1000 transform ${
+          className={`absolute bottom-16 flex flex-col items-center md:flex-row md:items-stretch justify-center w-full gap-4 pb-28 md:pb-14 transition-opacity duration-1000 transform ${
             showButton ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -74,14 +74,14 @@ const HeroSection = React.forwardRef((props, ref) => {
             className="block bg-[#003ad6] text-white px-4 py-2 w-44 rounded-3xl text-lg text-center group"
           >
             <div className="flex items-center justify-center gap-3">
-              Our services
+              View services
               <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2" />
             </div>
           </a>
 
           <a
             href="#clients"
-            className="block bg-[#ffffff]/50 text-[#000000] px-4 py-2 w-44 rounded-3xl text-lg text-center group"
+            className="block bg-[#ffffff]/30 shadow-xl text-[#000000] px-4 py-2 w-44 rounded-3xl text-lg text-center group"
           >
             <div className="flex items-center justify-center gap-3">
               Our clients

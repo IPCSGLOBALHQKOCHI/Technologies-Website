@@ -13,7 +13,7 @@ function SingleBlogPage() {
           `https://blog.ipcstechnologies.com/wp-json/wp/v2/posts?slug=${slug}`
         );
         setPost(res.data[0]);
-        // console.log(post);
+        console.log(post);
       } catch (err) {
         console.error("Error fetching post:", err);
       } finally {
@@ -34,7 +34,8 @@ function SingleBlogPage() {
     _embedded,
   } = post;
   const image = post?.yoast_head_json?.og_image?.[0]?.url;
-  console.log(image);
+  const description = post?.yoast_head_json?.description;
+    console.log(description);
 
   let modifiedContent = rawContent;
   modifiedContent = modifiedContent.replace(/WordToReplace/g, "NewWord");
@@ -46,9 +47,7 @@ function SingleBlogPage() {
         <title>{`${title}`}</title>
         <meta
           name="description"
-          content={post?.excerpt?.rendered
-            ?.replace(/<[^>]+>/g, "")
-            .slice(0, 160)}
+          content={description}
         />
         <meta property="og:title" content={title} />
         <meta

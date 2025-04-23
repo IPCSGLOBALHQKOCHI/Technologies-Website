@@ -12,7 +12,7 @@ const useCountUp = (end, duration = 2000) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.1 } 
     );
 
     if (ref.current) observer.observe(ref.current);

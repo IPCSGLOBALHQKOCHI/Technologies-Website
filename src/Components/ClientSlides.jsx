@@ -121,7 +121,7 @@ function ClientSlides() {
         ))}
       </div>
       <button className="md:bg-[#000000] md:text-[#ffffff] bg-[#ffffff] text-[#000000] px-6 py-3 w-52 rounded-md group mt-8">
-        <a href="#" className="text-xl font-400 inline-flex items-center">
+        <a href="/#connect" className="text-xl font-400 inline-flex items-center">
           Learn more
           <BsArrowRight className="ml-5 mt-1 transition-transform duration-300 group-hover:translate-x-3" />
         </a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import TechnoImg from "../../assets/images/blogsbg.png";
+import TechnoImg from "../../assets/images/servicesbg.png";
 function Herosection() {
   return (
       <div className=" relative  h-52 md:h-96 bg-cover bg-center flex items-center justify-center">
