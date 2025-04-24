@@ -1,5 +1,6 @@
 import React from "react";
 import { DmProcess } from "../../constants/Constants";
+import { BsArrowRight } from "react-icons/bs";
 
 function ProcessDM() {
   return (
@@ -25,9 +26,18 @@ function ProcessDM() {
             </div>
 
             {/* Text */}
-            <div className="md:w-1/2 w-full text-[#ffffff] mt-2">
+            <div className="md:w-1/2 w-full text-[#ffffff] flex flex-col">
               <h2 className="text-4xl font-400 mb-4">{section.title}</h2>
               <p className="text-lg text-[#ffffff]/80">{section.description}</p>
+              <button className="bg-[#003ad6] text-[#ffffff] px-3 py-2 w-48 rounded-md group mt-8">
+              <a
+                href="#faq"
+                className="text-xl font-400 inline-flex items-center"
+              >
+                Learn More
+                <BsArrowRight className="ml-5 mt-1 transition-transform duration-300 group-hover:translate-x-3" />
+              </a>
+            </button>   
             </div>
           </div>
         ))}

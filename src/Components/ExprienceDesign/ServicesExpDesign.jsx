@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesExpeDesign } from "../../constants/Constants";
+ const ExpeVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745479219/uiuxvideo_bn7o5c.mp4"
 function ServicesExpDesign() {
       const [openIndexes, setOpenIndexes] = useState([null, null]);
         
@@ -51,6 +52,18 @@ function ServicesExpDesign() {
                </div>
              ))}
            </div>
+           <div className="w-full h-auto mt-20 hidden md:block">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={ExpeVideo} type="video/mp4" />
+        </video>
+      </div>
          </div>
        </div>
   )

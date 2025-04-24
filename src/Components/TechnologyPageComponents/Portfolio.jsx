@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import showreel from "../../assets/videos/Showreel 60 FPS.mp4";
-import showreelhorizontl from "../../assets/videos/Showreel Horizontal Compressed.mp4";
+// import showreelhorizontl from "../../assets/videos/Showreel Horizontal Compressed.mp4";
+const showreelhorizontl = "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745483200/Showreel_Horizontal_Compressed_gy3nd7.mp4"
 
 function Portfolio() {
   const mobileVideoRef = useRef(null);

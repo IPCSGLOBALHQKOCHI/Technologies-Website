@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
-import { servicesfaq } from "../../constants/Constants";
+import { technologyfaq } from "../../constants/Constants";
 
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -15,7 +15,7 @@ function FAQ() {
         FAQ
       </h1>
       <div className="space-y-6 sm:space-y-8 lg:space-y-10">
-        {servicesfaq.map((service, index) => (
+        {technologyfaq  .map((service, index) => (
           <div
             key={index}
             className="border-b-2 border-b-[#000000] pb-4 p-4 bg-[#F3F3F3] rounded-t-lg shadow-sm"

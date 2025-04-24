@@ -169,7 +169,7 @@ export const cardData = [
 ];
 
 //faq technologies
-export const servicesfaq = [
+export const technologyfaq = [
   {
     title: "How long does it take to develop a custom software solution?",
     details:
@@ -526,7 +526,7 @@ export const ServicesDatas = [
     title: "Technology",
     description:
       "Building dynamic, high-performance websites, designing scalable mobile apps, and delivering complete e-commerce solutions to drive business growth and enhance user experiences.",
-    imageUrl:techservice,
+    imageUrl: techservice,
     services: [
       "Web Development",
       "Mobile App Development",
@@ -579,57 +579,115 @@ export const ServicesDatas = [
   },
 ];
 
-
 //DM process
-import image1 from "../assets/images/img1.png"
-import image2 from "../assets/images/img2.png"
-import image3 from "../assets/images/img3.png"
-import image4 from "../assets/images/img4.png"
-import image5 from "../assets/images/img5.png"
-import image6 from "../assets/images/img6.png"
-import image7 from "../assets/images/img7.png"
+import image1 from "../assets/images/img1.png";
+import image2 from "../assets/images/img2.png";
+import image3 from "../assets/images/img3.png";
+import image4 from "../assets/images/img4.png";
+import image5 from "../assets/images/img5.png";
+import image6 from "../assets/images/img6.png";
+import image7 from "../assets/images/img7.png";
 
 export const DmProcess = [
   {
     title: "Research & Strategy",
     description:
       "Understanding your business, audience, and market is the first step to digital success. We begin by gathering valuable insights through careful research—studying your competitors, industry trends, and customer needs. With this knowledge, we create a clear, goal-driven strategy that guides every part of your digital marketing journey.",
-    image: image1, 
+    image: image1,
   },
   {
     title: "Website & SEO Optimization",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image:image2, 
+      "Your website is the heart of your online presence. We focus on making it fast, user-friendly, and built to convert. At the same time, we optimize it for search engines—improving structure, content, and keywords—so your business ranks higher and reaches the right audience organically.",
+    image: image2,
   },
   {
     title: "Content Marketing",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image: image3, 
+      "Great content builds trust and keeps your audience engaged. We create valuable and relevant content—blogs, videos, graphics, and more—that speaks to your audience’s needs. By sharing the right message at the right time, we help your brand stay connected, build authority, and drive meaningful results.",
+    image: image3,
   },
   {
     title: "Social Media Marketing",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image:image4, 
+      "Social media is where conversations happen and connections grow. We help your brand stand out with engaging content, consistent posting, and smart strategies tailored to each platform. From building community to driving traffic, we make sure your social presence supports your goals and speaks to your audience.",
+    image: image4,
   },
   {
     title: "Paid Advertising",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image: image5, 
+      "Paid ads help you reach the right people at the right time. We design targeted campaigns across platforms like Google, Facebook, and Instagram to drive traffic, leads, and sales. With smart budgeting, precise targeting, and ongoing optimization, we make sure every ad delivers real results for your business.",
+    image: image5,
   },
   {
     title: "Email Marketing",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image:image6, 
+      "Email is a powerful way to stay connected with your audience. We craft personalized and engaging emails—from welcome messages to newsletters and offers—that keep your brand top of mind. With the right timing and strategy, we turn subscribers into loyal customers.",
+    image: image6,
   },
   {
     title: "Performance Tracking",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor",
-    image: image7, 
+      "We believe in results you can see. Through detailed tracking and analytics, we monitor every campaign’s performance—what’s working, what’s not, and where to improve. This data-driven approach helps us fine-tune strategies, maximize ROI, and keep your digital marketing on the path to success.",
+    image: image7,
+  },
+];
+
+//DM FAQ
+export const DMfaq = [
+  {
+    title: "What is digital marketing and how can it help my business?",
+    details:
+      "Digital marketing uses online channels like social media, search engines, and email to promote your brand, reach more customers, and increase sales. It helps businesses build visibility, generate leads, and grow revenue with measurable strategies.",
+  },
+  {
+    title:
+      " How do I know which digital marketing service is right for my business?",
+    details:
+      "It depends on your goals. For brand awareness, social media works best. For immediate traffic and leads, Google Ads and Meta Ads are effective. If you want long-term organic growth, SEO is the way to go. We’ll guide you in choosing the right mix based on your needs.",
+  },
+  {
+    title: "What’s the difference between SEO and Google Ads?",
+    details:
+      "SEO improves your organic search rankings over time without paying for clicks. Google Ads are paid advertisements that appear at the top of search results instantly. Both work well together for a balanced strategy.",
+  },
+  {
+    title: " How long does it take to see results from digital marketing?",
+    details:
+      "Paid campaigns like Google Ads or Meta Ads can show results within days. SEO and organic strategies may take 3–6 months for significant improvements. We'll provide a timeline and clear KPIs for each service.",
+  },
+  {
+    title: "Do you offer customized digital marketing packages?",
+    details:
+      "Yes! We tailor each digital marketing package based on your industry, goals, and budget to ensure maximum return on investment.",
+  },
+  {
+    title: "Can you handle ads on both Meta and Google platforms?",
+    details:
+      "Absolutely. Our team is experienced in running high-performing ad campaigns on both Meta (Facebook & Instagram) and Google platforms for various business goals.",
+  },
+  {
+    title: "Is LinkedIn marketing effective for B2B businesses?",
+    details:
+      "Yes, LinkedIn is one of the most powerful platforms for B2B lead generation. Our LinkedIn campaigns are designed to reach decision-makers and generate qualified leads.",
+  },
+];
+
+//Branding process
+import img1 from "../assets/images/image 74.png" 
+export const brandingProcess = [
+  {
+    title: "What Is Branding and Why Is It Important for Your Business?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
+    image: img1, 
+    reverse: false,
+  },
+  {
+    title: "what’s your brand identity?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
+    image: image2, 
+    reverse: true,
   },
 ];
