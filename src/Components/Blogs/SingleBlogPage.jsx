@@ -12,21 +12,21 @@ function SingleBlogPage() {
         const res = await axios.get(
           `https://blog.ipcstechnologies.com/wp-json/wp/v2/posts?slug=${slug}`
         );
+        console.log("First post:", res.data[0]);   
         setPost(res.data[0]);
-        console.log(post);
       } catch (err) {
         console.error("Error fetching post:", err);
       } finally {
       }
     };
-
+    
     if (slug) fetchPost();
   }, [slug]);
-
+  
   if (!post)
     return (
-      <div className="text-black text-3xl font-400 px-4 py-16">Loading...</div>
-    );
+  <div className="text-black text-3xl font-400 px-4 py-16">Loading...</div>
+);
 
   const {
     title: { rendered: title },
@@ -35,7 +35,6 @@ function SingleBlogPage() {
   } = post;
   const image = post?.yoast_head_json?.og_image?.[0]?.url;
   const description = post?.yoast_head_json?.description;
-    console.log(description);
 
   let modifiedContent = rawContent;
   modifiedContent = modifiedContent.replace(/WordToReplace/g, "NewWord");

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesSocialBranding } from "../../constants/Constants";
 const socialVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745482510/socialbranding_iv6jml.mp4"
-// import socialVideoMob from "../../assets/videos/socialbmob.mp4"
+const socialvideoMob = "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745899894/socialmob_is78kw.mp4"
 function ServicesSocialBranding() {
     const [openIndexes, setOpenIndexes] = useState([null, null]);
     
@@ -66,7 +66,7 @@ function ServicesSocialBranding() {
           <source src={socialVideo} type="video/mp4" />
         </video>
       </div>
-      {/* <div className="w-full h-auto mt-20 block md:hidden">
+      <div className="w-full h-auto mt-20 block md:hidden">
         <video
           className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
           muted
@@ -75,9 +75,9 @@ function ServicesSocialBranding() {
           preload="auto"
           playsInline
         >
-          <source src={socialVideoMob} type="video/mp4" />
+          <source src={socialvideoMob} type="video/mp4" />
         </video>
-      </div> */}
+      </div>
        </div>
   )
 }

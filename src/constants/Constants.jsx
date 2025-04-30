@@ -690,4 +690,39 @@ export const brandingProcess = [
     image: image2, 
     reverse: true,
   },
+  {
+    title: "What Is Branding and Why Is It Important for Your Business?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
+    image: img1, 
+    reverse: false,
+  },
+  {
+    title: "what’s your brand identity?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
+    image: image2, 
+    reverse: true,
+  },
+  {
+    title: "What Is Branding and Why Is It Important for Your Business?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
+    image: img1, 
+    reverse: false,
+  },
+  {
+    title: "what’s your brand identity?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
+    image: image2, 
+    reverse: true,
+  },
+  {
+    title: "What Is Branding and Why Is It Important for Your Business?",
+    description:
+      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
+    image: img1, 
+    reverse: false,
+  },
 ];

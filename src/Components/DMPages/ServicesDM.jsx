@@ -3,6 +3,7 @@ import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesDM } from "../../constants/Constants";
 // import DMVideo from "../../assets/videos/DMVideo.mp4"
 const DMVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745479217/marketingvideo_z5w0jq.mp4"
+const DMVideoMob ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745899894/socialmob_is78kw.mp4"
 function ServicesDM() {
   const [openIndexes, setOpenIndexes] = useState([null, null]);
 
@@ -64,6 +65,18 @@ function ServicesDM() {
           playsInline
         >
           <source src={DMVideo} type="video/mp4" />
+        </video>
+      </div>
+      <div className="w-full h-auto mt-20 block md:hidden">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={DMVideoMob} type="video/mp4" />
         </video>
       </div>
     </div>

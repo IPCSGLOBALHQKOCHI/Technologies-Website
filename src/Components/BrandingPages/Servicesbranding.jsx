@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesBranding } from "../../constants/Constants";
 // import brandingVideo from "../../assets/videos/brandingvideo.mp4";
-const brandingVideo ="https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745479220/brandingvideo_lpm51b.mp4"
+const brandingVideo =
+  "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745479220/brandingvideo_lpm51b.mp4";
+const brandingvideoMob =
+  "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745905224/brandingMob_ijffxk.mp4";
 function Servicesbranding() {
   const [openIndexes, setOpenIndexes] = useState([null, null]);
 
@@ -64,6 +67,18 @@ function Servicesbranding() {
           playsInline
         >
           <source src={brandingVideo} type="video/mp4" />
+        </video>
+      </div>
+      <div className="w-full h-auto mt-20 block md:hidden">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={brandingvideoMob} type="video/mp4" />
         </video>
       </div>
     </div>
