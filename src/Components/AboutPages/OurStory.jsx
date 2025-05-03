@@ -1,7 +1,7 @@
 import React from "react";
 import useCountUp from "../../Hooks/CountUp";
 function OurStory() {
-  const projects = useCountUp(100);
+  const projects = useCountUp(300);
   const years = useCountUp(9);
   const countries = useCountUp(15);
   return (

@@ -674,55 +674,133 @@ export const DMfaq = [
 ];
 
 //Branding process
-import img1 from "../assets/images/image 74.png" 
+import im1 from "../assets/images/brnd8.png" 
+import im2 from "../assets/images/brnd1.png" 
+import im3 from "../assets/images/brnd2.png" 
+import im4 from "../assets/images/brnd3.png" 
+import im5 from "../assets/images/brnd4.png" 
+import im6 from "../assets/images/brnd5.png" 
+import im7 from "../assets/images/brnd6.png" 
+import im8 from "../assets/images/brnd7.png" 
+
 export const brandingProcess = [
   {
-    title: "What Is Branding and Why Is It Important for Your Business?",
+    title: "Brand Discovery ",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
-    image: img1, 
+      "Understand your business, audience, competitors, and goals. This includes: SWOT analysis, Market research, Customer personas",
+    image: im1, 
     reverse: false,
   },
   {
-    title: "what’s your brand identity?",
+    title: "Brand Strategy",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
-    image: image2, 
+      "Define the core of your brand: Brand purpose, vision, missionBrand values, Unique Value Proposition (UVP), Brand positioning",
+    image: im2, 
     reverse: true,
   },
   {
-    title: "What Is Branding and Why Is It Important for Your Business?",
+    title: "Brand Identity",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
-    image: img1, 
+      "Visually and verbally express the brand:Logo, Typography, Color palette, Imagery style, Brand voice and tone,Tagline or slogan",
+    image: im3, 
     reverse: false,
   },
   {
-    title: "what’s your brand identity?",
+    title: "Brand Messaging",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
-    image: image2, 
+      "Craft consistent communication:Elevator pitch Key brand messages, Storytelling framework, Content guidelines",
+    image: im5, 
     reverse: true,
   },
   {
-    title: "What Is Branding and Why Is It Important for Your Business?",
+    title: "Brand Touchpoint",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
-    image: img1, 
+      "Apply branding across all platforms:Website, Social media, Packaging, Email templates, Print materials",
+    image: im6, 
     reverse: false,
   },
   {
-    title: "what’s your brand identity?",
+    title: "Brand Guidelines",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotional connections with your audience.",
-    image: image2, 
+      "Document and standardize: Style guide for visual and verbal identity, Usage rules for internal and external teams",
+    image: im7, 
     reverse: true,
   },
   {
-    title: "What Is Branding and Why Is It Important for Your Business?",
+    title: "Brand Launch Rollout",
     description:
-      "Branding is the process of creating a unique identity for your business, product, or service. It includes elements like your logo, colors, typography, messaging, and overall customer experience that distinguish you from competitors. A strong brand helps build recognition, trust, and emotion.",
-    image: img1, 
+      "Introduce the brand to the public: Internal rollout to staff, External launch campaigns, Social and press announcements",
+    image: im8, 
     reverse: false,
+  },
+  {
+    title: "Brand Management",
+    description:
+      "Monitor, measure, and adapt: Track brand performance, Conduct regular audits, Refresh elements as needed for relevance",
+    image: im4, 
+    reverse: true,
+  },
+];
+
+
+import imge1 from "../assets/vectors/socialmedia.png"
+import imge2 from "../assets/vectors/brandvoice.png"
+import imge3 from "../assets/vectors/collab.png"
+import imge4 from "../assets/vectors/content.png"
+import imge5 from "../assets/vectors/engment.png"
+import imge6 from "../assets/vectors/performance.png"
+export const socialBrandingprocess = [
+  {
+    imgeUrl: imge1,
+    title: 'Social Media Identity Design',
+    description: 'We create visually consistent and audience-aligned profiles with compelling bios, branded covers, and optimized CTAs.'
+  },
+  {
+    imgeUrl: imge2,
+    title: 'Brand Voice & Messaging',
+    description: 'From key themes to tone, we define and maintain a consistent voice across all touchpoints to strengthen identity and audience perception.'
+  },
+  {
+    imgeUrl: imge3,
+    title: 'Content Strategy & Planning',
+    description: 'We build a robust content calendar driven by goals, audience interests, and seasonality to build audience loyalty.'
+  },
+  {
+    imgeUrl: imge4,
+    title: 'Engagement & Community Building',
+    description: 'We enhance conversations by interacting with your audience, addressing DMs, replying to mentions, and managing followers through workflows.'
+  },
+  {
+    imgeUrl: imge5,
+    title: 'Collaborations & Influence',
+    description: 'Boost reach with creator collaborations, influencer campaigns, and engagement content that grows reach authentically in your target market.'
+  },
+  {
+    imgeUrl: imge6,
+    title: 'Performance Tracking & Optimization',
+    description: 'We continuously measure your performance using platform tools & refine new strategies for consistent growth and efficiency.'
+  }
+];
+
+export const processExpeDesign = [
+  {
+    title: "User Research",
+    description:
+      "User research is the process of understanding users' needs, behaviors, and pain points. It involves methods like interviews, surveys, and usability testing to gather insights.",
+  },
+  {
+    title: "Information Architecture",
+    description:
+      "Information Architecture (IA) is the process of organizing and structuring content in a clear and logical way. It helps users find information easily and navigate a product or website smoothly.",
+  },
+  {
+    title: "Interaction Design",
+    description:
+      "Interaction Design (IxD) focuses on creating meaningful and effective interaction between users and products. It involves designing how users engage with interfaces, ensuring ease of use and intuitive behavior.",
+  },
+  {
+    title: "Visual & UI Design",
+    description:
+      "UI Design (User Interface Design) involves designing the interactive elements of a product, such as buttons, menus, and icons, ensuring usability and a seamless user experience.",
   },
 ];

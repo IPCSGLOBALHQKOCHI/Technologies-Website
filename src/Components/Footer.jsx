@@ -145,7 +145,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/casestudy"
                 className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
               >
                 Testimonials
@@ -177,7 +177,8 @@ const Footer = () => {
             <li className="flex items-center gap-2 flex-nowrap justify-center sm:justify-start">
               <p className="whitespace-nowrap">Email:</p>
               <a
-                href="mailto:info@ipcstechnologies.com"
+                href="mailto:akshay@ipcsglobal.com"
+                // href="https://mail.google.com/mail/?view=cm&fs=1&to=akshay@ipcsglobal.com&su=Your%20Subject&body=Your%20message%20goes%20here"
                 className="text-[#FFFFFF] hover:underline break-words"
               >
                 info@ipcstechnologies.com
