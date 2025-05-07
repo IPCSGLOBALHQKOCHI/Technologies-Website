@@ -14,7 +14,7 @@ const ExperienceDesign = () => {
 <HeroSection/>
 <AboutexpeDesign/>
 <ServicesExpDesign/>
-<ProcessexpeDesign/>
+{/* <ProcessexpeDesign/> */}
     </div>
   );
 };

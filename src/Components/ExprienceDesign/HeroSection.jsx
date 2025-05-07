@@ -1,6 +1,6 @@
 import React from 'react'
-import expedesgnImg from "../../assets/images/Pages/expedesign.png"
-
+// import expedesgnImg from "../../assets/images/Pages/expedesign.png"
+const expedesgnImg="https://res.cloudinary.com/dn9mvkx7k/image/upload/v1746620318/expedesign_y99oqj.png"
 function HeroSection() {
   return (
     <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

@@ -1,5 +1,6 @@
 import React from 'react'
-import DMimage from "../../assets/images/Pages/DM main.png"
+// import DMimage from "../../assets/images/Pages/DM main.png"
+const DMimage = "https://res.cloudinary.com/dn9mvkx7k/image/upload/v1746620315/DM_main_s2cuhq.png"
 function HeroSection() {
   return (
  <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">
@@ -13,4 +14,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+export default HeroSection;

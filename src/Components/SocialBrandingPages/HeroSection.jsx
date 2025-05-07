@@ -1,5 +1,6 @@
 import React from 'react'
-import socialbrandigImg from "../../assets/images/Pages/socialbranding.png"
+// import socialbrandigImg from "../../assets/images/Pages/socialbranding.png"
+const socialbrandigImg="https://res.cloudinary.com/dn9mvkx7k/image/upload/v1746620316/socialbranding_drcu0o.png" 
 function HeroSection() {
   return (
    <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

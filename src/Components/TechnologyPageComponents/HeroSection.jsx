@@ -1,5 +1,6 @@
 import React from "react";
-import TechnoImg from "../../assets/images/Pages/technology.jpg";
+// import TechnoImg from "../../assets/images/Pages/technology.jpg";
+const TechnoImg= "https://res.cloudinary.com/dn9mvkx7k/image/upload/v1746620318/technology_bxsaoo.jpg"
 function HeroSection() {
   return (
     <div className=" relative  h-60 md:h-96 bg-cover bg-center flex items-center justify-center">

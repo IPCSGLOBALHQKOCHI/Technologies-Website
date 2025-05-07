@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import banner from "../../assets/images/Pages/Abouttechnology.png";
+// import banner from "../../assets/images/Pages/Abouttechnology.png";
+const banner="https://res.cloudinary.com/dn9mvkx7k/image/upload/v1746620317/Abouttechnology_fpufnp.png"
+
 import { BsArrowRight } from "react-icons/bs";
 
 function AboutBanner() {
