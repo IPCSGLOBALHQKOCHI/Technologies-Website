@@ -674,133 +674,167 @@ export const DMfaq = [
 ];
 
 //Branding process
-import im1 from "../assets/images/brnd8.png" 
-import im2 from "../assets/images/brnd1.png" 
-import im3 from "../assets/images/brnd2.png" 
-import im4 from "../assets/images/brnd3.png" 
-import im5 from "../assets/images/brnd4.png" 
-import im6 from "../assets/images/brnd5.png" 
-import im7 from "../assets/images/brnd6.png" 
-import im8 from "../assets/images/brnd7.png" 
+import im1 from "../assets/images/brnd8.png";
+import im2 from "../assets/images/brnd1.png";
+import im3 from "../assets/images/brnd2.png";
+import im4 from "../assets/images/brnd3.png";
+import im5 from "../assets/images/brnd4.png";
+import im6 from "../assets/images/brnd5.png";
+import im7 from "../assets/images/brnd6.png";
+import im8 from "../assets/images/brnd7.png";
 
 export const brandingProcess = [
   {
     title: "Brand Discovery ",
     description:
-      "Understand your business, audience, competitors, and goals. This includes: SWOT analysis, Market research, Customer personas",
-    image: im1, 
+      "Gain clarity on your business by analyzing strengths, weaknesses, opportunities, and threats (SWOT), conducting market research, studying competitors, and creating detailed customer personas aligned with your goals to guide effective marketing and strategy.",
+    image: im1,
     reverse: false,
   },
   {
     title: "Brand Strategy",
     description:
-      "Define the core of your brand: Brand purpose, vision, missionBrand values, Unique Value Proposition (UVP), Brand positioning",
-    image: im2, 
+      "Establish your brand’s foundation by defining its purpose, vision, and mission. Identify core values, craft a compelling Unique Value Proposition (UVP), and position your brand clearly in the market to resonate with your target audience and differentiate from competitors.",
+    image: im2,
     reverse: true,
   },
   {
     title: "Brand Identity",
     description:
-      "Visually and verbally express the brand:Logo, Typography, Color palette, Imagery style, Brand voice and tone,Tagline or slogan",
-    image: im3, 
+      "Convey your brand identity through a consistent visual and verbal style—design a meaningful logo, choose typography and color palette, define imagery style, establish brand voice and tone, and create a memorable tagline or slogan to enhance recognition.",
+    image: im3,
     reverse: false,
   },
   {
     title: "Brand Messaging",
     description:
-      "Craft consistent communication:Elevator pitch Key brand messages, Storytelling framework, Content guidelines",
-    image: im5, 
+      "Ensure consistent brand communication with a clear elevator pitch, defined key messages, a compelling storytelling framework, and content guidelines that align with your brand’s tone, values, and audience across all platforms and touchpoints.",
+    image: im5,
     reverse: true,
   },
   {
     title: "Brand Touchpoint",
     description:
-      "Apply branding across all platforms:Website, Social media, Packaging, Email templates, Print materials",
-    image: im6, 
+      "Maintain brand consistency by applying your identity across all platforms—design a cohesive website, align social media visuals, brand your packaging, create on-brand email templates, and ensure print materials reflect your visual and verbal style.",
+    image: im6,
     reverse: false,
   },
   {
     title: "Brand Guidelines",
     description:
-      "Document and standardize: Style guide for visual and verbal identity, Usage rules for internal and external teams",
-    image: im7, 
+      "Create a comprehensive style guide that documents your brand’s visual and verbal identity, including usage rules and guidelines to ensure consistency across all touchpoints for both internal teams and external partners.",
+    image: im7,
     reverse: true,
   },
   {
     title: "Brand Launch Rollout",
     description:
-      "Introduce the brand to the public: Internal rollout to staff, External launch campaigns, Social and press announcements",
-    image: im8, 
+      "Launch your brand effectively with an internal rollout to engage staff, followed by external campaigns, social media promotions, and press announcements to build awareness, generate excitement, and ensure a strong market introduction.",
+    image: im8,
     reverse: false,
   },
   {
     title: "Brand Management",
     description:
-      "Monitor, measure, and adapt: Track brand performance, Conduct regular audits, Refresh elements as needed for relevance",
-    image: im4, 
+      "Continuously track brand performance, conduct regular audits to assess consistency and impact, and refresh brand elements when necessary to stay relevant, aligned with market trends, and connected to your audience’s evolving needs.",
+    image: im4,
     reverse: true,
   },
 ];
 
-
-import imge1 from "../assets/vectors/socialmedia.png"
-import imge2 from "../assets/vectors/brandvoice.png"
-import imge3 from "../assets/vectors/collab.png"
-import imge4 from "../assets/vectors/content.png"
-import imge5 from "../assets/vectors/engment.png"
-import imge6 from "../assets/vectors/performance.png"
+import imge1 from "../assets/vectors/socialmedia.png";
+import imge2 from "../assets/vectors/brandvoice.png";
+import imge3 from "../assets/vectors/collab.png";
+import imge4 from "../assets/vectors/content.png";
+import imge5 from "../assets/vectors/engment.png";
+import imge6 from "../assets/vectors/performance.png";
 export const socialBrandingprocess = [
   {
     imgeUrl: imge1,
-    title: 'Social Media Identity Design',
-    description: 'We create visually consistent and audience-aligned profiles with compelling bios, branded covers, and optimized CTAs.'
+    title: "Social Media Identity Design",
+    description:
+      "We create visually consistent and audience-aligned profiles with compelling bios, branded covers, and optimized CTAs.",
   },
   {
     imgeUrl: imge2,
-    title: 'Brand Voice & Messaging',
-    description: 'From key themes to tone, we define and maintain a consistent voice across all touchpoints to strengthen identity and audience perception.'
+    title: "Brand Voice & Messaging",
+    description:
+      "From key themes to tone, we define and maintain a consistent voice across all touchpoints to strengthen identity and audience perception.",
   },
   {
     imgeUrl: imge3,
-    title: 'Content Strategy & Planning',
-    description: 'We build a robust content calendar driven by goals, audience interests, and seasonality to build audience loyalty.'
+    title: "Content Strategy & Planning",
+    description:
+      "We build a robust content calendar driven by goals, audience interests, and seasonality to build audience loyalty.",
   },
   {
     imgeUrl: imge4,
-    title: 'Engagement & Community Building',
-    description: 'We enhance conversations by interacting with your audience, addressing DMs, replying to mentions, and managing followers through workflows.'
+    title: "Engagement & Community Building",
+    description:
+      "We enhance conversations by interacting with your audience, addressing DMs, replying to mentions, and managing followers through workflows.",
   },
   {
     imgeUrl: imge5,
-    title: 'Collaborations & Influence',
-    description: 'Boost reach with creator collaborations, influencer campaigns, and engagement content that grows reach authentically in your target market.'
+    title: "Collaborations & Influence",
+    description:
+      "Boost reach with creator collaborations, influencer campaigns, and engagement content that grows reach authentically in your target market.",
   },
   {
     imgeUrl: imge6,
-    title: 'Performance Tracking & Optimization',
-    description: 'We continuously measure your performance using platform tools & refine new strategies for consistent growth and efficiency.'
-  }
+    title: "Performance Tracking & Optimization",
+    description:
+      "We continuously measure your performance using platform tools & refine new strategies for consistent growth and efficiency.",
+  },
 ];
 
 export const processExpeDesign = [
   {
     title: "User Research",
     description:
-      "User research is the process of understanding users' needs, behaviors, and pain points. It involves methods like interviews, surveys, and usability testing to gather insights.",
+      "User research is the process of understanding users’ needs, behaviors, and main points to be focused towards the goals.",
+    dropDown:
+      "User research involves understanding users’ needs, behaviors, and pain points to align product development with their goals, ensuring a user-centered approach that enhances usability, satisfaction, and overall experience.",
   },
   {
     title: "Information Architecture",
     description:
-      "Information Architecture (IA) is the process of organizing and structuring content in a clear and logical way. It helps users find information easily and navigate a product or website smoothly.",
+      "Information Architecture (IA) is the process of organizing and structuring content in a clear and logical way.",
+    dropDown:
+      "Information Architecture (IA) is about organizing and structuring content clearly and logically, helping users find information easily and navigate products or websites efficiently.",
   },
   {
     title: "Interaction Design",
     description:
-      "Interaction Design (IxD) focuses on creating meaningful and effective interaction between users and products. It involves designing how users engage with interfaces, ensuring ease of use and intuitive behavior.",
+      "Interaction Design (IxD) focuses on creating meaningful and effective interactions between users and products.",
+    dropDown:
+      "Interaction Design (IxD) is the process of designing meaningful and effective interactions between users and products, aiming to enhance usability, responsiveness, and overall user satisfaction through intuitive and engaging interfaces.",
   },
   {
     title: "Visual & UI Design",
     description:
-      "UI Design (User Interface Design) involves designing the interactive elements of a product, such as buttons, menus, and icons, ensuring usability and a seamless user experience.",
+      "UI Design involves designing the interactive elements of a product, such as buttons, menus, and icons, for seamless user experience",
+    dropDown:
+      "UI Design focuses on crafting interactive elements like buttons, menus, and icons to create a visually appealing and intuitive interface, ensuring a seamless and engaging user experience across digital products.",
+  },
+  {
+    title: "Content Strategy",
+    description:
+      "Content Strategy is the planning, creation, delivery, and management of content to meet user needs and business goals.",
+    dropDown:
+      "Content Strategy involves planning, creating, delivering, and managing content to effectively meet user needs while supporting business goals, ensuring clarity, consistency, and relevance across all platforms.",
+  },
+  {
+    title: "Service Design",
+    description:
+      "Service Design is the process of planning and organizing a service's components, such as people, processes, and technology",
+      dropDown:"Service Design is the process of planning and organizing a service's components—people, processes, and technology—to deliver a seamless, efficient, and user-friendly experience across all touchpoints."
+
+  },
+  {
+    title: "Testing & Feedback",
+    description:
+      "Testing & Feedback involves evaluating a product or service by observing how users interact with it and gathering their opinions.",
+    dropDown:
+      "Testing & Feedback involves evaluating a product or service by observing user interactions and collecting their input, helping identify issues, improve usability, and ensure the final solution meets user needs and expectations.",
   },
 ];

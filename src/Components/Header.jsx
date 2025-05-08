@@ -329,7 +329,7 @@ const Header = () => {
             )}
           </li>
           <li>
-            <a href="#" className="block py-2 text-xl font-400">
+            <a href="/blogs" className="block py-2 text-xl font-400">
               BLOG
             </a>
           </li>

@@ -6,7 +6,7 @@ import { socialBrandingprocess } from "../../constants/Constants";
 const ProcessSocialBranding = () => {
   return (
     <div className="max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-0 md:py-10 mx-auto">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-400 text-left pb-2 mb-8 sm:mb-12 bg-gradient-to-r from-[#001BCB] to-[#FE55D9] animate-gradient-fill bg-clip-text text-transparent">
+      <h1 className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-400 text-left pb-2 mb-8 sm:mb-12 bg-gradient-to-r from-[#001BCB] to-[#FE55D9] animate-gradient-fill bg-clip-text text-transparent">
         Building a Brand that Speaks
       </h1>
 

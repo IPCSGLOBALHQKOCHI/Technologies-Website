@@ -40,14 +40,6 @@ function Portfolio() {
 
   return (
     <div className="px-4 sm:px-6 md:px-20 py-8 md:py-20 min-h-screen relative flex flex-col">
-      <h1 className="text-3xl sm:text-4xl md:text-7xl font-light text-white mb-8 text-left">
-        Our{" "}
-        <span className="bg-gradient-to-r from-[#001BCB] to-[#B3BCFE] bg-clip-text text-transparent font-medium">
-          Works
-        </span>
-      </h1>
-      
-      {/* Mobile Video */}
       <div className="w-full max-w-xs sm:max-w-md md:hidden">
         <video
           ref={mobileVideoRef}
