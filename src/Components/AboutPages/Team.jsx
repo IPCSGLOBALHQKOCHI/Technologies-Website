@@ -1,22 +1,33 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import { teamMembers } from "../../constants/Constants";
+import { FaLinkedin } from "react-icons/fa";
 function Team() {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const handleNext = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
     );
   };
+
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1
     );
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative h-auto overflow-hidden">
-      <div className="absolute top-1/2 left-0 w-full overflow-hidden">
+      <div className="absolute top-1/2 -translate-y-[10%] left-0 w-full overflow-hidden">
         <p className="text-[15rem] font-bold uppercase text-[#ffffff15] whitespace-nowrap animate-marquee">
           #{teamMembers[activeIndex].name} #{teamMembers[activeIndex].name} #
         </p>
@@ -33,9 +44,9 @@ function Team() {
           <div className="w-full lg:w-1/2 flex py-4 sm:py-8 md:py-12 lg:py-16">
             <p className="text-lg sm:text-xl md:text-2xl font-300 text-[#ffffff]">
               Our expert team drives branding, technology, and digital
-              marketing, crafting powerful identities
-              and strategic campaigns that fuel business growth, captivate
-              audiences, and lead the digital frontier.
+              marketing, crafting powerful identities and strategic campaigns
+              that fuel business growth, captivate audiences, and lead the
+              digital frontier.
             </p>
           </div>
         </div>
@@ -45,9 +56,18 @@ function Team() {
               <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-400 text-[#ffffff] whitespace-nowrap">
                 {teamMembers[activeIndex].name}
               </p>
-              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-200 text-[#ffffffcc] mt-0 md:mt-2">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-200 text-[#ffffffcc] mt-0 md:mt-2">
                 {teamMembers[activeIndex].role}
               </p>
+              <div className="flex mt-4 ml-1 relative z-10">
+                <a
+                  href={teamMembers[activeIndex].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="w-7 h-7 text-[#ffffff]/70" />
+                </a>
+              </div>
             </div>
             <img
               src={teamMembers[activeIndex].image}

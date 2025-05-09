@@ -14,7 +14,7 @@ function AboutPage() {
       <OurStory/>
       <MissionVission/>
       <AboutBanner/>
-      {/* <Team/> */}
+      <Team/>
     </div>  
   )
 }

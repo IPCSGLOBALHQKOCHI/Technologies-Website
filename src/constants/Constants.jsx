@@ -477,25 +477,112 @@ export const servicesExpeDesign = [
   ],
 ];
 
-// import xaviDev from "../assets/images/xaviteam.png";
+import xavi from "../assets/images/teams/xaviTeam.png";
+import sachu from "../assets/images/teams/sachu.png";
+import nashi from "../assets/images/teams/nashi.png";
+import afijith from "../assets/images/teams/abhijith.png";
+import ajithannan from "../assets/images/teams/ajithTeam.png";
+import ansil from "../assets/images/teams/ansilTeam.png";
+import devan from "../assets/images/teams/devan.png";
+import abhiram from "../assets/images/teams/abhiram.png";
+import chandini from "../assets/images/teams/chandTeam.png";
+import akshaySir from "../assets/images/teams/akshay.png"
+import shalet from "../assets/images/teams/shalet.png"
+import Anitta from "../assets/images/teams/anitta.png"
+import Sheron from "../assets/images/teams/sherun.png"
+
+
 export const teamMembers = [
   {
+    id: 0,
+    name: "Akshay R S",
+    role: "Client Relations Manager",
+    image: akshaySir ,
+    link:"https://www.linkedin.com/in/akshay-rs-5bb145126/"
+  },
+  {
     id: 1,
-    name: "Saviyola Shajan",
-    role: "Web Developer",
-    // image: xaviDev,
+    name: "Nashid Ul Ameen",
+    role: "Creative Lead",
+    image: nashi,
+    link:"https://www.linkedin.com/in/nashidul-ameen-294b27240/"
   },
   {
     id: 2,
-    name: "John Doe",
-    role: "UI/UX Designer",
-    // image: xaviDev,
+    name: "Shalet Bernard",
+    role: "DM Manager",
+    image: shalet,
+    link:"https://www.linkedin.com/in/shalet-bernard/"
   },
   {
     id: 3,
-    name: "Jane Smith",
+    name: "Sachu Sathyan",
+    role: "Content Strategist",
+    image: sachu,
+    link:"https://www.linkedin.com/in/sachu-sathyan-3520111ab/"
+  },
+  {
+    id: 4,
+    name: "Chandini Mohan",
+    role: "Google Ad Expert",
+    image: chandini,
+    link:"https://www.linkedin.com/in/chandini-mohan-digital-marketer/"
+  },
+  {
+    id: 5,
+    name: "Saviyola Shajan",
     role: "Software Engineer",
-    // image: xaviDev,
+    image: xavi,
+    link:"https://www.linkedin.com/in/saviyola-shajan"
+  },
+  {
+    id: 6,
+    name: "Anitta K C",
+    role: "Wordpress Developer",
+    image: Anitta,
+    link:"https://www.linkedin.com/in/anitta-kc/"
+  },
+  {
+    id: 7,
+    name: "Abhiram P",
+    role: "Motion Graphic Designer",
+    image: abhiram,
+    link:"https://www.linkedin.com/in/a8hiram/"
+  },
+  {
+    id: 8,
+    name: "Abhijith V Prasad",
+    role: "SEO Analyst",
+    image: afijith,
+    link:"https://www.linkedin.com/in/abhijith-v-prasad/"
+  },
+  {
+    id: 9,
+    name: "Sherun Thomas",
+    role: "Content Writer",
+    image: Sheron,
+    link:"https://www.linkedin.com/in/sherunthomas/"
+  },
+  {
+    id: 10,
+    name: "Ajith Kumar",
+    role: "UI/UX Designer",
+    image: ajithannan,
+    link:"https://www.linkedin.com/in/ajith-kumar-83a36518a/"
+  },
+  {
+    id: 11,
+    name: "Ansil M B",
+    role: "Digital Marketer",
+    image: ansil,
+    link:"https://www.linkedin.com/in/ansil-m-b-25a0a124a/"
+  },
+  {
+    id: 12,
+    name: "Devadathan T s",
+    role: "Visual Designer",
+    image: devan,
+    link:"https://www.linkedin.com/in/devadathan-ts-80535432a/"
   },
 ];
 
@@ -858,6 +945,7 @@ import imge3 from "../assets/vectors/collab.png";
 import imge4 from "../assets/vectors/content.png";
 import imge5 from "../assets/vectors/engment.png";
 import imge6 from "../assets/vectors/performance.png";
+import { link } from "framer-motion/client";
 export const socialBrandingprocess = [
   {
     imgeUrl: imge1,
