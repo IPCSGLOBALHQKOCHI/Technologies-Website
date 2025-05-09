@@ -79,7 +79,7 @@ const ServicesSections = () => {
               </>
             )}
           </div>
-          <div className=" hidden md:block w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-40 mb-4"></div>
+          <div className=" hidden md:block w-full border-b-[2px] border-[#3A3A3A] mt-0 sm:mt-12 lg:-mt-36 mb-4"></div>
         </div>
       ))}
       <div className="flex justify-center items-center w-full mt-2 sm:mt-16 lg:min-h-[250px]">

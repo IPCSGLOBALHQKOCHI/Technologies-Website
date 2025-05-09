@@ -7,14 +7,16 @@ import HeroSection from "../../Components/ExprienceDesign/HeroSection";
 import ServicesExpDesign from "../../Components/ExprienceDesign/ServicesExpDesign";
 import AboutexpeDesign from "../../Components/ExprienceDesign/AboutexpeDesign";
 import ProcessexpeDesign from "../../Components/ExprienceDesign/ProcessexpeDesign";
+import ExpeFaq from "../../Components/ExprienceDesign/ExpeFaq";
 
 const ExperienceDesign = () => {
   return (
     <div>
-<HeroSection/>
-<AboutexpeDesign/>
-<ServicesExpDesign/>
-<ProcessexpeDesign/>
+      <HeroSection />
+      <AboutexpeDesign />
+      <ServicesExpDesign />
+      <ProcessexpeDesign />
+      <ExpeFaq />
     </div>
   );
 };

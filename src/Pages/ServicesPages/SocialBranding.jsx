@@ -3,6 +3,7 @@
 // import jackfruit from "../../../src/assets/videos/Bento/Social Branding/Jackfruit.mp4";
 // import mango from "../../../src/assets/videos/Bento/Social Branding/Mango.mp4";
 import AboutSocialbranding from "../../Components/SocialBrandingPages/AboutSocialbranding";
+import FaqSocial from "../../Components/SocialBrandingPages/FaqSocial";
 import HeroSection from "../../Components/SocialBrandingPages/HeroSection";
 import ProcessSocialBranding from "../../Components/SocialBrandingPages/ProcessSocialBranding";
 import ServicesSocialBranding from "../../Components/SocialBrandingPages/ServicesSocialBranding";
@@ -10,10 +11,11 @@ import ServicesSocialBranding from "../../Components/SocialBrandingPages/Service
 const SocialBranding = () => {
   return (
     <div>
- <HeroSection/>
- <AboutSocialbranding/>
-<ServicesSocialBranding/>
-  <ProcessSocialBranding/>
+      <HeroSection />
+      <AboutSocialbranding />
+      <ServicesSocialBranding />
+      <ProcessSocialBranding />
+      <FaqSocial />
     </div>
   );
 };

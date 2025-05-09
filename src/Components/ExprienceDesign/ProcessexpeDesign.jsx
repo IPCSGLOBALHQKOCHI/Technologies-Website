@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { FaArrowDown } from "react-icons/fa6";
 import { processExpeDesign } from "../../constants/Constants";
+import BlurText from "../../Components/BlurText";
 
+const handleAnimationComplete = () => {
+  console.log("Animation completed!");
+};
 function ProcessexpeDesign() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -11,7 +15,7 @@ function ProcessexpeDesign() {
 
   return (
     <div className="mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 2xl:px-40 py-0 pb-8 md:py-10 space-y-6 text-white">
-      <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-300 pb-2 bg-gradient-to-r from-[#001BCB] to-[#FE55D9] animate-gradient-fill bg-clip-text text-transparent">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-400 pb-2 bg-gradient-to-r from-[#001BCB] to-[#FE55D9] animate-gradient-fill bg-clip-text text-transparent">
         Crafting Experiences <br />
       </h1>
       {processExpeDesign.map((item, index) => (
@@ -24,12 +28,18 @@ function ProcessexpeDesign() {
             className="w-full flex justify-between items-center text-left group gap-4"
           >
             <div className="flex items-start gap-2">
-              <span className="text-2xl sm:text-3xl md:text-4xl leading-none text-white">
-                •
-              </span>
               <div>
                 <h3 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-400 mb-4">
-                  {item.title}
+                  <BlurText
+                    text={item.title}
+                    delay={150}
+                    animateBy="words"
+                    direction="top"
+                    onAnimationComplete={handleAnimationComplete}
+                    className={`text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-400 mb-4 ${
+                      index % 2 === 0 ? "text-[#ffffff]" : "text-[#ffffff]/50"
+                    }`}
+                  />
                 </h3>
                 <p className="max-w-full sm:max-w-xl md:max-w-2xl text-base sm:text-lg text-[#ffffff]/90">
                   {item.description}

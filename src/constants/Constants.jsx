@@ -673,6 +673,116 @@ export const DMfaq = [
   },
 ];
 
+//Expedesign FAQ
+export const ExpedesignFaq = [
+  {
+    title: "What is UI/UX Design?",
+    details:
+      "UI (User Interface) design focuses on the visual and interactive aspects of a digital product, while UX (User Experience) design ensures the product is easy to use, efficient, and enjoyable for the user. Together, they shape how users interact with your product.",
+  },
+  {
+    title:
+      " What does UED (User Experience Design) cover?",
+    details:
+      "UED involves researching user behavior, creating user journeys, wireframes, prototypes, usability testing, and designing a seamless experience that aligns with user needs and business goals.",
+  },
+  {
+    title: " What tools do you use for design?",
+    details:
+      "We use industry-standard tools like Figma, Adobe XD, Sketch, InVision, and tools like Hotjar and Maze for user testing and research",
+  },
+  {
+    title: " How long does a UI/UX design project take?",
+    details:
+      "The timeline depends on the project’s complexity. A simple app or landing page may take 2–3 weeks, while a full product design could take 4–10 weeks or more.",
+  },
+  {
+    title: " Do you provide responsive design for mobile and desktop?",
+    details:
+      "Yes. We design fully responsive interfaces that work seamlessly across devices—desktop, tablet, and mobile.",
+  },
+  {
+    title: "Can you redesign an existing website or app?",
+    details:
+      "Absolutely! We offer UX audits, identify usability issues, and create a modern, optimized redesign that improves both aesthetics and performance.",
+  },
+  {
+    title: " Do you also handle development after design?",
+    details:
+      "While our primary focus is design, we collaborate closely with development teams and can also refer trusted developers if needed.",
+  },
+];
+
+//branding FAQ
+export const BrandingFaq = [
+  {
+    title: " Why is branding important for my business?",
+    details:
+      "Branding helps differentiate your business, builds trust with your audience, increases recognition, and creates a strong emotional connection that influences buying decisions.",
+  },
+  {
+    title:
+      " How long does it take to build a brand?",
+    details:
+      "Depending on your needs, branding can take anywhere from 2 to 8 weeks. A full branding project with strategy, design, and rollout may take longer for large businesses.",
+  },
+  {
+    title: " Do you offer rebranding services?",
+    details:
+      "Yes. Whether you're updating an outdated look or shifting your business focus, we offer complete rebranding—including strategy, visuals, and brand communication refresh.",
+  },
+  {
+    title: " Will I get a brand guideline document?",
+    details:
+      "Yes, all our full-branding packages come with a comprehensive brand guideline PDF covering logo usage, color codes, fonts, tone of voice, and more for consistent application.",
+  },
+  {
+    title: " Can I use my own logo and still get other branding assets?",
+    details:
+      "Absolutely. If you already have a logo, we can work around it to create a complete brand kit including typography, colors, templates, and marketing materials.",
+  },
+  {
+    title: "What industries do you specialize in?",
+    details:
+      "We work with a wide range of industries including technology, education, retail, fashion, healthcare, hospitality, and more.",
+  }
+];
+
+//socialbransing FAQ
+export const socialBrandingFaq = [
+  {
+    title: " What is social branding?",
+    details:
+      "Social branding is the process of building and maintaining your brand’s identity across social media platforms. It includes creating a consistent tone, visual style, and strategy that reflects your brand’s values and connects with your target audience.",
+  },
+  {
+    title:
+      "Why is social branding important for my business?",
+    details:
+      "A strong social brand helps build trust, increase brand recognition, attract and retain customers, and boost engagement across platforms. It's essential for long-term digital growth.",
+  },
+  {
+    title: " What platforms do you work with for social branding?",
+    details:
+      "We work with Instagram, Facebook, YouTube, LinkedIn, TikTok, Pinterest, X (Twitter), Snapchat, WhatsApp Business, and even e-commerce platforms like Amazon, Etsy, and Shopify to ensure brand consistency everywhere.",
+  },
+  {
+    title: " Can I customize the branding services based on my platform preferences?",
+    details:
+      "Absolutely! We offer tailored plans depending on the platforms you prioritize and the goals you want to achieve.",
+  },
+  {
+    title: "How long does it take to see results?",
+    details:
+      "While brand recognition is a long-term goal, most clients start seeing improved engagement and follower growth within 4 to 8 weeks of consistent strategy and content.",
+  },
+  {
+    title: "What industries do you specialize in?",
+    details:
+      "We work with a wide range of industries including technology, education, retail, fashion, healthcare, hospitality, and more.",
+  }
+];
+
 //Branding process
 import im1 from "../assets/images/brnd8.png";
 import im2 from "../assets/images/brnd1.png";

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import { servicesTechno } from "../../constants/Constants";
 import { BsArrowRight } from "react-icons/bs";
+import showreel from "../../assets/videos/Showreel 60 FPS.mp4";
+const showreelhorizontl = "https://res.cloudinary.com/dn9mvkx7k/video/upload/v1745483200/Showreel_Horizontal_Compressed_gy3nd7.mp4"
 
 function ServicesTechno() {
   const [openIndex, setOpenIndex] = useState({ col: null, index: null });
@@ -65,6 +67,30 @@ function ServicesTechno() {
               <BsArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-3" />
             </a>
           </button>
+      </div>
+      <div className="w-full h-auto mt-20 hidden md:block">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={showreelhorizontl} type="video/mp4" />
+        </video>
+      </div>
+      <div className="w-full h-auto mt-20 block md:hidden">
+        <video
+          className="w-full h-[80svh] object-cover rounded-lg shadow-lg"
+          muted
+          loop
+          autoPlay
+          preload="auto"
+          playsInline
+        >
+          <source src={showreel} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

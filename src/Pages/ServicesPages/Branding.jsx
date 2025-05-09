@@ -9,14 +9,16 @@ import HeroSection from "../../Components/BrandingPages/HeroSection";
 import Servicesbranding from "../../Components/BrandingPages/Servicesbranding";
 import AboutBranding from "../../Components/BrandingPages/AboutBranding";
 import ProcessBranding from "../../Components/BrandingPages/ProcessBranding";
+import FaqBranding from "../../Components/BrandingPages/FaqBranding";
 
 const Branding = () => {
   return (
     <div>
-<HeroSection/>
-<AboutBranding/>
-<Servicesbranding/>
-<ProcessBranding/>
+      <HeroSection />
+      <AboutBranding />
+      <Servicesbranding />
+      <ProcessBranding />
+      <FaqBranding />
     </div>
   );
 };
